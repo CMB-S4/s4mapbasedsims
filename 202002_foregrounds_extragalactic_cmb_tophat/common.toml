@@ -1,0 +1,9 @@
+nside = 512
+output_folder = "/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202002_foregrounds_extragalactic_cmb_tophat/{nside}/{tag}/0000"
+output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_0000.fits"
+channels = "SAT"
+unit = "uK_CMB"
+num = 0
+mapsims_version = "2.1.0"
+so_pysm_models_version = "2.1.0"
+instrument_parameters = "cmbs4_tophat.h5"
