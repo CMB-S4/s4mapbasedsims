@@ -11,8 +11,8 @@ cl = {}
 for folder in glob("output/512/*"):
     print(folder)
     component = os.path.basename(folder)
-    filename = f"C_ell/{component}.pkl"
-    if os.path.exists(filename):
+    output_filename = f"output/512/C_ell/{component}.pkl"
+    if os.path.exists(output_filename):
         continue
 
     for ch in [c for c in s4.keys() if s4[c].attrs["telescope"]=="SAT"]:
@@ -30,5 +30,5 @@ for folder in glob("output/512/*"):
 
         cl[ch] = hp.anafast(m, lmax=min(3*nside-1,ellmax))
 
-    with open(filename, "wb") as f:
+    with open(output_filename, "wb") as f:
         pickle.dump(cl, f, protocol=-1)
