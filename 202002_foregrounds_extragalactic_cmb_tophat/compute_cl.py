@@ -6,7 +6,7 @@ import h5py
 ellmax = int(1e4)
 import os.path
 
-s4 = h5py.File("cmbs4_tophat.h5")
+s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 cl = {}
 for folder in glob("output/512/*"):
     print(folder)
