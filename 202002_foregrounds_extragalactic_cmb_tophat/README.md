@@ -68,8 +68,9 @@ Plots are interactive, click on the legend to select channel, double-click on pl
 Also created a single set of maps which is the sum of all components to be used as input to some of the TOD simulations (which don't require running PySM on the fly). They are also reordered to NEST (default for TOAST).
 
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
-* `cmb_lensing_signal`: `cmb_lensed_solardipole` minus `cmb_unlensed`
+* `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
 * `cmb_lensed_solardipole_nest`: `cmb_lensed_solardipole`, just reordered to HEALPix NEST
+* `cmb_tensor_nest`: `cmb_tensor`, just reordered to HEALPix NEST
 
 They are in the same folder and same naming convention, e.g.:
 

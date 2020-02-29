@@ -5,8 +5,9 @@ import numpy as np
 all_combined = {
     "combined_foregrounds": ["dust", "synchrotron", "freefree", "ame"]
     + ["cib", "ksz", "tsz"],
-    "cmb_lensing_signal": ["cmb_lensed_solardipole", "-cmb_unlensed"],
+    "cmb_lensing_signal": ["cmb", "-cmb_unlensed"],
     "cmb_lensed_solardipole_nest": ["cmb_lensed_solardipole"],
+    "cmb_tensor_nest": ["cmb_tensor"],
 }
 
 import h5py
