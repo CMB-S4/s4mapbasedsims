@@ -65,7 +65,7 @@ Plots are interactive, click on the legend to select channel, double-click on pl
 
 ## Combined maps
 
-Also created a single set of maps which is the sum of all components to be used as input to some of the TOD simulations (which don't require running PySM on the fly). They are also reordered to NEST (default for TOAST).
+Also created a single set of maps which is the sum of all components. They are also reordered to NEST (default for TOAST).
 
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
 * `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
