@@ -78,7 +78,7 @@ They are in the same folder and same naming convention, e.g.:
 
 ## Issues or feedback
 
-In case of any problem with the maps or the documentation or request more/different runs, [open an issue on the `map_based_simulations` repo](https://github.com/CMB-S4/s4mapbasedsims/issues)
+In case of any problem with the maps or the documentation or request more/different runs, [open an issue on the `s4mapbasedsims` repo](https://github.com/CMB-S4/s4mapbasedsims/issues)
 
 ## Software
 
