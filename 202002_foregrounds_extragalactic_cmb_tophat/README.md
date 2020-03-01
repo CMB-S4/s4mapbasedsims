@@ -3,9 +3,8 @@ Tophat bandpasses simulation: high resolution foregrounds with spectral index no
 
 Released on 28 February 2020 by @zonca
 
-This is the first release using tophat bandpasses, all previous releases used Dirac delta bandpasses at the reference
-frequency. It includes all galactic high resolution components with index not varying spatially and the extragalactic
-components based on WebSky.
+It includes all galactic high resolution components with index not varying spatially and the extragalactic
+components based on WebSky. Integrated on top-hat bandpasses based on the instrument model from `s4sim`.
 
 The last version of this file is [available on Github](https://github.com/CMB-S4/s4mapbasedsims/tree/master/202002_foregrounds_extragalactic_cmb_tophat).
 The same folder contains all the configuration files used and the scripts to create SLURM jobs.
