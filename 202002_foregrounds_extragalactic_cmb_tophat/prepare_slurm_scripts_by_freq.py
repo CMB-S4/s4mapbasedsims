@@ -5,7 +5,7 @@ folder = Path(f"jobs")
 folder.mkdir(exist_ok=True, parents=True)
 
 nside_sims = ["dust", "freefree", "synchrotron", "ame"]
-no_nside_sims = ["cib", "ksz", "tsz", "cmb", "cmb_unlensed", "cmb_lensed_solardipole"]
+no_nside_sims = ["cib", "ksz", "tsz", "cmb", "cmb_tensor", "cmb_unlensed", "cmb_lensed_solardipole"]
 
 import h5py
 s4 = h5py.File("cmbs4_tophat.h5", mode="r")
