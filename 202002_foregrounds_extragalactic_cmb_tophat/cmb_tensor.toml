@@ -1,0 +1,13 @@
+
+tag = "cmb_tensor"
+
+[ pysm_components ]
+# do not apply any rotation
+pysm_output_reference_frame = "C"
+
+    [ pysm_components.cmb_tensor ]
+    class  =  "so_pysm_models.PrecomputedAlms"
+    filename = "/global/project/projectdirs/planck/data/ffp10/sky/CMB/ffp10_ten_cmb_000_alm.fits"
+    # r is 0.01
+    input_units = "K_CMB"
+    precompute_output_map = true
