@@ -52,16 +52,6 @@ where:
 * `telescope` is `SAT` or `LAT`
 * `band` is the channel band
 
-## Plots and validation
-
-Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
-
-Plots are interactive, click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
-
-* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/041e7a134cf2bf962f671fbb4daabc36)
-* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/b3176a86a8f6d565e4220debb3d6ae7d)
-* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/40314ed532aa2a1ae1ba5c290be05f9d)
-
 ## Combined maps
 
 Also created a single set of maps which is the sum of all components. They are also reordered to NEST (default for TOAST).
@@ -74,6 +64,16 @@ Also created a single set of maps which is the sum of all components. They are a
 They are in the same folder and same naming convention, e.g.:
 
     /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202002_foregrounds_extragalactic_cmb_tophat/512/combined_foregrounds/0000/cmbs4_combined_foregrounds_uKCMB_SAT-LFS1_nside512_0000.fits
+
+## Plots and validation
+
+Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
+
+Plots are interactive, click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
+
+* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/041e7a134cf2bf962f671fbb4daabc36)
+* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/b3176a86a8f6d565e4220debb3d6ae7d)
+* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/40314ed532aa2a1ae1ba5c290be05f9d)
 
 ## Issues or feedback
 
