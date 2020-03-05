@@ -58,7 +58,7 @@ Also created a single set of maps which is the sum of all components. They are a
 
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
 * `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
-* `cmb_lensed_solardipole_nest`: `cmb_lensed_solardipole`, just reordered to HEALPix NEST
+* `cmb_unlensed_solardipole_nest`: `cmb_unlensed_solardipole`, just reordered to HEALPix NEST
 * `cmb_tensor_nest`: `cmb_tensor`, just reordered to HEALPix NEST
 
 They are in the same folder and same naming convention, e.g.:
