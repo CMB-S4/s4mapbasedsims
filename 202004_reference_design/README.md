@@ -24,6 +24,22 @@ in the documentation of the design simulation tool available at: <https://cmb-s4
 * `K_CMB` unit
 * One map per band per site which combines all the telescopes at that band, atmosphere scales down as telescope-years, noise as detector-years
 
+Metadata are available in the fits headers of extension 1, for example:
+
+```
+SOFTWARE= 's4_design_sim_tool'                                                  
+SW_VERS = '1.0.1   '                                                            
+SKY_VERS= '1.0     '                                                            
+ATM_VERS= '1.0     '                                                            
+NOI_VERS= '1.0     '                                                            
+SITE    = 'Pole    '                                                            
+SPLIT   =                    2                                                  
+NSPLITS =                    7                                                  
+CHANNEL = 'HFL1    '                                                            
+DATE    = '2020-04-23'                                                          
+CONFMD5 = '79858f71dbaf1c8bd9bd57a2cbea57ed'   
+```
+
 ## Noise and atmosphere
 
 1 full map based on 7 years of mission and 7 independent splits with equal sky coverage.
