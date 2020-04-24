@@ -1,0 +1,61 @@
+[sky_emission]
+# Each sky emission has a weighting factor between 0 and 1
+
+# Synchrotron, Dust, Free-free, AME
+# Websky CIB, tSZ, kSZ
+foreground_emission = 0
+
+# Planck cosmological parameters, no tensor modes
+CMB_unlensed = 0
+
+# CMB lensed - CMB unlensed:
+# 1 for lensed CMB
+# 0 for unlensed CMB
+# >0, <1 for residual after de-lensing
+CMB_lensing_signal = 0
+
+CMB_tensor_to_scalar_ratio = 0
+
+[experiment]
+
+total_experiment_length_years = 7
+
+# between 0 and 1, typically 0.2
+observing_efficiency = 0.2
+
+# Number of splits, 1 generates only full mission
+# 2-7 generates the full mission map and then the requested number
+# of splits scaled accordingly. E.g. 7 generates the full mission
+# map and 7 equal (yearly) maps
+number_of_splits = 7
+
+[telescopes]
+
+    # Telescope names are not used within the software
+
+    [telescopes.SAT]
+    # Available SAT tubes (band centers in GHz) are:
+    # LFS (30,40), MFLS (85,145.1), MFHS (95,155.1), HFS (220,270)
+    # Tubes for each SAT should be 3
+
+    SAT1 = { LFS=0, MFLS= 3, MFHS=0, HFS=0, site="Pole", years=7 }
+    SAT3 = { LFS=0, MFLS= 0, MFHS=3, HFS=0, site="Pole", years=7 }
+    SAT5 = { LFS=1, MFLS= 0, MFHS=0, HFS=2, site="Pole", years=7 }
+
+    SAT0 = { LFS=0, MFLS= 3, MFHS=0, HFS=0, site="Pole", years=7 }
+    SAT2 = { LFS=0, MFLS= 0, MFHS=3, HFS=0, site="Pole", years=7 }
+    SAT4 = { LFS=1, MFLS= 0, MFHS=0, HFS=2, site="Pole", years=7 }
+
+    [telescopes.LAT]
+    # Available LAT tubes (band centers in GHz) are:
+    # ULFL (20), LFL (27,39), MFL (93,145), HFL (225,278)
+    # Tubes for each LAT should be 19
+
+    # Legacy survey LAT deployed in Chile
+
+    LAT0 = { ULFL=0, LFL= 2, MFL=12, HFL=5, site="Chile", years=7 }
+    LAT1 = { ULFL=0, LFL= 2, MFL=12, HFL=5, site="Chile", years=7 }
+
+    # Delensing survey LAT deployed at Pole
+
+    LAT2 = { ULFL=1, LFL= 2, MFL=11, HFL=4, site="Pole", years=7 }
