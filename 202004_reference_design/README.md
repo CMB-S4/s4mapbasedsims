@@ -48,7 +48,7 @@ Maps are available at NERSC at:
 
     /global/cscratch1/sd/zonca/cmbs4/s4refsimtool/reference_design_nosky_7splits
 
-They will be moved to project space later on and there path here updated
+Will be moved to project space later on and the path here updated
 
 File naming convention:
 
