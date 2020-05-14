@@ -18,7 +18,7 @@ Dust, synchrotron, free-free and anomalous microwave emission using the "0" mode
 The CIB, KSZ and TSZ models are created from WebSky cosmological simulations, 
 we also include one CMB realization generated with the same cosmological parameters used in the WebSky simulations both unlensed and lensed with the potential from the WebSky simulations,
 see more details in [in the documentation](https://so-pysm-models.readthedocs.io/en/latest/models.html#websky).
-For convenience, here are the [cosmological parameters assumed in WebSky](https://mocks.cita.utoronto.ca/data/websky/v0.0/cosmology.py).
+For convenience, here are the [cosmological parameters assumed in WebSky](https://mocks.cita.utoronto.ca/data/websky/v0.0/cosmology.py), everything else is set to `CAMB` defaults.
 
 All the models listed above will be part of PySM 3 once we upgrade them to nside 8192 and merge them in.
 
