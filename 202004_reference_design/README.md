@@ -70,9 +70,11 @@ For example:
     LAT-LFL2_chile/cmbs4_atmosphere_noise_KCMB_LAT-LFL2_chile_nside4096_1_of_1.fits
     LAT-LFL2_chile/cmbs4_atmosphere_noise_KCMB_LAT-LFL2_chile_nside4096_3_of_7.fits
 
-## CMB
+## CMB no tensor modes
 
-1 full map
+1 full map which includes CMB emission with `r=0` and lensing using the potential from Websky and has gone through filter-and-bin mapmaking.
+
+See <https://github.com/CMB-S4/s4mapbasedsims/tree/master/202002_foregrounds_extragalactic_cmb_tophat#input-components> for more information about the inputs.
 
 Maps are available at NERSC at:
 
