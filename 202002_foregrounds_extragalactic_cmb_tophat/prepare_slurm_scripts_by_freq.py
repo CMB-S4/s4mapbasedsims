@@ -21,7 +21,7 @@ for nside in [4096]:
             if s4[channels].attrs["telescope"] == "LAT":
                 filename = f"job_{simulation_type}_{nside}_{channels}.slurm"
                 with open(folder / filename, "w") as f:
-                    print(f"sbatch jobs/{filename}")
+                    print(f"sbatch jobs/{filename} &")
                     f.write(template.format(
                         simulation_type=simulation_type,
                         nside=nside,
