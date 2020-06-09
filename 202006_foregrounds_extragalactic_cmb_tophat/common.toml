@@ -1,4 +1,4 @@
-output_folder = "/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202006_foregrounds_extragalactic_cmb_tophat/{nside}/{tag}/0000"
+output_folder = "output/{nside}/{tag}/0000"
 output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_0000.fits"
 unit = "uK_CMB"
 num = 0
