@@ -1,3 +1,5 @@
+channels = "telescope:SAT"
+nside = 512
 output_folder = "output/{nside}/{tag}/0000"
 output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_0000.fits"
 unit = "uK_CMB"

@@ -5,13 +5,13 @@ folder = Path(f"jobs")
 folder.mkdir(exist_ok=True, parents=True)
 
 nside_sims = ["dust", "freefree", "synchrotron", "ame"]
-no_nside_sims = ["cib", "ksz", "tsz", "cmb", "cmb_tensor", "cmb_unlensed", "cmb_lensed_solardipole", "cmb_unlensed_solardipole"]
+no_nside_sims = ["cib", "ksz", "tsz", "cmb", "cmb_tensor", "cmb_unlensed", "cmb_unlensed_solardipole"]
 
 import h5py
 s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 sims = nside_sims + no_nside_sims
 
-for nside in [4096]:
+for nside in [512]:
     for simulation_type in sims:
         config_file = simulation_type if simulation_type in no_nside_sims else simulation_type + "_" + str(nside)
         template = open("submit.slurm").read()
@@ -28,7 +28,22 @@ for nside in [4096]:
                         hours=hours,
                         minutes=minutes,
                         channels=channels,
+                        run_channels=channels,
                         config_file=config_file
                     ))
 
-                subprocess.run(["sbatch", f"jobs/{filename}"])
+                #subprocess.run(["sbatch", f"jobs/{filename}"])
+        filename = f"job_{simulation_type}_{nside}_SAT.slurm"
+        with open(folder / filename, "w") as f:
+            print(f"sbatch jobs/{filename} &")
+            f.write(template.format(
+                simulation_type=simulation_type,
+                nside=nside,
+                hours=hours,
+                minutes=minutes,
+                channels='SAT',
+                run_channels='telescope:SAT',
+                config_file=config_file
+            ))
+
+        subprocess.run(["sbatch", f"jobs/{filename}"])
