@@ -43,7 +43,7 @@ CONFMD5 = '79858f71dbaf1c8bd9bd57a2cbea57ed'
 
 The configuration file for the design simulation tool is:
 
-* [`s4_reference_design_nosky_7splits.toml`](s4_reference_design_nosky_7splits.toml)
+* [`s4_reference_design_noise_atmo_7splits.toml`](s4_reference_design_noise_atmo_7splits.toml)
 
 Maps are available at NERSC at:
 
