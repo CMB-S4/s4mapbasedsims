@@ -72,11 +72,11 @@ They are in the same folder and same naming convention, e.g.:
 
 Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
 
-Plots are interactive, click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
+Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
-* [Plot TT NSIDE 512](https://gist.github.com/6b6f142babb63526be91dc9d61667b9f)
-* [Plot EE NSIDE 512](https://gist.github.com/822c19ee590112f2d11be7bb183850f5)
-* [Plot BB NSIDE 512](https://gist.github.com/af05f08e29dd26df82b85ea3137be5fa)
+* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
+* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/822c19ee590112f2d11be7bb183850f5)
+* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/af05f08e29dd26df82b85ea3137be5fa)
 
 ## Issues or feedback
 
