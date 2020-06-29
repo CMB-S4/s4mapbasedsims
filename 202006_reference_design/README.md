@@ -81,7 +81,7 @@ We have 1 map per tube for each of 3 components (with link to TOML configuration
 
 * [foregrounds (dust, free-free, synchrotron, ame, Websky CIB/tsz/ksz)](s4_reference_design_foregrounds.toml)
 * [CMB scalar (Websky compatible cosmology, scalar modes and lensing with Websky potential)](s4_reference_design_cmb_r0.toml)
-* [CMB tensor only (`r=3e-3`, B Modes only)](s4_reference_design_cmb_tensor_only_r3e-3.toml)
+* [CMB tensor only (`r=3e-3`)](s4_reference_design_cmb_tensor_only_r3e-3.toml)
 
 Maps are available at NERSC at (Will be moved to project space later on and the path here updated):
 
