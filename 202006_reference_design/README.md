@@ -67,6 +67,10 @@ For example:
     LAT-LFL2_chile/cmbs4_KCMB_LAT-LFL2_chile_nside4096_1_of_1.fits
     LAT-LFL2_chile/cmbs4_KCMB_LAT-LFL2_chile_nside4096_3_of_7.fits
 
+The noise and atmosphere maps used as input are currently located at:
+
+    /global/cscratch1/sd/keskital/s4sim/reference_tool/out_v1
+
 ## CMB and foregrounds
 
 CMB and foreground maps are generated applying the mapmaking step in map domain to the [full sky, bandpass-integrated and beam-convolved input map based simulations](https://github.com/CMB-S4/s4mapbasedsims/tree/master/202006_foregrounds_extragalactic_cmb_tophat#input-components).
@@ -103,3 +107,7 @@ Where:
 For example:
 
     s4_reference_design_foregrounds/LAT-LFL2_chile/cmbs4_KCMB_LAT-LFL2_chile_nside4096_1_of_1.fits
+
+The foreground and CMB maps used as input are currently located at:
+
+    /global/cscratch1/sd/keskital/s4sim/reference_tool/out
