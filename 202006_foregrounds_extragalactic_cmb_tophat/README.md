@@ -74,9 +74,9 @@ Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulatio
 
 Plots are interactive, click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
-* [Plot TT NSIDE 512]()
-* [Plot EE NSIDE 512]()
-* [Plot BB NSIDE 512]()
+* [Plot TT NSIDE 512](https://gist.github.com/6b6f142babb63526be91dc9d61667b9f)
+* [Plot EE NSIDE 512](https://gist.github.com/822c19ee590112f2d11be7bb183850f5)
+* [Plot BB NSIDE 512](https://gist.github.com/af05f08e29dd26df82b85ea3137be5fa)
 
 ## Issues or feedback
 
