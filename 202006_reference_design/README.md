@@ -111,3 +111,7 @@ For example:
 The foreground and CMB maps used as input are currently located at:
 
     /global/cscratch1/sd/keskital/s4sim/reference_tool/out
+    
+except `cmb_tensor` which is at:
+
+    /global/cscratch1/sd/keskital/s4sim/reference_tool/out_v1
