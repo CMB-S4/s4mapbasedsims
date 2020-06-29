@@ -30,6 +30,8 @@ I also created a version of the lensed CMB realization with the dipole component
 
 Bandpass for each channel is based on the figures in `s4sim.hardware.config`, PySM executes 10 equally spaced points between the low and the high limit, including both and integrates with the trapezoidal rule. Weighting is performed in `Jy/sr`, the same as PySM 2.
 
+Using version `0+untagged.115.gc57d15d` of the `s4sim` package, see `cmbs4_tophat.h5` or `cmbs4_tophat.csv` for the actual values used for beam and bandpass.
+
 ## Available maps
 
 HEALPix maps at high resolution for LAT (nside 4096) and low resolution for SAT (nside 512), these models are deterministic, so we have
