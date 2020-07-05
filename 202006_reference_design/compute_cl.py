@@ -53,7 +53,7 @@ for folder in glob("output/*noise*"):
 
             assert np.all(np.isfinite(hitmap))
             assert np.all(np.isfinite(m))
-            cl[tag] = hp.anafast(m*hitmap, lmax=min(3 * nside - 1, ellmax)) / np.mean(hitmap**2) / sky_fraction
+            cl[tag] = hp.anafast(m*hitmap, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True) / np.mean(hitmap**2) / sky_fraction
 
         with open(output_filename, "wb") as f:
             pickle.dump(cl, f, protocol=-1)
