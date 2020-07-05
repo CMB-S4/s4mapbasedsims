@@ -1,4 +1,5 @@
 import healpy as hp
+import numpy as np
 import sys
 from glob import glob
 import pickle
@@ -10,11 +11,11 @@ import os.path
 
 s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 cl = {}
-telescope = "SAT"
+telescope = sys.argv[1]
 sites = ["chile", "pole"]
 if telescope == "SAT":
     sites = sites[1:]
-for folder in glob("output/*"):
+for folder in glob("output/*noise*"):
     for site in sites:
         folder = Path(folder)
         print(folder)
@@ -24,21 +25,35 @@ for folder in glob("output/*"):
 
         for ch in [c for c in s4.keys() if s4[c].attrs["telescope"] == telescope]:
             tag = f"{telescope}-{ch}_{site}"
+            print(tag)
             try:
                 ch_folder = folder / tag
-                filename = list(ch_folder.glob("*1_of_1*"))[0]
-            except IndexError:
+                filenames = list(ch_folder.glob("*KCMB*1_of_1*"))
+                assert len(filenames) == 1
+                filename = filenames[0]
+            except:
                 print(f"{ch_folder} NOT FOUND " + ("*" * 20))
-                sys.exit(1)
+                continue
             print(f"reading {filename}")
             try:
-                m = hp.read_map(filename, (0, 1, 2))
+                m = hp.ma(hp.read_map(filename, (0, 1, 2)))
                 nside = hp.npix2nside(len(m[0]))
             except:
-                m = hp.read_map(filename)
+                m = hp.ma(hp.read_map(filename))
                 nside = hp.npix2nside(len(m))
 
-            cl[tag] = hp.anafast(m, lmax=min(3 * nside - 1, ellmax))
+            hitmap_filenames = list(ch_folder.glob("*hitmap*1_of_1*"))
+            assert(len(hitmap_filenames) == 1)
+            hitmap_filename = hitmap_filenames[0]
+            hitmap = hp.read_map(hitmap_filename)
+            hitmap[hitmap == hp.UNSEEN] = 0
+            sky_fraction = (hitmap > 0).sum()/len(hitmap)
+
+            hitmap[hitmap>0] = np.sqrt(hitmap[hitmap>0])
+
+            assert np.all(np.isfinite(hitmap))
+            assert np.all(np.isfinite(m))
+            cl[tag] = hp.anafast(m*hitmap, lmax=min(3 * nside - 1, ellmax)) / np.mean(hitmap**2) / sky_fraction
 
         with open(output_filename, "wb") as f:
             pickle.dump(cl, f, protocol=-1)
