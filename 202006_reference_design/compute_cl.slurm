@@ -9,4 +9,4 @@
 #SBATCH --output=compute_cl_%j.out
 
 export HDF5_USE_FILE_LOCKING=FALSE
-time python compute_cl.py LAT
+time python compute_cl.py LAT 7
