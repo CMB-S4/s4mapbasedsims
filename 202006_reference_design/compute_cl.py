@@ -13,15 +13,14 @@ s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 cl = {}
 telescope = sys.argv[1]
 sites = ["chile", "pole"]
+
 if telescope == "SAT":
     sites = sites[1:]
 for folder in glob("output/*noise*"):
+    folder = Path(folder)
+    print(folder)
+    output_filename = folder / f"C_ell_{telescope}.pkl"
     for site in sites:
-        folder = Path(folder)
-        print(folder)
-        output_filename = folder / f"C_ell_{telescope}.pkl"
-        if os.path.exists(output_filename):
-            continue
 
         for ch in [c for c in s4.keys() if s4[c].attrs["telescope"] == telescope]:
             tag = f"{telescope}-{ch}_{site}"
@@ -55,5 +54,5 @@ for folder in glob("output/*noise*"):
             assert np.all(np.isfinite(m))
             cl[tag] = hp.anafast(m*hitmap, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True) / np.mean(hitmap**2) / sky_fraction
 
-        with open(output_filename, "wb") as f:
-            pickle.dump(cl, f, protocol=-1)
+    with open(output_filename, "wb") as f:
+        pickle.dump(cl, f, protocol=-1)
