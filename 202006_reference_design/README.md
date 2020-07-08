@@ -23,6 +23,31 @@ The `telescopes` section of the simulations configuration files describes the di
 see [on the repository](https://github.com/CMB-S4/s4mapbasedsims/blob/753307546ecb3145369609d0162131d51efbbb9a/202006_reference_design/s4_reference_design_noise_atmo_7splits.toml#L32-L61).
 Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file in this repository, and [exported to CSV for convenience](https://github.com/CMB-S4/s4mapbasedsims/blob/master/202006_foregrounds_extragalactic_cmb_tophat/cmbs4_tophat.csv).
 
+# Validation
+
+## Noise + Atmosphere
+
+* [`C_ell` computation script](compute_cl.py), [Plotting notebook](validation_atmo_noise.ipynb)
+* [Plots of spectra of noise + atmosphere, LAT pole](plots/LAT_pole.md)
+* [Plots of spectra of noise + atmosphere, LAT chile](plots/LAT_chile.md)
+* [Plots of spectra of noise + atmosphere, SAT](plots/SAT.md)
+* [Plots of spectra of hitmaps, LAT pole](plots/hitmap_LAT_pole.md)
+* [Plots of spectra of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
+* [Plots of spectra of hitmaps, SAT](plots/hitmap_SAT.md)
+* [Plots of spectra of noise + atmosphere, 7-way splits, SAT](plots/SAT_7.md)
+
+## Foregrounds and CMB
+
+Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
+
+For foregrounds, I compare the output total foregrounds both to the input synchrotron and the input dust, just
+to check they are reasonable.
+
+* [TT](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
+* [EE](https://nbviewer.jupyter.org/gist/zonca/37b99d0446d338191b4f660992c0c661)
+* [BB](https://nbviewer.jupyter.org/gist/zonca/c75ce0a8b372dc98fbba50c6f611cea8)
+
+
 # Available maps
 
 * `N_side` 512 for SAT, 4096 for LAT
@@ -69,14 +94,22 @@ Where:
 * `telescope` LAT or SAT
 * `band` e.g. LFL2
 * `site` pole or chile
-* `split` and `nsplits` the current split and the number of splits, so `1_of_1` is a full mission map, `3 of 7` is the 3rd year of observation on 7 yearly splits.
+* `split` and `nsplits` the current split (starts from 1) and the number of splits, so `1_of_1` is a full mission map, `3 of 7` is the 3rd year of observation on 7 yearly splits.
 
 For example:
 
     LAT-LFL2_chile/cmbs4_KCMB_LAT-LFL2_chile_nside4096_1_of_1.fits
     LAT-LFL2_chile/cmbs4_KCMB_LAT-LFL2_chile_nside4096_3_of_7.fits
 
-The noise and atmosphere maps used as input are currently located at:
+This dataset also includes hitmaps and white noise covariance matrices properly scaled for full mission and the splits,
+for example:
+
+    LAT-HFL1_pole/cmbs4_hitmap_LAT-HFL1_pole_nside4096_1_of_1.fits
+    LAT-HFL1_pole/cmbs4_hitmap_LAT-HFL1_pole_nside4096_1_of_7.fits
+    LAT-HFL1_pole/cmbs4_wcov_LAT-HFL1_pole_nside4096_1_of_1.fits
+    LAT-HFL1_pole/cmbs4_wcov_LAT-HFL1_pole_nside4096_1_of_7.fits
+
+The noise and atmosphere maps from TOAST used as input are currently located at:
 
     /global/project/projectdirs/cmbs4/dm/dstool/input
 
