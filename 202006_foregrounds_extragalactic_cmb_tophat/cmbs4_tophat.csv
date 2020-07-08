@@ -1,5 +1,5 @@
 ,band,telescope,center_frequency_GHz,fwhm_arcmin,detectors_per_tube,NET_uKsqrts,pole_NET_uKsqrts,bandpass_low,bandpass_high
-ULFL1,ULFL1,LAT,20.0,10.0,216,473.0,,17.5,22.5
+ULFL1,ULFL1,LAT,20.0,10.0,216,473.0,473.0,17.5,22.5
 LFL1,LFL1,LAT,27.0,7.4,384,429.0,445.0,24.0,30.0
 LFL2,LFL2,LAT,39.0,5.1,384,261.0,320.0,30.0,48.0
 LFS1,LFS1,SAT,30.0,72.8,296,177.0,,25.5,34.5
