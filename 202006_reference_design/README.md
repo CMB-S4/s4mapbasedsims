@@ -46,7 +46,7 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 For foregrounds, I compare the output total foregrounds both to the input synchrotron and the input dust, just
 to check they are reasonable.
 
-* [TT](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
+* [TT](https://nbviewer.jupyter.org/gist/zonca/29706d266015f21db8a6f217e3508f19)
 * [EE](https://nbviewer.jupyter.org/gist/zonca/37b99d0446d338191b4f660992c0c661)
 * [BB](https://nbviewer.jupyter.org/gist/zonca/c75ce0a8b372dc98fbba50c6f611cea8)
 
