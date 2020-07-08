@@ -1,0 +1,7 @@
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-ULFL1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-LFL1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-LFL2_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-MFL1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-MFL2_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-HFL1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_LAT-HFL2_pole.png)

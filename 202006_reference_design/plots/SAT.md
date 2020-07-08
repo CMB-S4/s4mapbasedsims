@@ -1,0 +1,8 @@
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-LFS1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-LFS2_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-MFHS1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-MFHS2_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-MFLS1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-MFLS2_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-HFS1_pole.png)
+![](C_ell_s4_reference_design_noise_atmo_7splits_SAT-HFS2_pole.png)
