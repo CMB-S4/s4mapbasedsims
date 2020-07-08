@@ -1,0 +1,8 @@
+SAT-HFS1_pole
+SAT-HFS2_pole
+SAT-LFS1_pole
+SAT-LFS2_pole
+SAT-MFHS1_pole
+SAT-MFHS2_pole
+SAT-MFLS1_pole
+SAT-MFLS2_pole
