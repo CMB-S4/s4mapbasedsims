@@ -42,7 +42,7 @@ The `ell_max` for the harmonics transform is `3*Nside-1`.
 
 **Location at NERSC**:
 
-    /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202006_foregrounds_extragalactic_cmb_tophat
+    /global/project/projectdirs/cmbs4/dm/dstool/input_pysm
 
 The naming convention is:
 
@@ -68,7 +68,7 @@ Also created a single set of maps which is the sum of all components. They are a
 
 They are in the same folder and same naming convention, e.g.:
 
-    /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202006_foregrounds_extragalactic_cmb_tophat/512/combined_foregrounds/0000/cmbs4_combined_foregrounds_uKCMB_SAT-LFS1_nside512_0000.fits
+    /global/project/projectdirs/cmbs4/dm/dstool/input_pysm/512/combined_foregrounds/0000/cmbs4_combined_foregrounds_uKCMB_SAT-LFS1_nside512_0000.fits
 
 ## Plots and validation
 
