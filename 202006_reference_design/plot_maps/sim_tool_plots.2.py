@@ -86,7 +86,6 @@ for instrument in instruments:
                 amp = int(np.std(m[good]))
                 hp.mollview(
                     m,
-                    norm="hist",
                     cmap="coolwarm",
                     sub=[nrow, ncol, iplot],
                     title="{}-{}".format(comp, band),
