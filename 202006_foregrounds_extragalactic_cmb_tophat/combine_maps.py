@@ -31,8 +31,6 @@ for output_content, components in all_combined.items():
                         filename = f"output/{nside}/{content}/{num:04d}/cmbs4_{content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
                         print(filename)
                         print(float(s4[band]["bandpass_frequency_GHz"][0]))
-                        if content == "cib" and float(s4[band]["bandpass_frequency_GHz"][0]) < 26:
-                            continue
                         try:
                             combined_map += sign * hp.read_map(
                                 filename, dtype=np.float32, field=(0, 1, 2)
