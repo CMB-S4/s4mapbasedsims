@@ -28,7 +28,10 @@ for folder in glob("output/512/*"):
             m = hp.read_map(filename)
             nside = hp.npix2nside(len(m))
 
-        cl[ch] = hp.anafast(m, lmax=min(3 * nside - 1, ellmax))
+        #if m.shape[0] == 3 and m[1].sum() == 0:
+        #    m = m[0]
+
+        cl[ch] = hp.anafast(m, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True)
 
     with open(output_filename, "wb") as f:
         pickle.dump(cl, f, protocol=-1)
