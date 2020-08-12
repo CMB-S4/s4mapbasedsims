@@ -26,7 +26,11 @@ The `telescopes` section of the simulations configuration files describes the di
 see [on the repository](https://github.com/CMB-S4/s4mapbasedsims/blob/753307546ecb3145369609d0162131d51efbbb9a/202006_reference_design/s4_reference_design_noise_atmo_7splits.toml#L32-L61).
 Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file in this repository, and [exported to CSV for convenience](https://github.com/CMB-S4/s4mapbasedsims/blob/master/202006_foregrounds_extragalactic_cmb_tophat/cmbs4_tophat.csv).
 
-# Validation
+# Verification
+
+## Plots of the maps
+
+* [Plots of all full experiment maps on the same scale](plot_maps/README.md)
 
 ## Noise + Atmosphere
 
