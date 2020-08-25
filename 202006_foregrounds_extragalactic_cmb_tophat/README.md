@@ -70,7 +70,7 @@ They are in the same folder and same naming convention, e.g.:
 
     /global/project/projectdirs/cmbs4/dm/dstool/input_pysm/512/combined_foregrounds/0000/cmbs4_combined_foregrounds_uKCMB_SAT-LFS1_nside512_0000.fits
 
-## Plots and validation
+## Plots and verification
 
 Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
 
@@ -79,6 +79,10 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 * [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
 * [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/822c19ee590112f2d11be7bb183850f5)
 * [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/af05f08e29dd26df82b85ea3137be5fa)
+
+## External analysis
+
+* [Aug 2020: Spectra of all SAT components by Colin Bischoff](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20200817_DM_AWG_sim/index.html)
 
 ## Issues or feedback
 
