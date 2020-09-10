@@ -31,6 +31,7 @@ Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file
 ## Plots of the maps
 
 * [Plots of all full experiment maps on the same scale](plot_maps/README.md)
+* [Comparison in gnomview of input and output foregrounds for SAT](plot_gnomview/README.md)
 
 ## Noise + Atmosphere
 
