@@ -160,3 +160,13 @@ For example:
 The foreground and CMB maps used as input are currently located at:
 
     /global/project/projectdirs/cmbs4/dm/dstool/input
+
+## Issues or feedback
+
+In case of any problem with the maps or the documentation or request more/different runs, [open an issue on the `s4mapbasedsims` repo](https://github.com/CMB-S4/s4mapbasedsims/issues)
+
+### Known issues
+
+Due to a bug in the PySM 3 bandpass integration routine, this maps have a overall scale error which is negligible
+at the low frequency channels, below 1% at mid-frequencies, and 2-3% at high frequencies, please
+see [this issue for the full table of scaling factors](https://github.com/CMB-S4/s4mapbasedsims/issues/5).

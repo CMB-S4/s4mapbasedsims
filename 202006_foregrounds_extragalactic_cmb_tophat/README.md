@@ -72,6 +72,8 @@ They are in the same folder and same naming convention, e.g.:
 
 ## Plots and verification
 
+Make sure to check the "Known issues" section below.
+
 Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
 
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
@@ -87,6 +89,12 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 ## Issues or feedback
 
 In case of any problem with the maps or the documentation or request more/different runs, [open an issue on the `s4mapbasedsims` repo](https://github.com/CMB-S4/s4mapbasedsims/issues)
+
+### Known issues
+
+Due to a bug in the PySM 3 bandpass integration routine, this maps have a overall scale error which is negligible
+at the low frequency channels, below 1% at mid-frequencies, and 2-3% at high frequencies, please
+see [this issue for the full table of scaling factors](https://github.com/CMB-S4/s4mapbasedsims/issues/5).
 
 ## Software
 
