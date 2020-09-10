@@ -8,7 +8,7 @@ import os.path
 
 s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 cl = {}
-for folder in glob("output/512/*"):
+for folder in glob("output/512/*combined_foregrounds*"):
     print(folder)
     component = os.path.basename(folder)
     output_filename = f"output/512/C_ell/{component}.pkl"
