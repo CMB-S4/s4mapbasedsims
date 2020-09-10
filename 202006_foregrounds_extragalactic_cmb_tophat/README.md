@@ -79,6 +79,8 @@ Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulatio
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
 * [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
+
+**in the polarization plots, due to a [previous bug now fixed](https://github.com/CMB-S4/s4mapbasedsims/issues/4), CIB is non-zero**
 * [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/822c19ee590112f2d11be7bb183850f5)
 * [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/af05f08e29dd26df82b85ea3137be5fa)
 
