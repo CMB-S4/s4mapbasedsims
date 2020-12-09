@@ -1,7 +1,6 @@
 import healpy as hp
 import numpy as np
 import sys
-from glob import glob
 import pickle
 import h5py
 from pathlib import Path
@@ -12,14 +11,15 @@ s4 = h5py.File("cmbs4_tophat.h5", mode="r")
 cl = {}
 telescope = sys.argv[1]
 splits = int(sys.argv[2])
-sites = ["chile", "pole"]
+sites = ["chile"]
 
-if telescope == "SAT":
-    sites = sites[1:]
-for folder in glob("output/*noise*"):
+local_folder = Path("output/") # local
+output_base_folder = Path("/global/project/projectdirs/cmbs4/dm/dstool/output/") # project
+output_base_folder = local_folder
+
+for folder in output_base_folder.glob("*noise*"):
     folder = Path(folder)
-    print(folder)
-    output_filename = folder / f"C_ell_{telescope}_{splits}.pkl"
+    output_filename = local_folder / folder.name / f"C_ell_{telescope}_{splits}.pkl"
     for site in sites:
 
         for ch in [c for c in s4.keys() if s4[c].attrs["telescope"] == telescope]:
