@@ -1,0 +1,12 @@
+[telescopes]
+
+    # Telescope names are not used within the software
+
+    [telescopes.SAT]
+    # Available SAT tubes (band centers in GHz) are:
+    # LFS (30,40), MFLS (85,145.1), MFHS (95,155.1), HFS (220,270)
+    # Tubes for each SAT should be 3
+
+    SAT1 = { LFS=0, MFLS= 3, MFHS=0, HFS=0, site="Chile", years=7 }
+    SAT3 = { LFS=0, MFLS= 0, MFHS=3, HFS=0, site="Chile", years=7 }
+    SAT5 = { LFS=1, MFLS= 0, MFHS=0, HFS=2, site="Chile", years=7 }

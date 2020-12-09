@@ -1,0 +1,8 @@
+SAT-HFS1_chile
+SAT-HFS2_chile
+SAT-LFS1_chile
+SAT-LFS2_chile
+SAT-MFHS1_chile
+SAT-MFHS2_chile
+SAT-MFLS1_chile
+SAT-MFLS2_chile
