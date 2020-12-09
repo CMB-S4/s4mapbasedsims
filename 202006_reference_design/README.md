@@ -26,7 +26,9 @@ all the numbers have been exported on 7th July 2020 from `s4sim` [commit c2732f0
 The `telescopes` section of the simulations configuration files describes the distribution of telescopes and tubes,
 see [on the repository](https://github.com/CMB-S4/s4mapbasedsims/blob/753307546ecb3145369609d0162131d51efbbb9a/202006_reference_design/s4_reference_design_noise_atmo_7splits.toml#L32-L61).
 
-For the Chile LAT configuration, the instrument definition is overridden for each of the simulation runs with the [`chile_sat.toml`](chile_sat.toml) configuration file.
+For the Chile LAT configuration, the instrument definition is overridden for each of the simulation runs with the [`chile_sat.toml`](chile_sat.toml) configuration file, which
+assumes 3 SAT telescopes at Chile for 7 years with the same tube distributions of the
+Pole SAT.
 
 Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file in this repository, and [exported to CSV for convenience](https://github.com/CMB-S4/s4mapbasedsims/blob/master/202006_foregrounds_extragalactic_cmb_tophat/cmbs4_tophat.csv).
 
