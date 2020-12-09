@@ -1,0 +1,8 @@
+![](hitmap_LFS1_chile_1_of_1.png)
+![](hitmap_LFS2_chile_1_of_1.png)
+![](hitmap_MFHS1_chile_1_of_1.png)
+![](hitmap_MFHS2_chile_1_of_1.png)
+![](hitmap_MFLS1_chile_1_of_1.png)
+![](hitmap_MFLS2_chile_1_of_1.png)
+![](hitmap_HFS1_chile_1_of_1.png)
+![](hitmap_HFS2_chile_1_of_1.png)
