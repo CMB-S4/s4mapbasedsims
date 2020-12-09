@@ -48,7 +48,8 @@ Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file
 * [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
 * [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
 * [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
-* [Plots of spectra of noise + atmosphere, 7-way splits, SAT](plots/SAT_7.md)
+* [Plots of spectra of noise + atmosphere, 7-way splits, SAT pole](plots/SAT_7.md)
+* [Plots of spectra of noise + atmosphere, 7-way splits, SAT chile](plots/SAT_chile_7.md)
 
 ## Foregrounds and CMB
 
