@@ -1,6 +1,5 @@
 import healpy as hp
 import numpy as np
-import sys
 import pickle
 import h5py
 from pathlib import Path
@@ -25,14 +24,12 @@ for folder in output_base_folder.glob("*noise*"):
         for ch in [c for c in s4.keys() if s4[c].attrs["telescope"] == telescope]:
             tag = f"{telescope}-{ch}_{site}"
             ch_folder = folder / tag
-            hitmap_filenames = list(ch_folder.glob(f"*hitmap*1_of_{splits}*"))
+            hitmap_filenames = list(ch_folder.glob(f"*wcov*1_of_{splits}*"))
             assert(len(hitmap_filenames) == 1)
             hitmap_filename = hitmap_filenames[0]
-            hitmap = hp.read_map(hitmap_filename)
-            hitmap[hitmap == hp.UNSEEN] = 0
-            sky_fraction = (hitmap > 0).sum()/len(hitmap)
-
-            hitmap[hitmap>0] = np.sqrt(hitmap[hitmap>0])
+            hitmap = hp.ma(hp.read_map(hitmap_filename, (3, 5)))
+            hitmap = 1/hitmap
+            hitmap = hitmap.filled(0)
 
             assert np.all(np.isfinite(hitmap))
             print(tag)
@@ -53,8 +50,12 @@ for folder in output_base_folder.glob("*noise*"):
                     m = hp.ma(hp.read_map(filename))
                     nside = hp.npix2nside(len(m))
 
+                for i_pol in [1,2]:
+                    m[i_pol] *= hitmap[i_pol-1]
+                norm = np.mean(hitmap[0]*hitmap[1])
+                del hitmap
                 assert np.all(np.isfinite(m))
-                cl[tag][s] = hp.anafast(m*hitmap, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True) / np.mean(hitmap**2)
+                cl[tag][s] = hp.anafast(m, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True) / norm
 
     with open(output_filename, "wb") as f:
         pickle.dump(cl, f, protocol=-1)
