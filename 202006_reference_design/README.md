@@ -126,6 +126,9 @@ for example:
     LAT-HFL1_pole/cmbs4_wcov_LAT-HFL1_pole_nside4096_1_of_1.fits
     LAT-HFL1_pole/cmbs4_wcov_LAT-HFL1_pole_nside4096_1_of_7.fits
 
+The white noise matrices also encode pixels discarded during mapmaking and the effect of variable NET with elevation (also on declination for South Pole),
+therefore differ at the 5% level with the white noise levels computed naively from the NET and the hitmaps.
+
 The noise and atmosphere maps from TOAST used as input are currently located at:
 
     /global/project/projectdirs/cmbs4/dm/dstool/input
