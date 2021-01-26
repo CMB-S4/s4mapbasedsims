@@ -17,6 +17,14 @@ local_folder = Path("output/") # local
 output_base_folder = Path("/global/project/projectdirs/cmbs4/dm/dstool/output/") # project
 output_base_folder = local_folder
 
+def build_pol_weights(wcov_filename):
+    """Build inverse variance weights for polarization from covariance matrices"""
+    wcov = hp.ma(hp.read_map(wcov_filename, (3, 4, 5)))
+    pol_weights = 2/(wcov[0] + wcov[2] + 2*wcov[1])
+    pol_weights = pol_weights.filled(0)
+    assert np.all(np.isfinite(pol_weights))
+    return pol_weights
+
 for folder in output_base_folder.glob("*noise*"):
     folder = Path(folder)
     output_filename = local_folder / folder.name / f"C_ell_{telescope}_{splits}.pkl"
@@ -28,11 +36,8 @@ for folder in output_base_folder.glob("*noise*"):
             wcov_filenames = list(ch_folder.glob(f"*wcov*1_of_{splits}*"))
             assert(len(wcov_filenames) == 1)
             wcov_filename = wcov_filenames[0]
-            inv_wcov = hp.ma(hp.read_map(wcov_filename, (3, 5)))
-            inv_wcov = 1/inv_wcov
-            inv_wcov = inv_wcov.filled(0)
+            pol_weights = build_pol_weights(wcov_filename):
 
-            assert np.all(np.isfinite(inv_wcov))
             print(tag)
             cl[tag] = {}
             for s in range(1, splits+1):
@@ -51,10 +56,9 @@ for folder in output_base_folder.glob("*noise*"):
                     m = hp.ma(hp.read_map(filename))
                     nside = hp.npix2nside(len(m))
 
-                for i_pol in [1,2]:
-                    m[i_pol] *= inv_wcov[i_pol-1]
-                norm = np.mean(inv_wcov[0]*inv_wcov[1])
-                del inv_wcov
+                m *= pol_weights
+                norm = np.mean(pol_weights**2)
+                del pol_weights
                 assert np.all(np.isfinite(m))
                 cl[tag][s] = hp.anafast(m, lmax=min(3 * nside - 1, ellmax), use_pixel_weights=True) / norm
 
