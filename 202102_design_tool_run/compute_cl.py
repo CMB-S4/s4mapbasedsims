@@ -5,6 +5,8 @@ import pickle
 import h5py
 from pathlib import Path
 
+from compute_cl_utils import build_pol_weights
+
 ellmax = int(1e4)
 
 s4 = h5py.File("cmbs4_tophat.h5", mode="r")
@@ -17,13 +19,6 @@ local_folder = Path("output/") # local
 output_base_folder = Path("/global/project/projectdirs/cmbs4/dm/dstool/output/") # project
 output_base_folder = local_folder
 
-def build_pol_weights(wcov_filename):
-    """Build inverse variance weights for polarization from covariance matrices"""
-    wcov = hp.ma(hp.read_map(wcov_filename, (3, 4, 5)))
-    pol_weights = 2/(wcov[0] + wcov[2] + 2*wcov[1])
-    pol_weights = pol_weights.filled(0)
-    assert np.all(np.isfinite(pol_weights))
-    return pol_weights
 
 for folder in output_base_folder.glob("*noise*"):
     folder = Path(folder)
