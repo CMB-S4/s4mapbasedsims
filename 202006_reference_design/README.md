@@ -34,6 +34,11 @@ Parameters like beams and bandpasses are available in the `cmbs4_tophat.h5` file
 
 # Verification
 
+## External verification
+
+* [SAT Pole CMB/Noise/Foregrounds by @cbischoff](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20200817_DM_AWG_sim/index.html)
+* [SAT Chile CMB noise level comparison by @cbischoff](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20210208_DMsim/)
+
 ## Plots of the maps
 
 * [Plots of all full experiment maps on the same scale](plot_maps/README.md)
