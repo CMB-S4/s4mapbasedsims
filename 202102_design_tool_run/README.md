@@ -21,7 +21,7 @@ This release includes noise, atmosphere, foreground and CMB maps.
 
 # Instrument model
 
-The instrument model has been extracted from `s4sim` on February, the 10th, 2021, using the Git hash: `ca07638f6781144648938a636a972711321ba166`,
+The instrument model has been extracted from `s4sim` on February, the 10th, 2021,
 see the [notebook script for more details](utils/create_s4_instrument_parameters.ipynb), the instrument parameters have been extracted to
 [text files in IPAC table format](instrument_model/cmbs4_instrument_model.tbl), which supports units for the columns and can be read as `astropy.QTable`.
 
