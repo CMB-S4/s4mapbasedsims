@@ -32,7 +32,7 @@ I also created a version of the lensed CMB realization with the dipole component
 HEALPix maps at high resolution for LAT (nside 4096) and low resolution for SAT (nside 512), these models are deterministic, so we have
 a set for each resolution for all channels. All maps are full-sky.
 
-Reference frame for the maps is **Equatorial**.
+Reference frame for the maps is **Equatorial**, pixel ordering is NESTED.
 The `ell_max` for the harmonics transform is `3*Nside-1`.
 
 **Location at NERSC**:
@@ -59,7 +59,6 @@ Also created a single set of maps which is the sum of all components. They are a
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
 * `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
 * `cmb_unlensed_solardipole_nest`: `cmb_unlensed_solardipole`, just reordered to HEALPix NEST
-* `cmb_tensor_nest`: `cmb_tensor`, just reordered to HEALPix NEST
 
 They are in the same folder and same naming convention, e.g.:
 

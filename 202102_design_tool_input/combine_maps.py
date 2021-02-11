@@ -7,7 +7,6 @@ all_combined = {
     + ["cib", "ksz", "tsz"],
     "cmb_lensing_signal": ["cmb", "-cmb_unlensed"],
     "cmb_unlensed_solardipole_nest": ["cmb_unlensed_solardipole"],
-    "cmb_tensor_nest": ["cmb_tensor"],
 }
 
 import h5py
