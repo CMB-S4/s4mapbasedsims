@@ -52,13 +52,14 @@ where:
 * `telescope` is `SAT` or `LAT`
 * `band` is the channel band
 
-## Combined maps
+## Combined maps, inputs for the Design Tool
 
 Also created a single set of maps which is the sum of all components. They are also reordered to NEST (default for TOAST).
 
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
 * `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
-* `cmb_unlensed_solardipole_nest`: `cmb_unlensed_solardipole`, just reordered to HEALPix NEST
+* `cmb_unlensed_solardipole`
+* `cmb_tensor`
 
 They are in the same folder and same naming convention, e.g.:
 
@@ -72,15 +73,12 @@ Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulatio
 
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
-* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/6b6f142babb63526be91dc9d61667b9f)
-
-**in the polarization plots, due to a [previous bug now fixed](https://github.com/CMB-S4/s4mapbasedsims/issues/4), CIB is non-zero**
-* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/822c19ee590112f2d11be7bb183850f5)
-* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/af05f08e29dd26df82b85ea3137be5fa)
+* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/38e85587e02d5741425387f7ba2c8034)
+* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/14873cd787be0d84b023e774b3269301)
+* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/)
 
 ## External analysis
 
-* [Aug 2020: Spectra of all SAT components by Colin Bischoff](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20200817_DM_AWG_sim/index.html)
 
 ## Issues or feedback
 
