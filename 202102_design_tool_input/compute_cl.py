@@ -11,7 +11,7 @@ from astropy.table import QTable
 
 s4 = QTable.read("../202102_design_tool_run/instrument_model/cmbs4_instrument_model.tbl", format="ascii.ipac")
 cl = {}
-for folder in glob("output/512/*ame*"):
+for folder in glob("output/512/*"):
     print(folder)
     component = os.path.basename(folder)
     output_filename = f"output/512/C_ell_{component}.pkl"
