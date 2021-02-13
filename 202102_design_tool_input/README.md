@@ -52,13 +52,17 @@ where:
 * `telescope` is `SAT` or `LAT`
 * `band` is the channel band
 
+Only exception are the CMB Solar Dipole maps:
+
+    output/{nside}/cmbs4_cmb_solar_dipole_uKCMB_nside{nside}.fits
+
 ## Combined maps, inputs for the Design Tool
 
-Also created a single set of maps which is the sum of all components. They are also reordered to NEST (default for TOAST).
+Also created a single set of maps which is the sum of all components. They are in NEST ordering (default for TOAST).
 
 * `combined_foregrounds`: sum of `dust`, `synchrotron`, `freefree`, `ame`, `cib`, `ksz`, `tsz`
 * `cmb_lensing_signal`: `cmb` minus `cmb_unlensed`
-* `cmb_unlensed_solardipole`
+* `cmb_unlensed_solardipole`: `cmb_unlensed` with dipole removed, plus the Planck HFI 2018 solar dipole map
 * `cmb_tensor`
 
 They are in the same folder and same naming convention, e.g.:
