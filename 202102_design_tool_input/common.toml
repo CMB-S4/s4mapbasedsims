@@ -1,0 +1,9 @@
+channels = "telescope:SAT"
+nside = 512
+output_folder = "output/{nside}/{tag}/0000"
+output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_0000.fits"
+unit = "uK_CMB"
+num = 0
+mapsims_version = "2.4.0"
+so_pysm_models_version = "2.4.0"
+instrument_parameters = "../202102_design_tool_run/instrument_model/cmbs4_instrument_model.tbl"

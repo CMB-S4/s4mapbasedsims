@@ -1,0 +1,17 @@
+\ Text file in IPAC table format, read with astropy
+\ from astropy.table import QTable
+\ QTable.read('filename.tbl', format='ascii.ipac')
+|bandpass_frequency|bandpass_weight|
+|            double|         double|
+|               GHz|               |
+|              null|           null|
+               77.0             1.0 
+  80.22222222222223             1.0 
+  83.44444444444444             1.0 
+  86.66666666666667             1.0 
+  89.88888888888889             1.0 
+  93.11111111111111             1.0 
+  96.33333333333334             1.0 
+  99.55555555555556             1.0 
+ 102.77777777777777             1.0 
+              106.0             1.0 

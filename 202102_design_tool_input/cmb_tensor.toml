@@ -1,0 +1,12 @@
+
+tag = "cmb_tensor"
+
+[ pysm_components ]
+# do not apply any rotation
+pysm_output_reference_frame = "C"
+
+    [ pysm_components.cmb_tensor ]
+    class  =  "so_pysm_models.WebSkyCMBTensor"
+    websky_version = "0.3"
+    tensor_to_scalar = 3e-3
+    precompute_output_map = true
