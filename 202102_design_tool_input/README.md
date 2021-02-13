@@ -1,7 +1,7 @@
 Design tool run inputs: foregrounds, CMB, extragalactic
 =======================================================
 
-Released on February 2021 by @zonca
+Released on 12 February 2021 by @zonca
 
 Executed with the same configuration of `202006_foregrounds_extragalactic_cmb_tophat`
 
@@ -46,7 +46,7 @@ The naming convention is:
 where:
 
 * `content` is `[dust, synchtrotron, freefree, ame]` for galactic components and `[ksz, tsz, cib]` for extragalactic components
-* `content` for the available CMB is `[cmb, cmb_unlensed, cmb_lensed_solardipole]`
+* `content` for the available CMB is `[cmb, cmb_unlensed]`
 *  CIB map for LFL1 and LFS1 are missing
 * `num` is `0`
 * `telescope` is `SAT` or `LAT`
