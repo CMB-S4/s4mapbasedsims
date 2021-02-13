@@ -79,7 +79,7 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 
 * [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/38e85587e02d5741425387f7ba2c8034)
 * [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/14873cd787be0d84b023e774b3269301)
-* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/)
+* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/1381e3c785f5bd47d3b5152ff1806e32)
 
 ## External analysis
 
