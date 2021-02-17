@@ -16,7 +16,7 @@ s4 = QTable.read("../202102_design_tool_run/instrument_model/cmbs4_instrument_mo
 num = 0
 
 for output_content, components in all_combined.items():
-    for telescope in ["SAT"]:
+    for telescope in ["LAT"]:
             nside = 512 if telescope == "SAT" else 4096
             for row in s4:
                 band = row["band"]

@@ -11,15 +11,17 @@ from astropy.table import QTable
 
 s4 = QTable.read("../202102_design_tool_run/instrument_model/cmbs4_instrument_model.tbl", format="ascii.ipac")
 cl = {}
-for folder in glob("output/512/*"):
+nside = 4096
+telescope = "LAT"
+for folder in glob(f"output/{nside}/*"):
     print(folder)
     component = os.path.basename(folder)
-    output_filename = f"output/512/C_ell_{component}.pkl"
+    output_filename = f"output/{nside}/C_ell_{component}.pkl"
     if os.path.exists(output_filename):
         continue
 
     for ch in s4:
-        if ch["telescope"] == "SAT":
+        if ch["telescope"] == telescope:
             try:
                 filename = glob(folder + f"/0000/*{ch['band']}*")[0]
             except IndexError:

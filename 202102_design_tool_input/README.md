@@ -73,13 +73,22 @@ They are in the same folder and same naming convention, e.g.:
 
 Make sure to check the "Known issues" section below.
 
-Only at NSIDE 512, comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
+Comparison of all the channels with on-the-fly PySM simulations ran without the pipeline, just at the center frequency of the lower and higher frequency channel.
+
+### SAT
 
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
-* [Plot TT NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/38e85587e02d5741425387f7ba2c8034)
-* [Plot EE NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/14873cd787be0d84b023e774b3269301)
-* [Plot BB NSIDE 512](https://nbviewer.jupyter.org/gist/zonca/1381e3c785f5bd47d3b5152ff1806e32)
+* [Plot TT SAT](https://nbviewer.jupyter.org/gist/zonca/38e85587e02d5741425387f7ba2c8034)
+* [Plot EE SAT](https://nbviewer.jupyter.org/gist/zonca/14873cd787be0d84b023e774b3269301)
+* [Plot BB SAT](https://nbviewer.jupyter.org/gist/zonca/1381e3c785f5bd47d3b5152ff1806e32)
+
+### LAT
+
+* [Plot TT LAT](https://nbviewer.jupyter.org/gist/zonca/7c93b466fc247277edbbdf3308863ada)
+* [Plot EE LAT](https://nbviewer.jupyter.org/gist/zonca/8c5faf168972950bbfdb78eae2768626)
+* [Plot BB LAT](https://nbviewer.jupyter.org/gist/zonca/981e6bf2b698f83eee691025380db656)
+
 
 ## External analysis
 
