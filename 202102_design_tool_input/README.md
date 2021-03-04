@@ -103,3 +103,5 @@ In case of any problem with the maps or the documentation or request more/differ
 ## Software
 
 * PySM 3 is available at <https://github.com/healpy/pysm>
+* `so_pysm_models` version 2.4.0
+* `mapsims` version 2.4.0
