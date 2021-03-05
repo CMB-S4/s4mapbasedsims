@@ -1,0 +1,88 @@
+[experiment]
+
+total_experiment_length_years = 7
+
+
+# Number of splits, 1 generates only full mission
+# 2-7 generates the full mission map and then the requested number
+# of splits scaled accordingly. E.g. 7 generates the full mission
+# map and 7 equal (yearly) maps
+number_of_splits = 1
+
+include_atmosphere = false
+
+include_noise = false
+
+# between 0 and 1, typically 0.2
+# remove default so the code errors if a band is not specified
+# observing_efficiency.default = 0.2
+
+# we can override the observing efficiency for specific sites/bands
+# always specify first site, then telescope, then band
+
+# Copy-pasted from https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit#gid=1776795091
+# on 4 March 2021
+
+observing_efficiency.Pole.SAT.LFS1  = 0.194656896
+observing_efficiency.Pole.SAT.LFS2  = 0.194656896
+observing_efficiency.Pole.SAT.MFLS1 = 0.194656896
+observing_efficiency.Pole.SAT.MFHS1 = 0.194656896
+observing_efficiency.Pole.SAT.MFLS2 = 0.1914126144
+observing_efficiency.Pole.SAT.MFHS2 = 0.1914126144
+observing_efficiency.Pole.SAT.HFS1  = 0.1359894704
+observing_efficiency.Pole.SAT.HFS2  = 0.0940841664
+
+observing_efficiency.Chile.SAT.LFS1  = 0.2026944
+observing_efficiency.Chile.SAT.LFS2  = 0.2026944
+observing_efficiency.Chile.SAT.MFLS1 = 0.2026944
+observing_efficiency.Chile.SAT.MFHS1 = 0.2026944
+observing_efficiency.Chile.SAT.MFLS2 = 0.19931616
+observing_efficiency.Chile.SAT.MFHS2 = 0.19931616
+observing_efficiency.Chile.SAT.HFS1  = 0.14160456
+observing_efficiency.Chile.SAT.HFS2  = 0.09796896
+
+observing_efficiency.Pole.LAT.ULFPL1 = 0.435712
+observing_efficiency.Pole.LAT.LFPL1  = 0.435712
+observing_efficiency.Pole.LAT.LFPL2  = 0.435712
+observing_efficiency.Pole.LAT.MFPL1  = 0.435712
+observing_efficiency.Pole.LAT.MFPL2  = 0.406272
+observing_efficiency.Pole.LAT.HFPL1  = 0.400384
+observing_efficiency.Pole.LAT.HFPL2  = 0.276736
+
+observing_efficiency.Chile.LAT.LFL1 = 0.249696
+observing_efficiency.Chile.LAT.LFL2 = 0.249696
+observing_efficiency.Chile.LAT.MFL1 = 0.249696
+observing_efficiency.Chile.LAT.MFL2 = 0.249696
+observing_efficiency.Chile.LAT.HFL1 = 0.22032
+observing_efficiency.Chile.LAT.HFL2 = 0.22032
+
+# we can also specify defaults for sites (notice capitalization) or telescopes
+# observing_efficiency.Pole.SAT.default = 0.2
+# observing_efficiency.Chile.default = 0.2
+
+[telescopes]
+
+    # Telescope names are not used within the software
+
+    [telescopes.SAT]
+    # Tubes for each SAT should be 3
+
+    SAT1 = { LFS=0, MFLS= 3, MFHS=0, HFS=0, site="Pole", years=7 }
+    SAT3 = { LFS=0, MFLS= 0, MFHS=3, HFS=0, site="Pole", years=7 }
+    SAT5 = { LFS=1, MFLS= 0, MFHS=0, HFS=2, site="Pole", years=7 }
+
+    SAT0 = { LFS=0, MFLS= 3, MFHS=0, HFS=0, site="Pole", years=7 }
+    SAT2 = { LFS=0, MFLS= 0, MFHS=3, HFS=0, site="Pole", years=7 }
+    SAT4 = { LFS=1, MFLS= 0, MFHS=0, HFS=2, site="Pole", years=7 }
+
+    [telescopes.LAT]
+    # Tubes for each LAT should be 19
+
+    # Legacy survey LAT deployed in Chile
+
+    LAT0 = { LFL=8, MFL=54, HFL=23, site="Chile", years=7 }
+    LAT1 = { LFL=8, MFL=54, HFL=23, site="Chile", years=7 }
+
+    # Delensing survey LAT deployed at Pole
+
+    LAT2 = { ULFPL=4, LFPL=9, MFPL=54, HFPL=18, site="Pole", years=7 }

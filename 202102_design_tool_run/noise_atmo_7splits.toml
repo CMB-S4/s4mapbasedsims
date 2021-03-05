@@ -1,0 +1,33 @@
+[sky_emission]
+# Each sky emission has a weighting factor between 0 and 1
+
+# Synchrotron, Dust, Free-free, AME
+# Websky CIB, tSZ, kSZ
+foreground_emission = 0
+
+# Planck cosmological parameters, no tensor modes
+CMB_unlensed = 0
+
+# CMB lensed - CMB unlensed:
+# 1 for lensed CMB
+# 0 for unlensed CMB
+# >0, <1 for residual after de-lensing
+CMB_lensing_signal = 0
+
+CMB_tensor_to_scalar_ratio = 0
+
+[experiment]
+
+# Number of splits, 1 generates only full mission
+# 2-7 generates the full mission map and then the requested number
+# of splits scaled accordingly. E.g. 7 generates the full mission
+# map and 7 equal (yearly) maps
+number_of_splits = 7
+
+include_atmosphere = true
+
+# atmosphere maps scaling factors (multipled to input maps)
+atmosphere_scaling_T = 1.0
+atmosphere_scaling_P = 1.0
+
+include_noise = true

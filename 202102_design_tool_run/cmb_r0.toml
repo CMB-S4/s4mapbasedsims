@@ -1,0 +1,17 @@
+[sky_emission]
+# Each sky emission has a weighting factor between 0 and 1
+
+# Synchrotron, Dust, Free-free, AME
+# Websky CIB, tSZ, kSZ
+foreground_emission = 0
+
+# Planck cosmological parameters, no tensor modes
+CMB_unlensed = 1
+
+# CMB lensed - CMB unlensed:
+# 1 for lensed CMB
+# 0 for unlensed CMB
+# >0, <1 for residual after de-lensing
+CMB_lensing_signal = 1
+
+CMB_tensor_to_scalar_ratio = 0
