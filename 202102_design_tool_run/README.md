@@ -77,6 +77,7 @@ to check they are reasonable.
 * float32 precision
 * `K_CMB` unit
 * One map per band per site which combines all the telescopes at that band, atmosphere scales down as telescope-years, noise as detector-years
+* Compared to the previous release, only base folder names (`s4_reference_design_foregrounds` -> `foregrounds`) and LAT channel labels changed
 
 Metadata are available in the fits headers of extension 1, for example:
 
