@@ -1,5 +1,10 @@
 # SAT Pole foreground comparison
 
+The outputs map are the results for the design simulation tool,
+the inputs are input map produced by PySM which have already beam
+and bandpass but no effect from observing and mapmaking.
+Using the same sky cut of the output maps.
+
 ## Temperature
 
 ![](foreground_map_LFS1_input.png) ![](foreground_map_LFS1_output.png)
