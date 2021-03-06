@@ -138,6 +138,14 @@ therefore differ at the 5% level with the white noise levels computed naively fr
 The noise and atmosphere maps from TOAST used as input are currently located at:
 
     /global/cscratch1/sd/keskital/s4sim/reference_tool_round_2/out
+    
+### Observation matrix
+
+Observation matrices for Pole SAT are available in the subfolder:
+
+    noise_atmo_7splits/observation_matrix
+    
+See the [observation matrix post on the wiki](https://cmb-s4.uchicago.edu/wiki/index.php/Observation_matrix).
 
 ## CMB and foregrounds
 
