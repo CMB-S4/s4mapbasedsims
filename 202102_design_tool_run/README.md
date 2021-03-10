@@ -61,18 +61,16 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 * [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
 * [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
 * [Plots of spectra of noise + atmosphere, 7-way splits, SAT chile](plots/SAT_chile_7.md)
+-->
 
-## Foregrounds and CMB
+## CMB
 
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
 
-For foregrounds, I compare the output total foregrounds both to the input synchrotron and the input dust, just
-to check they are reasonable.
+* [SAT TT](https://nbviewer.jupyter.org/gist/zonca/2fabab2f0dddbb7cb1b4c1879d4ce774)
+* [SAT EE](https://nbviewer.jupyter.org/gist/zonca/f6f8da5c9810c435d2606ea93ca05dee)
+* [SAT BB](https://nbviewer.jupyter.org/gist/zonca/3146421a03ac7eec61c15d9e187e72d2)
 
-* [TT](https://nbviewer.jupyter.org/gist/zonca/29706d266015f21db8a6f217e3508f19)
-* [EE](https://nbviewer.jupyter.org/gist/zonca/37b99d0446d338191b4f660992c0c661)
-* [BB](https://nbviewer.jupyter.org/gist/zonca/c75ce0a8b372dc98fbba50c6f611cea8)
--->
 
 # Available maps
 
