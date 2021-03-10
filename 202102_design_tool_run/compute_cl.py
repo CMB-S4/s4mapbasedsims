@@ -2,13 +2,12 @@ import healpy as hp
 import numpy as np
 import sys
 import pickle
-import h5py
 from pathlib import Path
 
 from compute_cl_utils import build_inverse_cov_weights
 
-ellmax = int(1e4)
 from astropy.table import QTable
+ellmax = int(1e4)
 
 cl = {}
 telescope = sys.argv[1]
@@ -22,8 +21,9 @@ local_folder = Path("output/")  # local
 output_base_folder = Path("output/")  # project
 output_base_folder = local_folder
 
+noise_folder = output_base_folder / "noise_atmo_7splits"
 
-for folder in output_base_folder.glob("*noise*"):
+for folder in output_base_folder.glob("*cmb*"):
     folder = Path(folder)
     output_filename = local_folder / folder.name / f"C_ell_{telescope}_{splits}.pkl"
     for site in sites:
@@ -32,10 +32,12 @@ for folder in output_base_folder.glob("*noise*"):
             ch = row["band"]
             tag = f"{telescope}-{ch}_{site}"
             ch_folder = folder / tag
-            wcov_filenames = list(ch_folder.glob(f"*wcov*1_of_{splits}*"))
+            wcov_filenames = list((noise_folder / tag).glob(f"*wcov*1_of_{splits}*"))
             assert len(wcov_filenames) == 1
             wcov_filename = wcov_filenames[0]
-            temp_weights, pol_weights, noise_cl = build_inverse_cov_weights(wcov_filename)
+            temp_weights, pol_weights, noise_cl = build_inverse_cov_weights(
+                wcov_filename
+            )
 
             print(tag)
             cl[tag] = {}
