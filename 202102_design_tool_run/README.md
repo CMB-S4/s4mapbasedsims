@@ -43,15 +43,17 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 
 * [Comparison in gnomview of input and output foregrounds for SAT](plot_gnomview/README.md)
 
-<!-- 
-* [Plots of all full experiment maps on the same scale](plot_maps/README.md)
 ## Noise + Atmosphere
 
-* [`C_ell` computation script](compute_cl.py), [Plotting notebook](validation_atmo_noise.ipynb)
+* [Plots of spectra of noise + atmosphere, SAT pole](plots/SAT.md)
+* [`C_ell` computation script](compute_cl.py), [Plotting notebook](utils/verification_atmo_noise.ipynb)
+
+<!-- 
+
 * [Plots of spectra of noise + atmosphere, LAT pole](plots/LAT_pole.md)
 * [Plots of spectra of noise + atmosphere, LAT chile](plots/LAT_chile.md)
-* [Plots of spectra of noise + atmosphere, SAT pole](plots/SAT.md)
 * [Plots of spectra of noise + atmosphere, SAT chile](plots/SAT_chile.md)
+* [Plots of all full experiment maps on the same scale](plot_maps/README.md)
 * [Plots of hitmaps, LAT pole](plots/hitmap_LAT_pole.md)
 * [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
 * [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
