@@ -47,6 +47,7 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 
 * [Plots of spectra of noise + atmosphere, SAT pole](plots/SAT.md)
 * [`C_ell` computation script](compute_cl.py), [Plotting notebook](utils/verification_atmo_noise.ipynb)
+* [Plots of spectra of noise + atmosphere, 7-way splits, SAT pole](plots/SAT_7.md)
 
 <!-- 
 
@@ -58,7 +59,6 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 * [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
 * [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
 * [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
-* [Plots of spectra of noise + atmosphere, 7-way splits, SAT pole](plots/SAT_7.md)
 * [Plots of spectra of noise + atmosphere, 7-way splits, SAT chile](plots/SAT_chile_7.md)
 
 ## Foregrounds and CMB
