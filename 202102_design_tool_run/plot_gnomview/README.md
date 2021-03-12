@@ -1,28 +1,5 @@
-# SAT Pole foreground comparison
+# Foreground map comparison
 
-The outputs map are the results for the design simulation tool,
-the inputs are input map produced by PySM which have already beam
-and bandpass but no effect from observing and mapmaking.
-Using the same sky cut of the output maps.
-
-## Temperature
-
-![](foreground_map_LFS1_input.png) ![](foreground_map_LFS1_output.png)
-![](foreground_map_LFS2_input.png) ![](foreground_map_LFS2_output.png)
-![](foreground_map_MFLS1_input.png) ![](foreground_map_MFLS1_output.png)
-![](foreground_map_MFLS2_input.png) ![](foreground_map_MFLS2_output.png)
-![](foreground_map_MFHS1_input.png) ![](foreground_map_MFHS1_output.png)
-![](foreground_map_MFHS2_input.png) ![](foreground_map_MFHS2_output.png)
-![](foreground_map_HFS1_input.png) ![](foreground_map_HFS1_output.png)
-![](foreground_map_HFS2_input.png) ![](foreground_map_HFS2_output.png)
-
-## Polarization amplitude
-
-![](foreground_map_P_LFS1_input.png) ![](foreground_map_P_LFS1_output.png)
-![](foreground_map_P_LFS2_input.png) ![](foreground_map_P_LFS2_output.png)
-![](foreground_map_P_MFLS1_input.png) ![](foreground_map_P_MFLS1_output.png)
-![](foreground_map_P_MFLS2_input.png) ![](foreground_map_P_MFLS2_output.png)
-![](foreground_map_P_MFHS1_input.png) ![](foreground_map_P_MFHS1_output.png)
-![](foreground_map_P_MFHS2_input.png) ![](foreground_map_P_MFHS2_output.png)
-![](foreground_map_P_HFS1_input.png) ![](foreground_map_P_HFS1_output.png)
-![](foreground_map_P_HFS2_input.png) ![](foreground_map_P_HFS2_output.png)
+* [SAT](SAT.md)
+* [LAT Pole](LAT_pole.md)
+* [LAT Chile](LAT_chile.md)
