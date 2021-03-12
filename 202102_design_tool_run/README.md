@@ -43,7 +43,7 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 
 ## Plots of the maps
 
-* [Comparison in gnomview of input and output foregrounds for SAT](plot_gnomview/README.md)
+* [Comparison input and output foregrounds maps on same scale in gnomview/mollview](plot_gnomview/README.md)
 
 ## Noise + Atmosphere
 
