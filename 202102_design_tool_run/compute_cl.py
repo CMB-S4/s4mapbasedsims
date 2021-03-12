@@ -1,3 +1,5 @@
+import os
+os.environ["OMP_NUM_THREADS"] = "64"
 import healpy as hp
 import numpy as np
 import sys
@@ -12,7 +14,7 @@ ellmax = int(1e4)
 cl = {}
 telescope = sys.argv[1]
 splits = int(sys.argv[2])
-sites = ["pole"]
+sites = ["chile", "pole"]
 
 s4 = QTable.read("instrument_model/cmbs4_instrument_model.tbl", format="ascii.ipac")
 s4 = s4[s4["telescope"] == telescope]
@@ -23,15 +25,19 @@ output_base_folder = local_folder
 
 noise_folder = output_base_folder / "noise_atmo_7splits"
 
-for folder in output_base_folder.glob("*cmb*"):
+for folder in output_base_folder.glob("*noise*"):
     folder = Path(folder)
-    output_filename = local_folder / folder.name / f"C_ell_{telescope}_{splits}.pkl"
     for site in sites:
+        output_filename = local_folder / folder.name / f"C_ell_{telescope}_{site}_{splits}.pkl"
+        if output_filename.exists():
+            continue
 
         for row in s4:
             ch = row["band"]
             tag = f"{telescope}-{ch}_{site}"
             ch_folder = folder / tag
+            if not ch_folder.exists():
+                continue
             wcov_filenames = list((noise_folder / tag).glob(f"*wcov*1_of_{splits}*"))
             assert len(wcov_filenames) == 1
             wcov_filename = wcov_filenames[0]
@@ -67,5 +73,5 @@ for folder in output_base_folder.glob("*cmb*"):
                 cl[tag][s][0] /= np.mean(temp_weights ** 2)
                 cl[tag][s][1:] /= np.mean(pol_weights ** 2)
 
-    with open(output_filename, "wb") as f:
-        pickle.dump(cl, f, protocol=-1)
+        with open(output_filename, "wb") as f:
+            pickle.dump(cl, f, protocol=-1)
