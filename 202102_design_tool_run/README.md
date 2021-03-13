@@ -58,6 +58,7 @@ Plots below are generated with a [`C_ell` computation script](compute_cl.py) and
 * [Plots of spectra of noise + atmosphere, SAT chile](plots/SAT_chile.md)
 * [Plots of all full experiment maps on the same scale](plot_maps/README.md)
 * [Plots of spectra of noise + atmosphere, 7-way splits, SAT chile](plots/SAT_chile_7.md)
+* [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
 -->
 
 
@@ -74,7 +75,6 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 * [Plots of hitmaps, LAT pole](plots/hitmap_LAT_pole.md)
 * [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
 * [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
-* [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
 
 
 # Available maps
