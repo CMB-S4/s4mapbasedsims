@@ -47,22 +47,19 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 
 ## Noise + Atmosphere
 
+Plots below are generated with a [`C_ell` computation script](compute_cl.py) and a [Plotting notebook](utils/verification_atmo_noise.ipynb). It uses the white noise covariance matrices to inverse-noise-weight the pixels before `anafast`.
+
+
 * [Plots of spectra of noise + atmosphere, SAT pole](plots/SAT.md)
-* [`C_ell` computation script](compute_cl.py), [Plotting notebook](utils/verification_atmo_noise.ipynb)
 * [Plots of spectra of noise + atmosphere, 7-way splits, SAT pole](plots/SAT_7.md)
-
-<!-- 
-
 * [Plots of spectra of noise + atmosphere, LAT pole](plots/LAT_pole.md)
 * [Plots of spectra of noise + atmosphere, LAT chile](plots/LAT_chile.md)
+<!-- 
 * [Plots of spectra of noise + atmosphere, SAT chile](plots/SAT_chile.md)
 * [Plots of all full experiment maps on the same scale](plot_maps/README.md)
-* [Plots of hitmaps, LAT pole](plots/hitmap_LAT_pole.md)
-* [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
-* [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
-* [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
 * [Plots of spectra of noise + atmosphere, 7-way splits, SAT chile](plots/SAT_chile_7.md)
 -->
+
 
 ## CMB
 
@@ -71,6 +68,13 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 * [SAT TT](https://nbviewer.jupyter.org/gist/zonca/2fabab2f0dddbb7cb1b4c1879d4ce774)
 * [SAT EE](https://nbviewer.jupyter.org/gist/zonca/f6f8da5c9810c435d2606ea93ca05dee)
 * [SAT BB](https://nbviewer.jupyter.org/gist/zonca/3146421a03ac7eec61c15d9e187e72d2)
+
+## Hitmaps
+
+* [Plots of hitmaps, LAT pole](plots/hitmap_LAT_pole.md)
+* [Plots of hitmaps, LAT chile](plots/hitmap_LAT_chile.md)
+* [Plots of hitmaps, SAT pole](plots/hitmap_SAT.md)
+* [Plots of hitmaps, SAT chile](plots/hitmap_SAT_chile.md)
 
 
 # Available maps

@@ -1,0 +1,7 @@
+![](hitmap_ULFPL1_pole_1_of_1.png)
+![](hitmap_LFPL1_pole_1_of_1.png)
+![](hitmap_LFPL2_pole_1_of_1.png)
+![](hitmap_MFPL1_pole_1_of_1.png)
+![](hitmap_MFPL2_pole_1_of_1.png)
+![](hitmap_HFPL1_pole_1_of_1.png)
+![](hitmap_HFPL2_pole_1_of_1.png)
