@@ -1,0 +1,13 @@
+LAT-HFL1_chile
+LAT-HFL2_chile
+LAT-HFPL1_pole
+LAT-HFPL2_pole
+LAT-LFL1_chile
+LAT-LFL2_chile
+LAT-LFPL1_pole
+LAT-LFPL2_pole
+LAT-MFL1_chile
+LAT-MFL2_chile
+LAT-MFPL1_pole
+LAT-MFPL2_pole
+LAT-ULFPL1_pole
