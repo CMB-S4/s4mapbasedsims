@@ -69,6 +69,9 @@ Plots are interactive, first click on the "Click here to toggle on/off the raw c
 * [SAT TT](https://nbviewer.jupyter.org/gist/zonca/2fabab2f0dddbb7cb1b4c1879d4ce774)
 * [SAT EE](https://nbviewer.jupyter.org/gist/zonca/f6f8da5c9810c435d2606ea93ca05dee)
 * [SAT BB](https://nbviewer.jupyter.org/gist/zonca/3146421a03ac7eec61c15d9e187e72d2)
+* [LAT TT](https://nbviewer.jupyter.org/gist/zonca/f933724d5be62daad75caa5e128e8814)
+* [LAT EE](https://nbviewer.jupyter.org/gist/zonca/3c74dea8452e2f56fb3ce54d34355b25)
+* [LAT BB](https://nbviewer.jupyter.org/gist/zonca/1c53b4ec4d84f9a752900aa7b47748bf)
 
 ## Hitmaps
 
