@@ -41,9 +41,11 @@ for folder in output_base_folder.glob("*noise*"):
             wcov_filenames = list((noise_folder / tag).glob(f"*wcov*1_of_{splits}*"))
             assert len(wcov_filenames) == 1
             wcov_filename = wcov_filenames[0]
-            temp_weights, pol_weights, noise_cl = build_inverse_cov_weights(
-                wcov_filename
-            )
+            temp_weights, pol_weights = None, None
+            if "noise" in str(folder.resolve()):
+                temp_weights, pol_weights, _ = build_inverse_cov_weights(
+                    wcov_filename
+                )
 
             print(tag)
             cl[tag] = {}
@@ -56,12 +58,13 @@ for folder in output_base_folder.glob("*noise*"):
                     print(f"{ch_folder} NOT FOUND " + ("*" * 20))
                     continue
                 print(f"reading {filename}")
-                try:
-                    m = hp.ma(hp.read_map(filename, (0, 1, 2)))
-                    nside = hp.npix2nside(len(m[0]))
-                except:
-                    m = hp.ma(hp.read_map(filename))
-                    nside = hp.npix2nside(len(m))
+                m = hp.ma(hp.read_map(filename, (0, 1, 2)))
+                nside = hp.npix2nside(len(m[0]))
+
+                if temp_weights is None:
+                    print(f"using uniform weighting")
+                    temp_weights = np.logical_not(m.mask[0])
+                    pol_weights = temp_weights
 
                 m[0] *= temp_weights
                 m[1:] *= pol_weights
