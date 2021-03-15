@@ -65,10 +65,20 @@ Plots below are generated with a [`C_ell` computation script](compute_cl.py) and
 ## CMB
 
 Plots are interactive, first click on the "Click here to toggle on/off the raw code" buttone, then click on the legend to select channel, double-click on plot to reset, zoom with scrolling.
+CMB maps power spectra was computed with the same `compute_cl.py` script, using inverse noise weighting, even if this maps have no noise.
 
 * [SAT TT](https://nbviewer.jupyter.org/gist/zonca/2fabab2f0dddbb7cb1b4c1879d4ce774)
 * [SAT EE](https://nbviewer.jupyter.org/gist/zonca/f6f8da5c9810c435d2606ea93ca05dee)
 * [SAT BB](https://nbviewer.jupyter.org/gist/zonca/3146421a03ac7eec61c15d9e187e72d2)
+
+For LAT instead, using inverse noise weighting was causing spurious features in the spectra (for example an excess in II for the 2 lowest frequecy channels at Pole in the ell range `300-500`). Therefore I switched to uniform weighting.
+
+* [LAT TT](https://nbviewer.jupyter.org/gist/zonca/5dc1c8f7f2acd16fffb3f326298e9d83)
+* [LAT EE](https://nbviewer.jupyter.org/gist/zonca/00a87a2bd6d23fe4e7b9c7ee01932577)
+* [LAT BB](https://nbviewer.jupyter.org/gist/zonca/8663ab29235d4894eeee3da12b5d7125)
+
+For reference here the plots with inverse noise weighting:
+
 * [LAT TT](https://nbviewer.jupyter.org/gist/zonca/f933724d5be62daad75caa5e128e8814)
 * [LAT EE](https://nbviewer.jupyter.org/gist/zonca/3c74dea8452e2f56fb3ce54d34355b25)
 * [LAT BB](https://nbviewer.jupyter.org/gist/zonca/1c53b4ec4d84f9a752900aa7b47748bf)
