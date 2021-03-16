@@ -1,0 +1,50 @@
+[experiment]
+
+total_experiment_length_years = 6
+
+
+# Number of splits, 1 generates only full mission
+# 2-7 generates the full mission map and then the requested number
+# of splits scaled accordingly. E.g. 7 generates the full mission
+# map and 7 equal (yearly) maps
+number_of_splits = 1
+
+include_atmosphere = false
+
+include_noise = false
+
+# between 0 and 1, typically 0.2
+# remove default so the code errors if a band is not specified
+# observing_efficiency.default = 0.2
+
+# we can override the observing efficiency for specific sites/bands
+# always specify first site, then telescope, then band
+
+# Copy-pasted from https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit#gid=1776795091
+# on 4 March 2021
+
+observing_efficiency.Pole.SAT.LFS1  = 0.194656896
+observing_efficiency.Pole.SAT.LFS2  = 0.194656896
+observing_efficiency.Pole.SAT.MFLS1 = 0.194656896
+observing_efficiency.Pole.SAT.MFHS1 = 0.194656896
+observing_efficiency.Pole.SAT.MFLS2 = 0.1914126144
+observing_efficiency.Pole.SAT.MFHS2 = 0.1914126144
+observing_efficiency.Pole.SAT.HFS1  = 0.1359894704
+observing_efficiency.Pole.SAT.HFS2  = 0.0940841664
+
+# we can also specify defaults for sites (notice capitalization) or telescopes
+# observing_efficiency.Pole.SAT.default = 0.2
+# observing_efficiency.Chile.default = 0.2
+
+[telescopes]
+
+    # Telescope names are not used within the software
+
+    [telescopes.SAT]
+
+    # Detector ratio 288/3528
+    BK15_90 =  { LFS=0, MFLS= 0.08163265306, MFHS=0, HFS=0, site="Pole", years=2 }
+    # Detector ratio 512/3528
+    BK15_150 = { LFS=0, MFLS= 0, MFHS=0.14512471655, HFS=0, site="Pole", years=5.6 } 
+    # Detector ratio 512/8592
+    BK15_220 = { LFS=0, MFLS= 0, MFHS=0, HFS=0.05959031657, site="Pole", years=1 }
