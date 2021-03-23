@@ -1,7 +1,7 @@
 Tophat bandpasses simulation: high resolution foregrounds with spectral index not varying spatially and extragalactic
 =====================================================================================================================
 
-**DO NOT USE**: This set of simulations uses the wrong beams for some channels
+**DO NOT USE**: This set of simulations uses the wrong beams for some SAT channels (LAT beams are fine)
 
 Released on 28 February 2020 by @zonca
 
