@@ -3,6 +3,7 @@ Design tool run March 2021
 
 Release:
 
+* 24 March 2021, added noise-only and atmosphere-only
 * 15 March 2021, released LAT maps and their verification plots
 * 10 March 2021, fixed noise+atmosphere SAT maps, added verification plots
 * 5 March 2021, SAT maps
@@ -151,6 +152,10 @@ for example:
 
 The white noise matrices also encode pixels discarded during mapmaking and the effect of variable NET with elevation (also on declination for South Pole),
 therefore differ at the 5% level with the white noise levels computed naively from the NET and the hitmaps.
+
+For debugging and comparison purposes I also produces noise-only and atmosphere-only maps, without splits,
+they are located in the `noise` and `atmo` subfolders, they have the same weighting and naming of the noise+atmosphere maps,
+I haven't run any of the verification on those, please open issue if anything looks suspect.
 
 The noise and atmosphere maps from TOAST used as input are currently located at:
 
