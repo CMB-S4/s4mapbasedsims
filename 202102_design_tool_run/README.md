@@ -112,6 +112,17 @@ DATE    = '2020-04-23'
 CONFMD5 = '79858f71dbaf1c8bd9bd57a2cbea57ed'   
 ```
 
+Space used:
+
+```
+30G     atmo/
+30G     cmb_r0/
+30G     cmb_tensor_only_r3e-3/
+30G     foregrounds/
+31G     noise/
+491G    noise_atmo_7splits/
+```
+
 ## Noise and atmosphere
 
 1 full map based on 7 years of mission and 7 independent splits with equal sky coverage.
