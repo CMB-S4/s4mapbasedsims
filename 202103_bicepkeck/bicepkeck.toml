@@ -42,9 +42,9 @@ observing_efficiency.Pole.SAT.HFS2  = 0.0940841664
 
     [telescopes.SAT]
 
-    # Detector ratio 288/3528
-    BK15_90 =  { LFS=0, MFLS= 0.08163265306, MFHS=0, HFS=0, site="Pole", years=2 }
-    # Detector ratio 512/3528
-    BK15_150 = { LFS=0, MFLS= 0, MFHS=0.14512471655, HFS=0, site="Pole", years=5.6 } 
-    # Detector ratio 512/8592
-    BK15_220 = { LFS=0, MFLS= 0, MFHS=0, HFS=0.05959031657, site="Pole", years=1 }
+    # Detector ratio 288/3528, 2 tubes
+    BK15_90 =  { LFS=0, MFLS= 0.163, MFHS=0, HFS=0, site="Pole", years=2 }
+    # Detector ratio 512/3528, 1.6 tubes, 11.2 years total
+    BK15_150 = { LFS=0, MFLS= 0, MFHS=0.232, HFS=0, site="Pole", years=7 }
+    # Detector ratio 512/8592, 2 tubes
+    BK15_220 = { LFS=0, MFLS= 0, MFHS=0, HFS=0.119, site="Pole", years=1 }
