@@ -2,6 +2,24 @@
 
 total_experiment_length_years = 7
 
+# Sensitivity factors impact only noise but not atmosphere
+# Copy-pasted from https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit#gid=1776795091
+# on 13 April 2021
+# yield is given by detectors lost during fabrication
+# For pole SAT it includes yield and loss to uneven noise across detectors
+sensitivity_factor.Pole.SAT.LFS1  = 0.64 # 30 GHz
+sensitivity_factor.Pole.SAT.LFS2  = 0.64 # 40 GHz
+sensitivity_factor.Pole.SAT.MFLS1 = 0.64 # 85 GHz
+sensitivity_factor.Pole.SAT.MFLS2 = 0.52 # 145 GHz
+sensitivity_factor.Pole.SAT.MFHS1 = 0.64 # 95 GHz
+sensitivity_factor.Pole.SAT.MFHS2 = 0.52 # 155 GHz
+sensitivity_factor.Pole.SAT.HFS1  = 0.52 # 220 GHz
+sensitivity_factor.Pole.SAT.HFS2  = 0.52 # 270 GHz
+
+# Just consider yield
+sensitivity_factor.Chile.LAT.default = 0.8
+sensitivity_factor.Chile.SAT.default = 0.8
+sensitivity_factor.Pole.LAT.default = 0.8
 
 # Number of splits, 1 generates only full mission
 # 2-7 generates the full mission map and then the requested number
@@ -10,6 +28,10 @@ total_experiment_length_years = 7
 number_of_splits = 1
 
 include_atmosphere = false
+
+# atmosphere maps scaling factors (multipled to input maps)
+atmosphere_scaling_T = 1.0
+atmosphere_scaling_P = 1.0
 
 include_noise = false
 
@@ -21,40 +43,40 @@ include_noise = false
 # always specify first site, then telescope, then band
 
 # Copy-pasted from https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit#gid=1776795091
-# on 4 March 2021
+# on 13 April 2021
 
-observing_efficiency.Pole.SAT.LFS1  = 0.194656896
-observing_efficiency.Pole.SAT.LFS2  = 0.194656896
-observing_efficiency.Pole.SAT.MFLS1 = 0.194656896
-observing_efficiency.Pole.SAT.MFHS1 = 0.194656896
-observing_efficiency.Pole.SAT.MFLS2 = 0.1914126144
-observing_efficiency.Pole.SAT.MFHS2 = 0.1914126144
-observing_efficiency.Pole.SAT.HFS1  = 0.1359894704
-observing_efficiency.Pole.SAT.HFS2  = 0.0940841664
+observing_efficiency.Pole.SAT.LFS1  = 0.24332112  # Total (no yield), 30 GHz
+observing_efficiency.Pole.SAT.LFS2  = 0.24332112  # Total (no yield), 40 GHz
+observing_efficiency.Pole.SAT.MFLS1 = 0.24332112  # Total (no yield), 85 GHz
+observing_efficiency.Pole.SAT.MFLS2 = 0.239265768 # Total (no yield), 145 GHz
+observing_efficiency.Pole.SAT.MFHS1 = 0.24332112  # Total (no yield), 95 GHz
+observing_efficiency.Pole.SAT.MFHS2 = 0.239265768 # Total (no yield), 155 GHz
+observing_efficiency.Pole.SAT.HFS1  = 0.169986838 # Total (no yield), 220 GHz
+observing_efficiency.Pole.SAT.HFS2  = 0.117605208 # Total (no yield), 270 GHz
 
-observing_efficiency.Chile.SAT.LFS1  = 0.2026944
-observing_efficiency.Chile.SAT.LFS2  = 0.2026944
-observing_efficiency.Chile.SAT.MFLS1 = 0.2026944
-observing_efficiency.Chile.SAT.MFHS1 = 0.2026944
-observing_efficiency.Chile.SAT.MFLS2 = 0.19931616
-observing_efficiency.Chile.SAT.MFHS2 = 0.19931616
-observing_efficiency.Chile.SAT.HFS1  = 0.14160456
-observing_efficiency.Chile.SAT.HFS2  = 0.09796896
+observing_efficiency.Chile.SAT.LFS1  = 0.253368  # Total (no yield), 30 GHz
+observing_efficiency.Chile.SAT.LFS2  = 0.253368  # Total (no yield), 40 GHz
+observing_efficiency.Chile.SAT.MFLS1 = 0.253368  # Total (no yield), 85 GHz
+observing_efficiency.Chile.SAT.MFLS2 = 0.2491452 # Total (no yield), 145 GHz
+observing_efficiency.Chile.SAT.MFHS1 = 0.253368  # Total (no yield), 95 GHz
+observing_efficiency.Chile.SAT.MFHS2 = 0.2491452 # Total (no yield), 155 GHz
+observing_efficiency.Chile.SAT.HFS1  = 0.1770057 # Total (no yield), 220 GHz
+observing_efficiency.Chile.SAT.HFS2  = 0.1224612 # Total  (no yield), 270 GHz
 
-observing_efficiency.Pole.LAT.ULFPL1 = 0.435712
-observing_efficiency.Pole.LAT.LFPL1  = 0.435712
-observing_efficiency.Pole.LAT.LFPL2  = 0.435712
-observing_efficiency.Pole.LAT.MFPL1  = 0.435712
-observing_efficiency.Pole.LAT.MFPL2  = 0.406272
-observing_efficiency.Pole.LAT.HFPL1  = 0.400384
-observing_efficiency.Pole.LAT.HFPL2  = 0.276736
+observing_efficiency.Pole.LAT.ULFPL1 = 0.54464 # Total (no yield), 20 GHz
+observing_efficiency.Pole.LAT.LFPL1  = 0.54464 # Total (no yield), 27 GHz
+observing_efficiency.Pole.LAT.LFPL2  = 0.54464 # Total (no yield), 39 GHz
+observing_efficiency.Pole.LAT.MFPL1  = 0.54464 # Total (no yield), 93 GHz
+observing_efficiency.Pole.LAT.MFPL2  = 0.50784 # Total (no yield), 145 GHz
+observing_efficiency.Pole.LAT.HFPL1  = 0.50048 # Total (no yield), 225 GHz
+observing_efficiency.Pole.LAT.HFPL2  = 0.34592 # Total (no yield), 278 GHz
 
-observing_efficiency.Chile.LAT.LFL1 = 0.249696
-observing_efficiency.Chile.LAT.LFL2 = 0.249696
-observing_efficiency.Chile.LAT.MFL1 = 0.249696
-observing_efficiency.Chile.LAT.MFL2 = 0.249696
-observing_efficiency.Chile.LAT.HFL1 = 0.22032
-observing_efficiency.Chile.LAT.HFL2 = 0.22032
+observing_efficiency.Chile.LAT.LFL1 = 0.31212 # Total (no yield), 27 GHz
+observing_efficiency.Chile.LAT.LFL2 = 0.31212 # Total (no yield), 39 GHz
+observing_efficiency.Chile.LAT.MFL1 = 0.31212 # Total (no yield), 93 GHz
+observing_efficiency.Chile.LAT.MFL2 = 0.31212 # Total (no yield), 145 GHz
+observing_efficiency.Chile.LAT.HFL1 = 0.2754  # Total (no yield), 225 GHz
+observing_efficiency.Chile.LAT.HFL2 = 0.2754  # Total (no yield), 278 GHz
 
 # we can also specify defaults for sites (notice capitalization) or telescopes
 # observing_efficiency.Pole.SAT.default = 0.2
