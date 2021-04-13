@@ -1,6 +1,7 @@
 \ Text file in IPAC table format, read with astropy
 \ from astropy.table import QTable
 \ QTable.read('filename.tbl', format='ascii.ipac')
+\ Instrument model exported from `s4sim`, version 9a643f5
 |  band|telescope|center_frequency|  fwhm|detectors_per_tube|      NET|chile_temp_sensitivity_DSR|chile_pol_sensitivity_DSR|pole_pol_sensitivity_DSR|
 |  char|     char|          double|double|              long|   double|                    double|                   double|                  double|
 |      |         |             GHz|arcmin|                  |s(1/2) uK|                 arcmin uK|                arcmin uK|               arcmin uK|
