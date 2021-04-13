@@ -22,9 +22,9 @@ CMB_tensor_to_scalar_ratio = 0
 # 2-7 generates the full mission map and then the requested number
 # of splits scaled accordingly. E.g. 7 generates the full mission
 # map and 7 equal (yearly) maps
-number_of_splits = 1
+number_of_splits = 7
 
-include_atmosphere = false
+include_atmosphere = true
 
 # atmosphere maps scaling factors (multipled to input maps)
 atmosphere_scaling_T = 1.0
