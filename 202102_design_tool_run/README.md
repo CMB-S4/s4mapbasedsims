@@ -3,8 +3,8 @@ Design tool run March 2021
 
 Release:
 
-* 13 April 2021, reran all noise and atmosphere maps fixing the observation efficiency factors and the thinning factor impact on atmosphere polarization, first run maps saved at `/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/firstrun_202102_design_tool_run`
-* 24 March 2021, added noise-only and atmosphere-only
+* 13 April 2021, `s4_design_sim_tool` 1.1.1, reran all noise and atmosphere maps fixing the observation efficiency factors and the thinning factor impact on atmosphere polarization, see the `s4_design_sim_tool` [CHANGELOG](https://github.com/CMB-S4/s4_design_sim_tool/blob/master/CHANGELOG.md#release-111), first run maps saved at `/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/firstrun_202102_design_tool_run`
+* 24 March 2021, `s4_design_sim_tool` 1.1.0, added noise-only and atmosphere-only
 * 15 March 2021, released LAT maps and their verification plots
 * 10 March 2021, fixed noise+atmosphere SAT maps, added verification plots
 * 5 March 2021, SAT maps
