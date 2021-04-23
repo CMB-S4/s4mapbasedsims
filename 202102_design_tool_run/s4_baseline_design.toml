@@ -4,9 +4,10 @@ total_experiment_length_years = 7
 
 # Sensitivity factors impact only noise but not atmosphere
 # Copy-pasted from https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit#gid=1776795091
-# on 13 April 2021
+# on 22 April 2021
 # yield is given by detectors lost during fabrication
-# For pole SAT it includes yield and loss to uneven noise across detectors
+# All the factors below include yield and loss to uneven noise across detectors
+
 sensitivity_factor.Pole.SAT.LFS1  = 0.64 # 30 GHz
 sensitivity_factor.Pole.SAT.LFS2  = 0.64 # 40 GHz
 sensitivity_factor.Pole.SAT.MFLS1 = 0.64 # 85 GHz
@@ -16,10 +17,17 @@ sensitivity_factor.Pole.SAT.MFHS2 = 0.52 # 155 GHz
 sensitivity_factor.Pole.SAT.HFS1  = 0.52 # 220 GHz
 sensitivity_factor.Pole.SAT.HFS2  = 0.52 # 270 GHz
 
-# Just consider yield
-sensitivity_factor.Chile.LAT.default = 0.8
-sensitivity_factor.Chile.SAT.default = 0.8
-sensitivity_factor.Pole.LAT.default = 0.8
+sensitivity_factor.Chile.SAT.LFS1  = 0.64 # 30 GHz
+sensitivity_factor.Chile.SAT.LFS2  = 0.64 # 40 GHz
+sensitivity_factor.Chile.SAT.MFLS1 = 0.64 # 85 GHz
+sensitivity_factor.Chile.SAT.MFLS2 = 0.52 # 145 GHz
+sensitivity_factor.Chile.SAT.MFHS1 = 0.64 # 95 GHz
+sensitivity_factor.Chile.SAT.MFHS2 = 0.52 # 155 GHz
+sensitivity_factor.Chile.SAT.HFS1  = 0.52 # 220 GHz
+sensitivity_factor.Chile.SAT.HFS2  = 0.52 # 270 GHz
+
+sensitivity_factor.Chile.LAT.default = 0.64
+sensitivity_factor.Pole.LAT.default = 0.64
 
 # Number of splits, 1 generates only full mission
 # 2-7 generates the full mission map and then the requested number
