@@ -2,3 +2,10 @@
 *.swp
 output
 jobs
+202102_design_tool_run/tool
+202102_design_tool_run/ref
+202103_bicepkeck/instrument_model
+bk
+in
+run
+__pycache__
