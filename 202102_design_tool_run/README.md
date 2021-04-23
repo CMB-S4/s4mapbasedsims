@@ -3,6 +3,7 @@ Design tool run March 2021
 
 Release:
 
+* 22 April 2021, `s4_design_sim_tool` 1.1.2, reran all noise and atmosphere maps, including fix to amplitude of atmosphere both T and polarization, and including efficiency loss due to uneven NET for all detectors (see [`s4_baseline_design.toml`](s4_baseline_design.toml)
 * 13 April 2021, `s4_design_sim_tool` 1.1.1, reran all noise and atmosphere maps fixing the observation efficiency factors and the thinning factor impact on atmosphere polarization, see the `s4_design_sim_tool` [CHANGELOG](https://github.com/CMB-S4/s4_design_sim_tool/blob/master/CHANGELOG.md#release-111), first run maps saved at `/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/firstrun_202102_design_tool_run`
 * 24 March 2021, `s4_design_sim_tool` 1.1.0, added noise-only and atmosphere-only
 * 15 March 2021, released LAT maps and their verification plots
@@ -185,7 +186,7 @@ See the [observation matrix post on the wiki](https://cmb-s4.uchicago.edu/wiki/i
 
 CMB and foreground maps are generated applying the mapmaking step in map domain to the [full sky, bandpass-integrated and beam-convolved input map based simulations](https://github.com/CMB-S4/s4mapbasedsims/tree/master/202102_design_tool_input#input-components).
 See their documentation for details about all the models used.
-We have just 1 split, i.e. there is no weighting done for CMB and foregrounds.
+There is no weighting done for CMB and foregrounds.
 
 We have 1 map per tube for each of 3 components (with link to TOML configuration file):
 
