@@ -31,3 +31,4 @@ atmosphere_scaling_T = 1.0
 atmosphere_scaling_P = 1.0
 
 include_noise = true
+process_hitmap_wcov = false
