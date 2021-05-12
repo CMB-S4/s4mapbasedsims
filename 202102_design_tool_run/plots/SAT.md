@@ -1,3 +1,11 @@
+## Sensitivity comparison
+
+Comparison of the sensitivity from the simulations and the requirements
+from the PBDR document.
+
+![](sensitivity_plot_SAT_pole.png)
+![](sensitivity_plot_difference_SAT_pole.png)
+
 ## Temperature
 
 ![](C_ell_noise_atmo_7splits_SAT-LFS1_pole_1_temp.png)
