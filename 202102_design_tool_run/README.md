@@ -39,6 +39,10 @@ s4.loc["LFS1"]["fwhm"]
 The design of the instrument (i.e. sites where telescopes are deployed, distribution of tubes in each telescope) follows the "Baseline design".
 It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file in the repository.
 
+# Independent verification
+
+* [SAT noise and atmosphere comparison with scaled BK15](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20210506_dt1_vs_bk15_3/) by Clem Pryke
+
 # Verification
 
 * [Mini-plots of all full experiment maps on the same scale](plot_maps/README.md)
