@@ -14,9 +14,9 @@ sites = "pole", "chile"
 for pol in ["T", "P"]:
 
     if pol == "T":
-        fixed_amp = {("SAT", "pole"): 10, ("LAT", "chile"): 10, ("LAT", "pole"): 10}
+        fixed_amp = {("SAT", "pole"): 10, ("LAT", "chile"): 20, ("LAT", "pole"): 10}
     else:
-        fixed_amp = {("SAT", "pole"): 5, ("LAT", "chile"): 100, ("LAT", "pole"): 100}
+        fixed_amp = {("SAT", "pole"): 5, ("LAT", "chile"): 50, ("LAT", "pole"): 50}
 
     for instrument in instruments:
         bands = {
@@ -30,8 +30,8 @@ for pol in ["T", "P"]:
                     break
                 # bands.remove("ULFL1")
             nband = len(bands)
-            nrow, ncol = 4, 8
-            plt.figure(figsize=[18, 7])
+            nrow, ncol = 5, 8
+            plt.figure(figsize=[18, 8])
             # plt.suptitle("{} - {}".format(instrument, site))
             # plt.subplots_adjust(bottom=0.5)
 
@@ -40,8 +40,9 @@ for pol in ["T", "P"]:
                 "cmb": "cmb_r0",
                 "cmb_tensor": "cmb_tensor_only_r3e-3",
             }
+            components = ["foregrounds", "cmb", "cmb_tensor", "noise", "atmo"]
             for icomp, comp in enumerate(
-                ["foregrounds", "cmb", "cmb_tensor", "noise+atmo"]
+                components
             ):
                 iplot = icomp * ncol
                 for band in bands:
@@ -51,24 +52,11 @@ for pol in ["T", "P"]:
                     iplot += 1
                     if site == "chile" and band == "ULFL1":
                         continue
-                    cbar = False
-                    if comp == "noise+atmo":
-                        fnames = [
+                    cbar = comp == "atmo"
+                    fnames = [
                             os.path.join(
                                 rootdir,
-                                "noise_atmo_7splits",
-                                "{}-{}_{}".format(instrument, band, site),
-                                "cmbs4_KCMB_{}-{}_{}_nside{}_1_of_1.fits".format(
-                                    instrument, band, site, nside
-                                ),
-                            ),
-                        ]
-                        cbar = True
-                    else:
-                        fnames = [
-                            os.path.join(
-                                rootdir,
-                                comp_folder[comp],
+                                comp_folder.get(comp, comp),
                                 "{}-{}_{}".format(instrument, band, site),
                                 "cmbs4_KCMB_{}-{}_{}_nside{}_1_of_1.fits".format(
                                     instrument, band, site, nside
