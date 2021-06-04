@@ -3,7 +3,7 @@ Design tool run March 2021
 
 Release:
 
-* 2 June 2021, no changes to the design sim tool, reran all the input maps with significant changes in the time-domain pipeline, FIXME add link
+* 2 June 2021, no changes to the design sim tool, reran all the LAT input maps with significant changes in the filtering algorithm, see [study on the 2D filter order](https://cmb-s4.atlassian.net/wiki/spaces/XC/pages/701857803/2D+filter+order+in+CHLAT+data+reduction)
 * 22 April 2021, `s4_design_sim_tool` 1.1.2, reran all noise and atmosphere maps, including fix to amplitude of atmosphere polarization, and including efficiency loss due to uneven NET for all detectors (see [`s4_baseline_design.toml`](s4_baseline_design.toml). See the `s4_design_sim_tool` [CHANGELOG](https://github.com/CMB-S4/s4_design_sim_tool/blob/master/CHANGELOG.md#release-112)
 * 13 April 2021, `s4_design_sim_tool` 1.1.1, reran all noise and atmosphere maps fixing the observation efficiency factors and the thinning factor impact on atmosphere polarization, see the `s4_design_sim_tool` [CHANGELOG](https://github.com/CMB-S4/s4_design_sim_tool/blob/master/CHANGELOG.md#release-111), first run maps saved at `/global/cscratch1/sd/zonca/cmbs4/map_based_simulations/firstrun_202102_design_tool_run`
 * 24 March 2021, `s4_design_sim_tool` 1.1.0, added noise-only and atmosphere-only
