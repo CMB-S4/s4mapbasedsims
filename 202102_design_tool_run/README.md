@@ -19,7 +19,7 @@ The simulation has been performed in 3 stages:
 
 # Instrument model
 
-The instrument model has been extracted from `s4sim` on February, the 25th, 2021,
+The instrument model has been extracted from `s4sim`,
 see the [notebook script for more details](utils/create_s4_instrument_parameters.ipynb), the instrument parameters have been extracted to
 [text files in IPAC table format](instrument_model/cmbs4_instrument_model.tbl), which supports units for the columns and can be read as `astropy.QTable`.
 
@@ -42,7 +42,7 @@ It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file i
 
 # Independent verification
 
-* [SAT noise and atmosphere comparison with scaled BK15](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20210506_dt1_vs_bk15_3/) by Clem Pryke
+* [SAT noise and atmosphere comparison with scaled BK15](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20210506_dt1_vs_bk15_3) by Clem Pryke
 
 # Verification
 
