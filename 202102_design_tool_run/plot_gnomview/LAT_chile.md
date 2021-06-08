@@ -8,6 +8,10 @@ Using the same sky cut of the output maps.
 ## Temperature
 
 ![](foreground_map_LFL1_input.png) ![](foreground_map_LFL1_output.png)
+
+CMB transfer function and atmospheric residuals look fine, stripes in the map are most probably
+due to 1D-filters coupled with the sparsely sampled focalplane
+
 ![](foreground_map_LFL2_input.png) ![](foreground_map_LFL2_output.png)
 ![](foreground_map_MFL1_input.png) ![](foreground_map_MFL1_output.png)
 ![](foreground_map_MFL2_input.png) ![](foreground_map_MFL2_output.png)
