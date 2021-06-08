@@ -79,9 +79,9 @@ CMB maps power spectra was computed with the same `compute_cl.py` script, using 
 
 For LAT instead, using inverse noise weighting was causing spurious features in the spectra (for example an excess in II for the 2 lowest frequecy channels at Pole in the ell range `300-500`). Therefore I switched to uniform weighting.
 
-* [LAT TT](https://nbviewer.jupyter.org/gist/zonca/5dc1c8f7f2acd16fffb3f326298e9d83)
-* [LAT EE](https://nbviewer.jupyter.org/gist/zonca/00a87a2bd6d23fe4e7b9c7ee01932577)
-* [LAT BB](https://nbviewer.jupyter.org/gist/zonca/8663ab29235d4894eeee3da12b5d7125)
+* [LAT TT](https://nbviewer.jupyter.org/gist/zonca/fefd52386abbba37ddae0ce4ce7ac45b)
+* [LAT EE](https://nbviewer.jupyter.org/gist/zonca/2cbb9bf7970318e7d7c7212eb69edaf9)
+* [LAT BB](https://nbviewer.jupyter.org/gist/zonca/833c64205cd778bdd37b2478f197d783)
 
 For reference here the plots with inverse noise weighting:
 
