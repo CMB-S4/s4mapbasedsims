@@ -140,7 +140,7 @@ The configuration file for the design simulation tool is:
 
 Maps are available at NERSC at:
 
-    /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202102_design_tool_run
+    /global/cfs/cdirs/cmbs4/dm/dstool_202102/output/
 
 Will be moved to project space later on and the path here updated
 
@@ -177,7 +177,7 @@ I haven't run any of the verification on those, please open issue if anything lo
 
 The noise and atmosphere maps from TOAST used as input are currently located at:
 
-    /global/cscratch1/sd/keskital/s4sim/reference_tool_round_2/out
+    /global/cfs/cdirs/cmbs4/dm/dstool_202102/input/
     
 ### Observation matrix
 
@@ -201,7 +201,7 @@ We have 1 map per tube for each of 3 components (with link to TOML configuration
 
 Maps are available at NERSC at:
 
-    /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202102_design_tool_run
+    /global/cfs/cdirs/cmbs4/dm/dstool_202102/output/
 
 in the 3 subfolders:
 
