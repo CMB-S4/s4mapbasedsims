@@ -40,6 +40,9 @@ s4.loc["LFS1"]["fwhm"]
 The design of the instrument (i.e. sites where telescopes are deployed, distribution of tubes in each telescope) follows the "Baseline design".
 It is encoded in the [`s4_baseline_design.toml`](s4_baseline_design.toml) file in the repository.
 
+# Observation Efficiency
+Observation efficiency numbers can be found in this [description document](https://docs.google.com/document/d/1pR70PEYzdz_aRnTzIzdg9O0VNtmBuHT57p7lbN4Gyv4/edit?usp=sharing), and this [table](https://docs.google.com/spreadsheets/d/1jR9gSsJ0w1dEO5Jb_URlD3SWYtgFtwBgB3W88p6puo0/edit?usp=sharing).
+
 # Independent verification
 
 * [SAT noise and atmosphere comparison with scaled BK15](http://bicep.rc.fas.harvard.edu/CMB-S4/analysis_logbook/20210506_dt1_vs_bk15_3) by Clem Pryke
