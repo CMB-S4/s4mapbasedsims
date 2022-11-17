@@ -1,15 +1,17 @@
 from pathlib import Path
+import sys
 import subprocess
 
 folder = Path(f"jobs")
 folder.mkdir(exist_ok=True, parents=True)
 
-nside_sims = ["dust", "freefree", "synchrotron", "ame"]
-no_nside_sims = ["cib", "ksz", "tsz", "cmb", "cmb_unlensed"]
+no_nside_sims = ["cib", "ksz", "tsz", "radio", "cmb", "cmb_unlensed"]
+nside_sims = ["dust", "synchrotron", "freefree", "ame", "co"]
 
 sims = nside_sims + no_nside_sims
-sims = [s for s in sims if s.startswith("cmb")]
-sims = ["dust"]
+from glob import glob
+sims = list(glob("*low*.toml")) + list(glob("*high*.toml"))
+sims = [s.split(".")[0] for s in sims]
 
 from mapsims.channel_utils import parse_channels
 
@@ -23,36 +25,36 @@ for simulation_type in sims:
     hours = 4
     minutes = 30
     nside = 4096
-    #for channel in chs:
-    #    tag = channel.tag.replace(" ", "_")
-    #    filename = f"job_{simulation_type}_{nside}_{tag}.slurm"
-    #    with open(folder / filename, "w") as f:
-    #        print(f"sbatch jobs/{filename} &")
-    #        f.write(
-    #            template.format(
-    #                simulation_type=simulation_type,
-    #                nside=nside,
-    #                hours=hours,
-    #                minutes=minutes,
-    #                channels=tag,
-    #                run_channels=tag,
-    #                config_file=config_file,
-    #            )
-    #        )
+    for channel in chs:
+        tag = channel.tag.replace(" ", "_")
+        filename = f"job_{simulation_type}_{nside}_{tag}.slurm"
+        with open(folder / filename, "w") as f:
+            print(f"sbatch jobs/{filename} &")
+            f.write(
+                template.format(
+                    simulation_type=simulation_type,
+                    nside=nside,
+                    hours=hours,
+                    minutes=minutes,
+                    channels=tag,
+                    run_channels=tag,
+                    config_file=config_file,
+                )
+            )
 
-    #    subprocess.run(["sbatch", f"jobs/{filename}"])
+        subprocess.run(["sbatch", f"jobs/{filename}"])
     #nside = 512
-    filename = f"job_{simulation_type}_{nside}_LAT.slurm"
-    with open(folder / filename, "w") as f:
-       print(f"sbatch jobs/{filename} &")
-       f.write(template.format(
-           simulation_type=simulation_type,
-           nside=nside,
-           hours=hours,
-           minutes=minutes,
-           channels='LAT',
-           run_channels='telescope:LAT',
-           config_file=config_file
-       ))
+    #filename = f"job_{simulation_type}_{nside}_LAT.slurm"
+    #with open(folder / filename, "w") as f:
+    #   print(f"sbatch jobs/{filename} &")
+    #   f.write(template.format(
+    #       simulation_type=simulation_type,
+    #       nside=nside,
+    #       hours=hours,
+    #       minutes=minutes,
+    #       channels='LAT',
+    #       run_channels='telescope:LAT',
+    #       config_file=config_file
+    #   ))
 
-    subprocess.run(["sbatch", f"jobs/{filename}"])
+    #subprocess.run(["sbatch", f"jobs/{filename}"])
