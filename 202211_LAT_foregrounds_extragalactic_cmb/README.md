@@ -13,7 +13,7 @@ Each component is saved separately, all maps are in `uK_CMB`, IQU or I, single p
 
 For this simulation with have 3 versions of the Galactic foregrounds which have been recommended [by the Pan Experiment Galactic Science group to be used by all CMB experiments](https://galsci.github.io/blog/2022/common-fiducial-sky/)
 
-The CIB, KSZ and TSZ models are created from the new 0.4 version of the WebSky cosmological simulations, [see the recommended models by the Panexp group](https://galsci.github.io/blog/2022/common-fiducial-extragalactic-cmb)
+The CMB, CIB, KSZ and TSZ models are created from the new 0.4 version of the WebSky cosmological simulations, [see the recommended models by the Panexp group](https://galsci.github.io/blog/2022/common-fiducial-extragalactic-cmb)
 
 We needed also to have a CMB solar dipole, so I created a map for the [HFI 2018 solar dipole](https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/Map-making#HFI_2018_Solar_dipole) and added it to the unlensed CMB component.
 
