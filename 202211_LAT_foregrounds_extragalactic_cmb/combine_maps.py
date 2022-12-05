@@ -6,27 +6,27 @@ from astropy.table import QTable
 # Dipole needs to be the last component, I remove dipole
 # from previous map before adding dipole
 all_combined = {
-    # "combined_foregrounds_cmb_no_radio_fixdip": ["dust", "synchrotron", "freefree", "ame", "co"] + ["cib", "ksz", "tsz"] + ["cmb_unlensed_solardipole", "dipole"],
-    "combined_foregrounds_cmb_no_radio_fixdip_lowcomplexity": [
+    "combined_foregrounds_cmb_fixdip": ["dust", "synchrotron", "freefree", "ame", "co"] + ["cib", "ksz", "tsz", "radio"] + ["cmb_unlensed_solardipole", "dipole"],
+    "combined_foregrounds_cmb_fixdip_lowcomplexity": [
         "dust_low",
         "synchrotron_low",
         "freefree",
         "ame",
         "co_low",
     ]
-    + ["cib", "ksz", "tsz"]
+    + ["cib", "ksz", "tsz", "radio"]
     + ["cmb_unlensed_solardipole", "dipole"],
-    "combined_foregrounds_cmb_no_radio_fixdip_highcomplexity": [
+    "combined_foregrounds_cmb_fixdip_highcomplexity": [
         "dust_high",
         "synchrotron_high",
         "freefree",
         "ame_high",
         "co",
     ]
-    + ["cib", "ksz", "tsz"]
+    + ["cib", "ksz", "tsz", "radio"]
     + ["cmb_unlensed_solardipole", "dipole"],
 }
-# all_combined["combined_foregrounds_cmb_fixdip"] = all_combined["combined_foregrounds_cmb_no_radio_fixdip"] + ["radio"]
+# all_combined["combined_foregrounds_cmb_fixdip"] = all_combined["combined_foregrounds_cmb_fixdip"] + ["radio"]
 
 s4 = QTable.read(
     "../202102_design_tool_run/instrument_model/cmbs4_instrument_model.tbl",
