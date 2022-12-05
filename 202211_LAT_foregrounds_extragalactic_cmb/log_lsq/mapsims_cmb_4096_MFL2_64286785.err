@@ -1,0 +1,19 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:45,074:INFO:mapsims:Parsing configuration from common.toml, cmb.toml
+2022-11-14 01:45:45,190:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:45,194:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:45,198:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_I_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:45:45,201:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_Q_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:45:45,203:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_U_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:45:45,204:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_I_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:46:47,535:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_Q_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:47:49,966:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_U_lensed_alm_seed1_nside4096.fits
+2022-11-14 01:48:56,023:INFO:mapsims:Processing channel Channel MFL2
+2022-11-14 01:48:56,024:INFO:mapsims:Bandpass integration for Channel MFL2
+2022-11-14 01:49:08,139:INFO:mapsims:Smoothing and coord-transform for Channel MFL2
+2022-11-14 02:21:31,269:INFO:pysm3:Used map2alm_lsq, converged in 2 iterations, residual relative error 4.3e-08
+2022-11-14 02:40:56,969:INFO:mapsims:Writing output map cmbs4_cmb_uKCMB_LAT-MFL2_nside4096_0000.fits
+
+real	57m27.509s
+user	2992m16.349s
+sys	9m37.582s

@@ -1,0 +1,16 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-17 23:47:06,890:INFO:mapsims:Parsing configuration from common.toml, synchrotron_high.toml
+2022-11-17 23:47:07,007:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-17 23:47:07,012:INFO:mapsims:Initializing the PySM Sky object
+2022-11-17 23:47:07,016:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/synch/synch_template_nside4096.fits
+2022-11-17 23:50:22,451:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/synch/synch_beta_nside4096.fits
+2022-11-17 23:51:25,279:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/synch/synch_curvature_nside4096.fits
+2022-11-17 23:52:28,032:INFO:mapsims:Processing channel Channel HFL2
+2022-11-17 23:52:28,033:INFO:mapsims:Bandpass integration for Channel HFL2
+2022-11-17 23:54:39,266:INFO:mapsims:Smoothing and coord-transform for Channel HFL2
+2022-11-18 01:33:00,659:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.00028
+2022-11-18 01:52:34,353:INFO:mapsims:Writing output map cmbs4_synchrotron_high_uKCMB_LAT-HFL2_nside4096_0000.fits
+
+real	127m43.087s
+user	6490m51.693s
+sys	42m22.404s

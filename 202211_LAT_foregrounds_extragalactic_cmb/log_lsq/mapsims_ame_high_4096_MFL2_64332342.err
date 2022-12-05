@@ -1,0 +1,26 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-17 23:47:06,603:INFO:mapsims:Parsing configuration from common.toml, ame_high.toml
+2022-11-17 23:47:06,724:INFO:mapsims:Nside: 4096, Modeling Nside: 512, Ellmax: 1280
+2022-11-17 23:47:06,730:INFO:mapsims:Initializing the PySM Sky object
+2022-11-17 23:47:06,734:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame_t_new.fits
+2022-11-17 23:47:07,544:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame_nu_peak_0.fits
+2022-11-17 23:47:08,330:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/emissivity.txt
+2022-11-17 23:47:08,340:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_u_new.fits
+2022-11-17 23:47:09,119:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_u_new.fits
+2022-11-17 23:47:09,122:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_q_new.fits
+2022-11-17 23:47:09,901:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_q_new.fits
+2022-11-17 23:47:10,342:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame2_t_new.fits
+2022-11-17 23:47:11,131:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/emissivity.txt
+2022-11-17 23:47:11,140:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_u_new.fits
+2022-11-17 23:47:11,931:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_u_new.fits
+2022-11-17 23:47:11,938:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_q_new.fits
+2022-11-17 23:47:12,728:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/pysm_2/dust_q_new.fits
+2022-11-17 23:47:13,172:INFO:mapsims:Processing channel Channel MFL2
+2022-11-17 23:47:13,173:INFO:mapsims:Bandpass integration for Channel MFL2
+2022-11-17 23:48:13,615:INFO:mapsims:Smoothing and coord-transform for Channel MFL2
+2022-11-17 23:48:37,894:INFO:pysm3:Used map2alm_lsq, converged in 7 iterations, residual relative error 0.19
+2022-11-17 23:49:29,445:INFO:mapsims:Writing output map cmbs4_ame_high_uKCMB_LAT-MFL2_nside4096_0000.fits
+
+real	4m36.934s
+user	25m16.331s
+sys	5m41.040s

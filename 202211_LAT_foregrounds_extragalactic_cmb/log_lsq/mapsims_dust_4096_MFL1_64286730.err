@@ -1,0 +1,16 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-13 17:21:24,907:INFO:mapsims:Parsing configuration from common.toml, dust.toml
+2022-11-13 17:21:25,024:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-13 17:21:25,027:INFO:mapsims:Initializing the PySM Sky object
+2022-11-13 17:21:25,030:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/dust_gnilc/gnilc_dust_template_nside4096.fits
+2022-11-13 17:24:40,729:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/dust_gnilc/gnilc_dust_beta_nside4096.fits
+2022-11-13 17:25:46,701:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/dust_gnilc/gnilc_dust_Td_nside4096.fits
+2022-11-13 17:26:49,268:INFO:mapsims:Processing channel Channel MFL1
+2022-11-13 17:26:49,269:INFO:mapsims:Bandpass integration for Channel MFL1
+2022-11-13 17:36:21,340:INFO:mapsims:Smoothing and coord-transform for Channel MFL1
+2022-11-13 19:14:45,448:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.0077
+2022-11-13 19:34:18,645:INFO:mapsims:Writing output map cmbs4_dust_uKCMB_LAT-MFL1_nside4096_0000.fits
+
+real	135m8.619s
+user	6493m21.057s
+sys	34m57.505s

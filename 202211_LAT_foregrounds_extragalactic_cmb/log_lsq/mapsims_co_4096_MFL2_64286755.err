@@ -1,0 +1,25 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:44,852:INFO:mapsims:Parsing configuration from common.toml, co.toml
+2022-11-14 01:45:44,968:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:44,975:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:44,979:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-14 01:45:44,980:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-14 01:54:48,705:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:54:48,706:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:55:32,692:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:55:32,695:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:55:32,696:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:56:16,571:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:56:16,573:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/mcmoleCO_HGL_2048.fits
+2022-11-14 01:56:16,574:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/mcmoleCO_HGL_2048.fits
+2022-11-14 01:58:32,680:INFO:mapsims:Processing channel Channel MFL2
+2022-11-14 01:58:32,681:INFO:mapsims:Bandpass integration for Channel MFL2
+2022-11-14 01:58:50,168:INFO:mapsims:Smoothing and coord-transform for Channel MFL2
+/global/common/software/cmb/zonca/conda/pycmbprod/lib/python3.10/site-packages/healpy/sphtfunc.py:414: RuntimeWarning: invalid value encountered in double_scalars
+  return realalm2alm(res[0]), res[3] / norm(maps.reshape((-1,))), res[2]
+2022-11-14 02:10:59,366:INFO:pysm3:Used map2alm_lsq, converged in 0 iterations, residual relative error nan
+2022-11-14 02:30:25,080:INFO:mapsims:Writing output map cmbs4_co_uKCMB_LAT-MFL2_nside4096_0000.fits
+
+real	46m58.295s
+user	1925m7.912s
+sys	7m7.863s

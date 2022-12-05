@@ -1,0 +1,23 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:44,672:INFO:mapsims:Parsing configuration from common.toml, co.toml
+2022-11-14 01:45:44,789:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:44,794:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:44,875:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-14 01:45:44,877:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-14 01:54:49,036:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:54:49,037:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:55:32,757:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/co/psimap_dust90_2048.fits
+2022-11-14 01:55:32,760:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:55:32,761:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:56:16,510:WARNING:pysm3:No physical unit associated with file /global/project/projectdirs/cmb/www/pysm-data/co/gmap_dust90_2048.fits
+2022-11-14 01:56:16,512:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/mcmoleCO_HGL_2048.fits
+2022-11-14 01:56:16,513:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/mcmoleCO_HGL_2048.fits
+2022-11-14 01:58:32,528:INFO:mapsims:Processing channel Channel HFL1
+2022-11-14 01:58:32,529:INFO:mapsims:Bandpass integration for Channel HFL1
+2022-11-14 01:59:21,438:INFO:mapsims:Smoothing and coord-transform for Channel HFL1
+2022-11-14 03:37:37,421:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.2
+2022-11-14 03:57:00,817:INFO:mapsims:Writing output map cmbs4_co_uKCMB_LAT-HFL1_nside4096_0000.fits
+
+real	133m34.937s
+user	6478m22.290s
+sys	27m11.237s

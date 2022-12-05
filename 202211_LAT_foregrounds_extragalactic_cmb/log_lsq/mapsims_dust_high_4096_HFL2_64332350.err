@@ -1,0 +1,31 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-17 23:47:07,776:INFO:mapsims:Parsing configuration from common.toml, dust_high.toml
+2022-11-17 23:47:07,895:INFO:mapsims:Nside: 4096, Modeling Nside: 2048, Ellmax: 5120
+2022-11-17 23:47:07,900:INFO:mapsims:Initializing the PySM Sky object
+2022-11-17 23:47:27,588:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl1.fits
+2022-11-17 23:48:09,350:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl2.fits
+2022-11-17 23:48:51,726:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl3.fits
+2022-11-17 23:49:33,557:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl4.fits
+2022-11-17 23:50:15,359:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl5.fits
+2022-11-17 23:50:57,341:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_ampl6.fits
+2022-11-17 23:52:14,265:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind1.fits
+2022-11-17 23:52:27,662:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind2.fits
+2022-11-17 23:52:41,152:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind3.fits
+2022-11-17 23:52:54,744:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind4.fits
+2022-11-17 23:53:08,117:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind5.fits
+2022-11-17 23:53:21,514:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_specind6.fits
+2022-11-17 23:53:41,445:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp1.fits
+2022-11-17 23:53:54,882:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp2.fits
+2022-11-17 23:54:08,382:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp3.fits
+2022-11-17 23:54:21,974:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp4.fits
+2022-11-17 23:54:35,391:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp5.fits
+2022-11-17 23:54:49,001:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/mkd_dust/2048/thermaldust_temp6.fits
+2022-11-17 23:55:02,649:INFO:mapsims:Processing channel Channel HFL2
+2022-11-17 23:55:02,650:INFO:mapsims:Bandpass integration for Channel HFL2
+2022-11-18 00:10:06,191:INFO:mapsims:Smoothing and coord-transform for Channel HFL2
+2022-11-18 00:25:31,434:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.00062
+2022-11-18 00:29:12,540:INFO:mapsims:Writing output map cmbs4_dust_high_uKCMB_LAT-HFL2_nside4096_0000.fits
+
+real	44m21.057s
+user	910m38.247s
+sys	27m25.571s

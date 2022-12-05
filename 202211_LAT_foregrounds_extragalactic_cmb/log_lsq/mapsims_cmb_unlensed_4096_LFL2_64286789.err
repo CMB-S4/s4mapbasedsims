@@ -1,0 +1,19 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:46,611:INFO:mapsims:Parsing configuration from common.toml, cmb_unlensed.toml
+2022-11-14 01:45:46,727:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:46,731:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:46,739:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:45:46,746:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:45:46,752:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:45:46,753:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:46:49,030:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:47:51,232:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_solardipole_nside4096.fits
+2022-11-14 01:48:57,960:INFO:mapsims:Processing channel Channel LFL2
+2022-11-14 01:48:57,961:INFO:mapsims:Bandpass integration for Channel LFL2
+2022-11-14 01:49:10,277:INFO:mapsims:Smoothing and coord-transform for Channel LFL2
+2022-11-14 02:13:16,530:INFO:pysm3:Used map2alm_lsq, converged in 1 iterations, residual relative error 9.1e-08
+2022-11-14 02:32:41,318:INFO:mapsims:Writing output map cmbs4_cmb_unlensed_solardipole_uKCMB_LAT-LFL2_nside4096_0000.fits
+
+real	49m8.992s
+user	2556m15.658s
+sys	7m36.626s

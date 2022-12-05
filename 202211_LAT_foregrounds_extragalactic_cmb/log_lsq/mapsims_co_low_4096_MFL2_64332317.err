@@ -1,0 +1,17 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-17 10:43:40,064:INFO:mapsims:Parsing configuration from common.toml, co_low.toml
+2022-11-17 10:43:40,185:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-17 10:43:40,191:INFO:mapsims:Initializing the PySM Sky object
+2022-11-17 10:43:40,194:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-17 10:43:40,196:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2022-11-17 10:52:47,608:INFO:mapsims:Processing channel Channel MFL2
+2022-11-17 10:52:47,609:INFO:mapsims:Bandpass integration for Channel MFL2
+2022-11-17 10:53:05,383:INFO:mapsims:Smoothing and coord-transform for Channel MFL2
+/global/common/software/cmb/zonca/conda/pycmbprod/lib/python3.10/site-packages/healpy/sphtfunc.py:414: RuntimeWarning: invalid value encountered in double_scalars
+  return realalm2alm(res[0]), res[3] / norm(maps.reshape((-1,))), res[2]
+2022-11-17 11:05:14,595:INFO:pysm3:Used map2alm_lsq, converged in 0 iterations, residual relative error nan
+2022-11-17 11:24:39,002:INFO:mapsims:Writing output map cmbs4_co_low_uKCMB_LAT-MFL2_nside4096_0000.fits
+
+real	43m14.933s
+user	1919m46.173s
+sys	6m27.040s

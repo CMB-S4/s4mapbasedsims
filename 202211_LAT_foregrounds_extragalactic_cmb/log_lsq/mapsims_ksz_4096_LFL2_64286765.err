@@ -1,0 +1,15 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:45,936:INFO:mapsims:Parsing configuration from common.toml, ksz.toml
+2022-11-14 01:45:46,053:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:46,056:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:46,060:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/ksz.fits
+2022-11-14 01:45:46,063:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/ksz.fits
+2022-11-14 01:46:48,341:INFO:mapsims:Processing channel Channel LFL2
+2022-11-14 01:46:48,342:INFO:mapsims:Bandpass integration for Channel LFL2
+2022-11-14 01:47:30,860:INFO:mapsims:Smoothing and coord-transform for Channel LFL2
+2022-11-14 03:25:40,500:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.19
+2022-11-14 03:45:15,831:INFO:mapsims:Writing output map cmbs4_ksz_uKCMB_LAT-LFL2_nside4096_0000.fits
+
+real	121m46.741s
+user	6484m29.509s
+sys	24m55.265s

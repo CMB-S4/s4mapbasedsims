@@ -1,0 +1,14 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:44,843:INFO:mapsims:Parsing configuration from common.toml, freefree.toml
+2022-11-14 01:45:44,960:INFO:mapsims:Nside: 4096, Modeling Nside: 512, Ellmax: 1280
+2022-11-14 01:45:44,964:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:44,967:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ff_t_new.fits
+2022-11-14 01:45:45,774:INFO:mapsims:Processing channel Channel HFL2
+2022-11-14 01:45:45,775:INFO:mapsims:Bandpass integration for Channel HFL2
+2022-11-14 01:45:59,257:INFO:mapsims:Smoothing and coord-transform for Channel HFL2
+2022-11-14 01:46:26,304:INFO:pysm3:Used map2alm_lsq, converged in 8 iterations, residual relative error 0.11
+2022-11-14 01:47:18,702:INFO:mapsims:Writing output map cmbs4_freefree_uKCMB_LAT-HFL2_nside4096_0000.fits
+
+real	3m50.532s
+user	25m2.138s
+sys	5m56.806s

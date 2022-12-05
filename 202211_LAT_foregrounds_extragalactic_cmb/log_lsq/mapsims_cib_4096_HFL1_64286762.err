@@ -1,0 +1,39 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:44,671:INFO:mapsims:Parsing configuration from common.toml, cib.toml
+2022-11-14 01:45:44,788:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-11-14 01:45:44,792:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:46,559:INFO:mapsims:Processing channel Channel HFL1
+2022-11-14 01:45:46,560:INFO:mapsims:Bandpass integration for Channel HFL1
+2022-11-14 01:45:48,344:INFO:pysm3:Frequencies considered: [189. 210. 217. 232. 256.]
+2022-11-14 01:45:49,178:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2022-11-14 01:45:49,179:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2022-11-14 01:45:49,180:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2022-11-14 01:45:56,931:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2022-11-14 01:47:21,829:INFO:pysm3:Mean emission at 189.0 GHz in I: 23.88 uK_RJ
+2022-11-14 01:47:22,732:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2022-11-14 01:47:22,733:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2022-11-14 01:47:22,734:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2022-11-14 01:47:30,275:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2022-11-14 01:48:51,023:INFO:pysm3:Mean emission at 210.0 GHz in I: 26.14 uK_RJ
+2022-11-14 01:48:51,029:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2022-11-14 01:48:51,030:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2022-11-14 01:48:51,031:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2022-11-14 01:48:58,654:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2022-11-14 01:50:19,308:INFO:pysm3:Mean emission at 217.0 GHz in I: 26.83 uK_RJ
+2022-11-14 01:50:19,319:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2022-11-14 01:50:19,320:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2022-11-14 01:50:19,321:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2022-11-14 01:50:26,831:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2022-11-14 01:51:47,520:INFO:pysm3:Mean emission at 232.0 GHz in I: 28.19 uK_RJ
+2022-11-14 01:51:47,524:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2022-11-14 01:51:47,525:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2022-11-14 01:51:47,526:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2022-11-14 01:51:55,049:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2022-11-14 01:53:15,459:INFO:pysm3:Mean emission at 256.0 GHz in I: 30.05 uK_RJ
+2022-11-14 01:55:17,805:INFO:mapsims:Smoothing and coord-transform for Channel HFL1
+2022-11-14 03:33:41,160:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.39
+2022-11-14 03:53:06,641:INFO:mapsims:Writing output map cmbs4_cib_uKCMB_LAT-HFL1_nside4096_0000.fits
+
+real	129m40.260s
+user	6476m39.104s
+sys	27m44.280s

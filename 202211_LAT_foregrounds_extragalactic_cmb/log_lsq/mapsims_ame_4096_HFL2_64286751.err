@@ -1,0 +1,18 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-11-14 01:45:44,686:INFO:mapsims:Parsing configuration from common.toml, ame.toml
+2022-11-14 01:45:44,802:INFO:mapsims:Nside: 4096, Modeling Nside: 512, Ellmax: 1280
+2022-11-14 01:45:44,805:INFO:mapsims:Initializing the PySM Sky object
+2022-11-14 01:45:44,845:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame_t_new.fits
+2022-11-14 01:45:45,731:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame_nu_peak_0.fits
+2022-11-14 01:45:46,555:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/emissivity.txt
+2022-11-14 01:45:46,582:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/ame2_t_new.fits
+2022-11-14 01:45:47,386:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/pysm_2/emissivity.txt
+2022-11-14 01:45:47,395:INFO:mapsims:Processing channel Channel HFL2
+2022-11-14 01:45:47,396:INFO:mapsims:Bandpass integration for Channel HFL2
+2022-11-14 01:46:37,194:INFO:mapsims:Smoothing and coord-transform for Channel HFL2
+2022-11-14 01:47:02,181:INFO:pysm3:Used map2alm_lsq, converged in 7 iterations, residual relative error 0.19
+2022-11-14 01:47:54,286:INFO:mapsims:Writing output map cmbs4_ame_uKCMB_LAT-HFL2_nside4096_0000.fits
+
+real	4m25.556s
+user	24m35.479s
+sys	5m28.501s

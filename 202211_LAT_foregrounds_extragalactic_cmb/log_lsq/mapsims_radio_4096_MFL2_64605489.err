@@ -1,0 +1,44 @@
+Warning: Python module not loaded, you already have Python loaded via conda init
+2022-12-01 18:15:08,861:INFO:mapsims:Parsing configuration from common.toml, radio.toml
+2022-12-01 18:15:08,979:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2022-12-01 18:15:08,983:INFO:mapsims:Initializing the PySM Sky object
+2022-12-01 18:15:11,251:INFO:mapsims:Processing channel Channel MFL2
+2022-12-01 18:15:11,253:INFO:mapsims:Bandpass integration for Channel MFL2
+2022-12-01 18:15:13,078:INFO:pysm3:Frequencies considered: [111. 129. 143. 153. 164. 189.]
+2022-12-01 18:15:13,908:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2022-12-01 18:15:13,908:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2022-12-01 18:15:13,910:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2022-12-01 18:15:22,160:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2022-12-01 18:16:46,975:INFO:pysm3:Mean emission at 111.0 GHz in I: 0.8136 uK_RJ
+2022-12-01 18:16:47,907:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0129.0.fits
+2022-12-01 18:16:47,908:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0129.0.fits
+2022-12-01 18:16:47,910:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0129.0.fits
+2022-12-01 18:16:55,792:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0129.0.fits
+2022-12-01 18:18:15,778:INFO:pysm3:Mean emission at 129.0 GHz in I: 0.5486 uK_RJ
+2022-12-01 18:18:15,787:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0143.0.fits
+2022-12-01 18:18:15,788:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0143.0.fits
+2022-12-01 18:18:15,789:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0143.0.fits
+2022-12-01 18:18:25,106:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0143.0.fits
+2022-12-01 18:19:44,994:INFO:pysm3:Mean emission at 143.0 GHz in I: 0.4221 uK_RJ
+2022-12-01 18:19:45,016:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0153.0.fits
+2022-12-01 18:19:45,017:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0153.0.fits
+2022-12-01 18:19:45,018:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0153.0.fits
+2022-12-01 18:19:52,507:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0153.0.fits
+2022-12-01 18:21:12,172:INFO:pysm3:Mean emission at 153.0 GHz in I: 0.357 uK_RJ
+2022-12-01 18:21:12,177:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0164.0.fits
+2022-12-01 18:21:12,178:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0164.0.fits
+2022-12-01 18:21:12,179:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0164.0.fits
+2022-12-01 18:21:20,578:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0164.0.fits
+2022-12-01 18:22:40,510:INFO:pysm3:Mean emission at 164.0 GHz in I: 0.3017 uK_RJ
+2022-12-01 18:22:40,514:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0189.0.fits
+2022-12-01 18:22:40,515:INFO:pysm3:Reading map /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0189.0.fits
+2022-12-01 18:22:40,515:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0189.0.fits
+2022-12-01 18:22:48,925:INFO:pysm3:Access data from /global/project/projectdirs/cmb/www/pysm-data/websky/0.4/radio/radio_0189.0.fits
+2022-12-01 18:24:09,316:INFO:pysm3:Mean emission at 189.0 GHz in I: 0.2159 uK_RJ
+2022-12-01 18:26:13,299:INFO:mapsims:Smoothing and coord-transform for Channel MFL2
+2022-12-01 20:04:12,841:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.69
+2022-12-01 20:23:37,268:INFO:mapsims:Writing output map cmbs4_radio_uKCMB_LAT-MFL2_nside4096_0000.fits
+
+real	130m43.968s
+user	6477m11.503s
+sys	27m37.857s
