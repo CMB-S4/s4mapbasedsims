@@ -92,5 +92,5 @@ In case of any problem with the maps or the documentation or request more/differ
 
 ## Software
 
-* PySM 3: `3.4.0b4`
-* `mapsims` version 2.4.0
+* PySM 3: `3.4.0b5` - includes `d12` color correction, new small scales in Dust and Synchrotron.
+* `mapsims` version 2.5.0
