@@ -20,6 +20,17 @@ For CMB, we both have unlensed and lensed CMB.
 
 We needed also to have a CMB solar dipole, so I created a map for the [HFI 2018 solar dipole](https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/Map-making#HFI_2018_Solar_dipole) and added it to the unlensed CMB component.
 
+## Processing
+
+The simulations are executed by the `mapsims` package version 2.5.0 using the TOML configuration files available on Github.
+In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution, which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates in Spherical Harmonics domain and transformed back to the target resolution.
+
+## Processing
+
+The simulations are executed by the `mapsims` package version 2.5.0 using the TOML configuration files available on Github.
+In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution (referred as "modeling nside" in the code), which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates and beam-smoothed in Spherical Harmonics domain and transformed back to the target resolution. The ell max of the transforms is 2.5 times the
+modeling Nside and it is saved in the metadata of the output FITS maps.
+
 ## Available maps
 
 HEALPix maps at high resolution for LAT (nside 4096) and low resolution for SAT (nside 512), these models are deterministic, so we have a set for each resolution for all channels. All maps are full-sky.
