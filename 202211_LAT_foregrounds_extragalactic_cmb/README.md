@@ -28,7 +28,7 @@ In order to avoid issues in the spectra, no `hp.ud_grade` operations are perform
 ## Processing
 
 The simulations are executed by the `mapsims` package version 2.5.0 using the TOML configuration files available on Github.
-In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution (referred as "modeling nside" in the code), which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates and beam-smoothed in Spherical Harmonics domain and transformed back to the target resolution. The ell max of the transforms is 2.5 times the
+In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution (referred as "modeling nside" in the code), which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates and beam-smoothed in Spherical Harmonics domain (using `map2alm_lsq` with 10 iterations max) and transformed back to the target resolution. The ell max of the transforms is 2.5 times the
 modeling Nside and it is saved in the metadata of the output FITS maps.
 
 ## Available maps
