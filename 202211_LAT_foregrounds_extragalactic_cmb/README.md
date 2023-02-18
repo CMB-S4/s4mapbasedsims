@@ -3,7 +3,8 @@ Foregrounds and CMB for CMB-S4
 
 Released on 21 November 2022 by @zonca
 
-* `dust_high`, `radio` and all combined maps regenerated on 3 December 2022
+* `dust_high`, `radio` and all combined maps regenerated on 3 December 2022 with PySM 3.4.0b5
+* `dust_low`, `dust`, all `synchrotron` and all combined maps regenerated on 17 February 2023 with PySM 3.4.0b6
 
 ## Instrument properties
 
@@ -108,5 +109,5 @@ In case of any problem with the maps or the documentation or request more/differ
 
 ## Software
 
-* PySM 3: `3.4.0b5` - includes `d12` color correction, new small scales in Dust and Synchrotron.
+* PySM 3: `3.4.0b6` - includes `d12` color correction, new small scales in Dust and Synchrotron.
 * `mapsims` version 2.5.0
