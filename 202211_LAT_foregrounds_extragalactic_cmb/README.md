@@ -1,10 +1,12 @@
 Foregrounds and CMB for CMB-S4
 ==============================
 
-Released on 21 November 2022 by @zonca
+## Updates
 
-* `dust_high`, `radio` and all combined maps regenerated on 3 December 2022 with PySM 3.4.0b5
+* all `synchrotron` and all combined maps regenerated on 25 February 2023 with PySM 3.4.0b7
 * `dust_low`, `dust`, all `synchrotron` and all combined maps regenerated on 17 February 2023 with PySM 3.4.0b6
+* `dust_high`, `radio` and all combined maps regenerated on 3 December 2022 with PySM 3.4.0b5
+* first released on 21 November 2022
 
 ## Instrument properties
 
