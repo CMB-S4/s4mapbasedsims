@@ -7,8 +7,8 @@ from astropy.table import QTable
 # from previous map before adding dipole
 extragalactic = ["cib", "ksz", "tsz", "radio"]
 all_combined = {
-    "combined_cmb_unlensed_dipole": ["cmb_unlensed", "dipole"],
-    "combined_cmb_lensing_signal": ["cmb", "-cmb_unlensed"],
+    "combined_cmb_unlensed_dipole": ["cmb_unlensed_solardipole", "dipole"],
+    "combined_cmb_lensing_signal": ["cmb", "-cmb_unlensed_solardipole"],
     "combined_foregrounds_mediumcomplexity": [
         "dust",
         "synchrotron",
@@ -65,7 +65,7 @@ for output_content, components in all_combined.items():
                             m = hp.read_map(
                                 filename, dtype=np.float64, field=(0, 1, 2), nest=True
                             )
-                            if content == "cmb_unlensed":
+                            if content == "cmb_unlensed_solardipole":
                                 m[0] = hp.remove_dipole(m[0], nest=True)
                             combined_map += sign * m
                         except IndexError:
