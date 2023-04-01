@@ -44,7 +44,7 @@ I tried to be exhaustive in saving all metadata in the FITS headers.
 
 **Location at NERSC**:
 
-    /global/cfs/cdirs/cmbs4/dm/mbs/202211_LAT_fg_cmb
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky
 
 The naming convention is:
 
@@ -87,7 +87,7 @@ See [`combine_maps.py`](./combine_maps.py) for details.
 
 They are in the same folder and same naming convention, e.g.:
 
-    /global/cfs/cdirs/cmbs4/dm/mbs/202211_LAT_fg_cmb/4096/combined_foregrounds_cmb_fixdip_lowcomplexity/0000/cmbs4_combined_foregrounds_cmb_fixdip_lowcomplexity_uKCMB_LAT-MFL2_nside4096_0000.fits
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky/4096/combined_foregrounds_cmb_fixdip_lowcomplexity/0000/cmbs4_combined_foregrounds_cmb_fixdip_lowcomplexity_uKCMB_LAT-MFL2_nside4096_0000.fits
 
 ## Plots and verification
 
