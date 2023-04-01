@@ -7,8 +7,8 @@ from astropy.table import QTable
 # from previous map before adding dipole
 extragalactic = ["cib", "ksz", "tsz", "radio"]
 all_combined = {
-    "combined_cmb_unlensed_dipole": ["cmb_unlensed_solardipole", "dipole"],
-    "combined_cmb_lensing_signal": ["cmb", "-cmb_unlensed_solardipole"],
+    "combined_cmb_unlensed_dipole": ["cmb_unlensed_solardipole", "dipole"], # the script removes the solar dipole from cmb_unlensed_solardipole
+    "combined_cmb_lensing_signal": ["cmb", "-cmb_unlensed_solardipole"], # the script removes the solar dipole from cmb_unlensed_solardipole
     "combined_foregrounds_mediumcomplexity": [
         "dust",
         "synchrotron",
