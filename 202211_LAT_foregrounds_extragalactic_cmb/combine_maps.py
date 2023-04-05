@@ -47,7 +47,7 @@ for output_content, components in all_combined.items():
         nside = 512 if telescope == "SAT" else 4096
         for row in s4:
             band = row["band"]
-            if row["telescope"] == telescope:
+            if row["telescope"] == telescope and "P" not in band:
                 output_filename = f"output_lsq/{nside}/{output_content}/{num:04d}/cmbs4_{output_content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
                 if not os.path.exists(output_filename):
                     combined_map = np.zeros((3, hp.nside2npix(nside)), dtype=np.float64)
