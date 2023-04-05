@@ -26,23 +26,24 @@ for simulation_type in sims:
     minutes = 30
     nside = 4096
     for channel in chs:
-        tag = channel.tag.replace(" ", "_")
-        filename = f"job_{simulation_type}_{nside}_{tag}.slurm"
-        with open(folder / filename, "w") as f:
-            print(f"sbatch jobs/{filename} &")
-            f.write(
-                template.format(
-                    simulation_type=simulation_type,
-                    nside=nside,
-                    hours=hours,
-                    minutes=minutes,
-                    channels=tag,
-                    run_channels=tag,
-                    config_file=config_file,
+        if "P" not in channel.tag: # only Chile
+            tag = channel.tag.replace(" ", "_")
+            filename = f"job_{simulation_type}_{nside}_{tag}.slurm"
+            with open(folder / filename, "w") as f:
+                print(f"sbatch jobs/{filename} &")
+                f.write(
+                    template.format(
+                        simulation_type=simulation_type,
+                        nside=nside,
+                        hours=hours,
+                        minutes=minutes,
+                        channels=tag,
+                        run_channels=tag,
+                        config_file=config_file,
+                    )
                 )
-            )
 
-        subprocess.run(["sbatch", f"jobs/{filename}"])
+            subprocess.run(["sbatch", f"jobs/{filename}"])
     #nside = 512
     #filename = f"job_{simulation_type}_{nside}_LAT.slurm"
     #with open(folder / filename, "w") as f:
