@@ -3,10 +3,11 @@ Foregrounds and CMB for CMB-S4
 
 ## Updates
 
-* all `synchrotron` and all combined maps regenerated on 25 February 2023 with PySM 3.4.0b7
-* `dust_low`, `dust`, all `synchrotron` and all combined maps regenerated on 17 February 2023 with PySM 3.4.0b6
-* `dust_high`, `radio` and all combined maps regenerated on 3 December 2022 with PySM 3.4.0b5
-* first released on 21 November 2022
+* 5 April 2023: discovered bug in solar dipole removal from `cmb_unlensed_solardipole` leaving relativistic quadrupole in the map, this affects all the previously created combined maps, see #22, created a new component named `cmb_unlensed` and used it to created new combined maps. Still using PySM 3.4.0b7.
+* 25 February 2023: all `synchrotron` and all combined maps regenerated with PySM 3.4.0b7
+* 17 February 2023: `dust_low`, `dust`, all `synchrotron` and all combined maps regenerated with PySM 3.4.0b6
+* 3 December 2022: `dust_high`, `radio` and all combined maps regenerated with PySM 3.4.0b5
+* 21 November 2022: first release
 
 ## Instrument properties
 
@@ -31,8 +32,7 @@ In order to avoid issues in the spectra, no `hp.ud_grade` operations are perform
 ## Processing
 
 The simulations are executed by the `mapsims` package version 2.5.0 using the TOML configuration files available on Github.
-In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution (referred as "modeling nside" in the code), which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates and beam-smoothed in Spherical Harmonics domain (using `map2alm_lsq` with 10 iterations max) and transformed back to the target resolution. The ell max of the transforms is 2.5 times the
-modeling Nside and it is saved in the metadata of the output FITS maps.
+In order to avoid issues in the spectra, no `hp.ud_grade` operations are performed, each model is executed at its native resolution (referred as "modeling nside" in the code), which is 512 for the PySM 2 based models, like `f1` and 4096 for all the new models and for the extragalactic and CMB component, then the maps are rotated to Equatorial coordinates and beam-smoothed in Spherical Harmonics domain (using `map2alm_lsq` with 10 iterations max) and transformed back to the target resolution. The ell max of the transforms is 2.5 times the modeling Nside and it is saved in the metadata of the output FITS maps.
 
 ## Available maps
 
@@ -42,9 +42,9 @@ Reference frame for the maps is **Equatorial**, pixel ordering is NESTED.
 The `ell_max` for the harmonics transform is `2.5*Nside`.
 I tried to be exhaustive in saving all metadata in the FITS headers.
 
-**Location at NERSC**:
+**Location at NERSC**, notice they are now in the `raw/` subfolder:
 
-    /global/cfs/cdirs/cmbs4/dc/dc0/sky
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky/raw/
 
 The naming convention is:
 
@@ -53,7 +53,7 @@ The naming convention is:
 where:
 
 * `content` is `[dust, synchtrotron, freefree, ame, co]` for galactic components and `[ksz, tsz, cib, radio]` for extragalactic components
-* `content` for the available CMB is `[cmb, cmb_unlensed_solardipole]`, the unlensed CMB map includes a dipole generated in Equatorial reference frame, but for Websky we assumed a Galactic reference frame, so I removed this dipole when creating the combined maps.
+* `content` for the available CMB is `[cmb, cmb_unlensed]`, the CMB maps have no solar dipole
 * `num` is `0`
 * `telescope` is `LAT`
 * `band` is the channel band
@@ -77,17 +77,24 @@ If you are not sure what component was used, you can check the `toml` configurat
 
 ## Combined maps
 
-Also created a single set of maps which is the sum of all components for medium, high and low complexity of the Galactic components, while extragalactic and CMB are the same (we are using Unlensed CMB for time domain simulations):
+Also created a single set of maps to be used as input to the DC-0 simulations, available at:
 
-* `combined_foregrounds_cmb_fixdip`
-* `combined_foregrounds_cmb_fixdip_highcomplexity`
-* `combined_foregrounds_cmb_fixdip_lowcomplexity`
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky/
+
+* `combined_cmb_unlensed_dipole`: Unlensed CMB with Planck HFI 2018 dipole
+* `combined_cmb_lensing_signal`: `cmb` lensed map - `cmb_unlensed` map
+* `combined_foregrounds_mediumcomplexity`: all Galactic and Extragalactic foregrounds, including SZ
+
+we also have the same foreground maps for the other models, not used in DC-0:
+
+* `combined_foregrounds_lowcomplexity`
+* `combined_foregrounds_highcomplexity`
 
 See [`combine_maps.py`](./combine_maps.py) for details.
 
 They are in the same folder and same naming convention, e.g.:
 
-    /global/cfs/cdirs/cmbs4/dc/dc0/sky/4096/combined_foregrounds_cmb_fixdip_lowcomplexity/0000/cmbs4_combined_foregrounds_cmb_fixdip_lowcomplexity_uKCMB_LAT-MFL2_nside4096_0000.fits
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky/4096/combined_foregrounds_lowcomplexity/0000/cmbs4_combined_foregrounds_lowcomplexity_uKCMB_LAT-MFL2_nside4096_0000.fits
 
 ## Plots and verification
 
@@ -99,7 +106,6 @@ In progress
 
 ## External analysis
 
-
 ## Issues or feedback
 
 In case of any problem with the maps or the documentation or request more/different runs, [open an issue on the `s4mapbasedsims` repo](https://github.com/CMB-S4/s4mapbasedsims/issues)
@@ -107,9 +113,3 @@ In case of any problem with the maps or the documentation or request more/differ
 ### Known issues
 
 * The first release of this simulation used PySM `3.4.0b4` which was missing color correction in the `d12` maps, so affecting only the high-complexity model. It also had no radio galaxies, which were not validated yet. The maps produced in that first run are available in the `obsolete/` subfolder.
-
-
-## Software
-
-* PySM 3: `3.4.0b6` - includes `d12` color correction, new small scales in Dust and Synchrotron.
-* `mapsims` version 2.5.0
