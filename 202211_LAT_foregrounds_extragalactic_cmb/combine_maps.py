@@ -5,28 +5,35 @@ from astropy.table import QTable
 
 # Dipole needs to be the last component, I remove dipole
 # from previous map before adding dipole
+extragalactic = ["cib", "ksz", "tsz", "radio"]
 all_combined = {
-    "combined_foregrounds_cmb_fixdip": ["dust", "synchrotron", "freefree", "ame", "co"] + ["cib", "ksz", "tsz", "radio"] + ["cmb_unlensed_solardipole", "dipole"],
-    "combined_foregrounds_cmb_fixdip_lowcomplexity": [
+    "combined_cmb_unlensed_dipole": ["cmb_unlensed", "dipole"],
+    "combined_cmb_lensing_signal": ["cmb", "-cmb_unlensed"],
+    "combined_foregrounds_mediumcomplexity": [
+        "dust",
+        "synchrotron",
+        "freefree",
+        "ame",
+        "co",
+    ]
+    + extragalactic,
+    "combined_foregrounds_lowcomplexity": [
         "dust_low",
         "synchrotron_low",
         "freefree",
         "ame",
         "co_low",
     ]
-    + ["cib", "ksz", "tsz", "radio"]
-    + ["cmb_unlensed_solardipole", "dipole"],
-    "combined_foregrounds_cmb_fixdip_highcomplexity": [
+    + extragalactic,
+    "combined_foregrounds_highcomplexity": [
         "dust_high",
         "synchrotron_high",
         "freefree",
         "ame_high",
         "co",
     ]
-    + ["cib", "ksz", "tsz", "radio"]
-    + ["cmb_unlensed_solardipole", "dipole"],
+    + extragalactic,
 }
-# all_combined["combined_foregrounds_cmb_fixdip"] = all_combined["combined_foregrounds_cmb_fixdip"] + ["radio"]
 
 s4 = QTable.read(
     "../202102_design_tool_run/instrument_model/cmbs4_instrument_model.tbl",
@@ -40,8 +47,8 @@ for output_content, components in all_combined.items():
         nside = 512 if telescope == "SAT" else 4096
         for row in s4:
             band = row["band"]
-            if row["telescope"] == telescope:
-                output_filename = f"output_lsq/{nside}/{output_content}/{num:04d}/cmbs4_{output_content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
+            if row["telescope"] == telescope and "P" not in band:
+                output_filename = f"/global/cfs/cdirs/cmbs4/dc/dc0/sky/{nside}/{output_content}/{num:04d}/cmbs4_{output_content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
                 if not os.path.exists(output_filename):
                     combined_map = np.zeros((3, hp.nside2npix(nside)), dtype=np.float64)
                     for content in components:
@@ -58,8 +65,6 @@ for output_content, components in all_combined.items():
                             m = hp.read_map(
                                 filename, dtype=np.float64, field=(0, 1, 2), nest=True
                             )
-                            if content == "cmb_unlensed_solardipole":
-                                m[0] = hp.remove_dipole(m[0], nest=True)
                             combined_map += sign * m
                         except IndexError:
                             print("T only map")
