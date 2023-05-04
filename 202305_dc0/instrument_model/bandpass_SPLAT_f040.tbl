@@ -1,0 +1,18 @@
+\ Text file in IPAC table format, read with astropy
+\ from astropy.table import QTable
+\ QTable.read('filename.tbl', format='ascii.ipac')
+\ Instrument model exported from `s4sim`, version eb6039d
+|bandpass_frequency|bandpass_weight|
+|            double|         double|
+|               GHz|               |
+|              null|           null|
+               28.0             1.0 
+  29.88888888888889             1.0 
+  31.77777777777778             1.0 
+ 33.666666666666664             1.0 
+  35.55555555555556             1.0 
+  37.44444444444444             1.0 
+  39.33333333333333             1.0 
+  41.22222222222222             1.0 
+ 43.111111111111114             1.0 
+               45.0             1.0 
