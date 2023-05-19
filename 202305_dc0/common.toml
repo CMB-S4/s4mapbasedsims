@@ -9,5 +9,4 @@ output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_000
 unit = "uK_CMB"
 num = 0
 output_reference_frame = "C"
-mapsims_version = "2.5.0"
 instrument_parameters = "instrument_model/cmbs4_instrument_model.tbl"
