@@ -1,0 +1,4 @@
+tag = "cmb_unlensed"
+
+[ pysm_components ]
+pysm_components_string = "c3"
