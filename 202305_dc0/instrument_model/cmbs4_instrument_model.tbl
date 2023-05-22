@@ -1,29 +1,29 @@
 \ Text file in IPAC table format, read with astropy
 \ from astropy.table import QTable
 \ QTable.read('filename.tbl', format='ascii.ipac')
-\ Instrument model exported from `s4sim`, version eb6039d
-|      band|telescope| site|center_frequency|  fwhm|      NET|nside|          bandpass_file|
-|      char|     char| char|          double|double|   double| long|                   char|
-|          |         |     |             GHz|arcmin|s(1/2) uK|     |                       |
-|      null|     null| null|            null|  null|     null| null|                   null|
- SPLAT_f020       LAT  Pole             20.0   11.2     421.0  4096 bandpass_SPLAT_f020.tbl 
- SPLAT_f030       LAT  Pole            24.75    9.1     407.0  4096 bandpass_SPLAT_f030.tbl 
- CHLAT_f030       LAT Chile            25.75    7.4     307.7  4096 bandpass_CHLAT_f030.tbl 
- SPLAT_f040       LAT  Pole             36.5    6.2     260.0  4096 bandpass_SPLAT_f040.tbl 
- CHLAT_f040       LAT Chile            38.75    5.1     240.7  4096 bandpass_CHLAT_f040.tbl 
- SPLAT_f090       LAT  Pole             91.5    2.5     324.0  4096 bandpass_SPLAT_f090.tbl 
- CHLAT_f090       LAT Chile             91.5    2.2     278.1  4096 bandpass_CHLAT_f090.tbl 
- CHLAT_f150       LAT Chile            148.5    1.4     309.6  4096 bandpass_CHLAT_f150.tbl 
- SPLAT_f150       LAT  Pole            148.5    1.5     297.0  4096 bandpass_SPLAT_f150.tbl 
- CHLAT_f220       LAT Chile            227.0    1.0     683.2  4096 bandpass_CHLAT_f220.tbl 
- SPLAT_f220       LAT  Pole            227.0    1.1     580.0  4096 bandpass_SPLAT_f220.tbl 
- CHLAT_f280       LAT Chile            285.5    0.9    1679.7  4096 bandpass_CHLAT_f280.tbl 
- SPLAT_f280       LAT  Pole            285.5    1.0    1327.0  4096 bandpass_SPLAT_f280.tbl 
-   SAT_f030       SAT  Both            24.75   85.2     180.0   512   bandpass_SAT_f030.tbl 
-   SAT_f040       SAT  Both             36.5   61.6     172.0   512   bandpass_SAT_f040.tbl 
-   SAT_f085       SAT  Both             85.0   24.6     283.0   512   bandpass_SAT_f085.tbl 
-   SAT_f095       SAT  Both             95.0   22.4     244.0   512   bandpass_SAT_f095.tbl 
-   SAT_f145       SAT  Both            145.0   15.8     286.0   512   bandpass_SAT_f145.tbl 
-   SAT_f155       SAT  Both            155.0   14.3     307.0   512   bandpass_SAT_f155.tbl 
-   SAT_f220       SAT  Both            227.0    9.4     626.0   512   bandpass_SAT_f220.tbl 
-   SAT_f280       SAT  Both            285.5    7.7    1511.0   512   bandpass_SAT_f280.tbl 
+\ Instrument model exported from `s4sim`, version e20d9ab
+|      band|telescope| site|center_frequency|  fwhm|nside|          bandpass_file|
+|      char|     char| char|          double|double| long|                   char|
+|          |         |     |             GHz|arcmin|     |                       |
+|      null|     null| null|            null|  null| null|                   null|
+ SPLAT_f020       LAT  Pole             20.0   11.2  4096 bandpass_SPLAT_f020.tbl 
+ CHLAT_f030       LAT Chile            24.75    7.8  4096 bandpass_CHLAT_f030.tbl 
+ SPLAT_f030       LAT  Pole            24.75    9.1  4096 bandpass_SPLAT_f030.tbl 
+ CHLAT_f040       LAT Chile             36.5    5.3  4096 bandpass_CHLAT_f040.tbl 
+ SPLAT_f040       LAT  Pole             36.5    6.2  4096 bandpass_SPLAT_f040.tbl 
+ SPLAT_f090       LAT  Pole             91.5    2.5  4096 bandpass_SPLAT_f090.tbl 
+ CHLAT_f090       LAT Chile             91.5    2.1  4096 bandpass_CHLAT_f090.tbl 
+ CHLAT_f150       LAT Chile            148.5    1.3  4096 bandpass_CHLAT_f150.tbl 
+ SPLAT_f150       LAT  Pole            148.5    1.5  4096 bandpass_SPLAT_f150.tbl 
+ CHLAT_f220       LAT Chile            227.0   0.95  4096 bandpass_CHLAT_f220.tbl 
+ SPLAT_f220       LAT  Pole            227.0    1.1  4096 bandpass_SPLAT_f220.tbl 
+ CHLAT_f280       LAT Chile            285.5   0.83  4096 bandpass_CHLAT_f280.tbl 
+ SPLAT_f280       LAT  Pole            285.5    1.0  4096 bandpass_SPLAT_f280.tbl 
+   SAT_f030       SAT  Both            24.75   85.2   512   bandpass_SAT_f030.tbl 
+   SAT_f040       SAT  Both             36.5   61.6   512   bandpass_SAT_f040.tbl 
+   SAT_f085       SAT  Both             85.0   24.6   512   bandpass_SAT_f085.tbl 
+   SAT_f095       SAT  Both             95.0   22.4   512   bandpass_SAT_f095.tbl 
+   SAT_f145       SAT  Both            145.0   15.8   512   bandpass_SAT_f145.tbl 
+   SAT_f155       SAT  Both            155.0   14.3   512   bandpass_SAT_f155.tbl 
+   SAT_f220       SAT  Both            227.0    9.4   512   bandpass_SAT_f220.tbl 
+   SAT_f280       SAT  Both            285.5    7.7   512   bandpass_SAT_f280.tbl 

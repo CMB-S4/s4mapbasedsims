@@ -3,6 +3,8 @@ Sky simulations for Data Challenge 0
 
 ## Updates
 
+2023-05-19: Exported instrument model from `s4sim` tag `e20d9ab`
+
 ## Instrument model
 
 The instrument model has been extracted from `s4sim`,
