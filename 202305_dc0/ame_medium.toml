@@ -1,4 +1,4 @@
-tag = "ame"
+tag = "ame_medium"
 modeling_nside = 512
 
 [pysm_components]

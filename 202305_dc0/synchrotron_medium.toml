@@ -1,4 +1,4 @@
-tag = "synchrotron"
+tag = "synchrotron_medium"
 
 [pysm_components]
 pysm_components_string = "s5"
