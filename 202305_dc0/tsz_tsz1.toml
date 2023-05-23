@@ -1,4 +1,4 @@
-tag = "tsz"
+tag = "tsz_tsz1"
 modeling_nside = 8192
 
 [pysm_components]

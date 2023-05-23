@@ -1,4 +1,4 @@
-tag = "dust_medium"
+tag = "dust_d10"
 
 [pysm_components]
 pysm_components_string = "d10"

@@ -1,4 +1,4 @@
-tag = "freefree_medium"
+tag = "freefree_f1"
 modeling_nside = 512
 
 [pysm_components]
