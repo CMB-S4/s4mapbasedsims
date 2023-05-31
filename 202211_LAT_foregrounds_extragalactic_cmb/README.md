@@ -44,11 +44,11 @@ I tried to be exhaustive in saving all metadata in the FITS headers.
 
 **Location at NERSC**, notice they are now in the `raw/` subfolder:
 
-    /global/cfs/cdirs/cmbs4/dc/dc0/sky/raw/
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky/4096/raw/
 
 The naming convention is:
 
-    {nside}/{content}/{num:04d}/cmbs4_{content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
+    {content}/{num:04d}/cmbs4_{content}_uKCMB_{telescope}-{band}_nside{nside}_{num:04d}.fits"
 
 where:
 
@@ -71,7 +71,7 @@ synchrotron_low
 
 Only exception is the CMB Solar Dipole map:
 
-    {nside}/cmbs4_cmb_solar_dipole_uKCMB_nside{nside}.fits
+    cmbs4_cmb_solar_dipole_uKCMB_nside{nside}.fits
 
 If you are not sure what component was used, you can check the `toml` configuration files inside this repository.
 
