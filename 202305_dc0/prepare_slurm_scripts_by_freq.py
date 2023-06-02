@@ -13,7 +13,7 @@ sims.remove("common")
 from mapsims.channel_utils import parse_channels
 
 instrument_parameters = (
-    "simonsobs_instrument_parameters_2023.03/simonsobs_instrument_parameters_2023.03.tbl"
+    "instrument_model/cmbs4_instrument_model.tbl"
 )
 chs = parse_channels(instrument_parameters=instrument_parameters)
 for simulation_type in sims:
