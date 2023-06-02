@@ -1,0 +1,33 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:26:57,215:INFO:mapsims:Parsing configuration from common.toml, cmb_c3.toml
+2023-06-02 00:26:57,225:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2023-06-02 00:26:57,472:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:26:57,474:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:26:57,475:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:26:57,476:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:26:57,476:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:26:58,899:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:27:00,361:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:27:02,749:INFO:mapsims:Processing channel Channel SPLAT_f220
+2023-06-02 00:27:02,749:INFO:mapsims:Bandpass integration for Channel SPLAT_f220
+2023-06-02 00:27:05,318:INFO:mapsims:Smoothing and coord-transform for Channel SPLAT_f220
+2023-06-02 00:29:13,268:INFO:pysm3:Used map2alm_lsq, converged in 2 iterations,residual relative error 5e-08
+2023-06-02 00:29:13,269:INFO:pysm3:Smoothing with fwhm of 1.1 arcmin
+2023-06-02 00:29:16,861:INFO:pysm3:Rotate Alm
+2023-06-02 00:42:51,347:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:43:05,934:INFO:mapsims:Writing output map cmbs4_cmb_c3_uKCMB_LAT-SPLAT_f220_nside4096.fits
+2023-06-02 00:43:05,935:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:43:06,525:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:43:22,250:INFO:mapsims:Writing output map
+
+real	16m33.788s
+user	409m4.685s
+sys	2m13.687s

@@ -1,0 +1,37 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:39:26,301:INFO:mapsims:Parsing configuration from common.toml, co_co3.toml
+2023-06-02 00:39:26,311:INFO:mapsims:Nside: 512, Modeling Nside: 2048, Ellmax: 1280
+2023-06-02 00:39:26,312:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:39:26,313:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2023-06-02 00:39:26,314:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2023-06-02 00:39:43,761:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2023-06-02 00:39:43,762:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2023-06-02 00:39:44,107:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2023-06-02 00:39:44,108:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2023-06-02 00:39:44,109:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2023-06-02 00:39:44,452:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2023-06-02 00:39:44,453:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/mcmoleCO_HGL_2048.fits
+2023-06-02 00:39:44,454:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/mcmoleCO_HGL_2048.fits
+2023-06-02 00:39:45,653:INFO:mapsims:Processing channel Channel SAT_f145
+2023-06-02 00:39:45,653:INFO:mapsims:Bandpass integration for Channel SAT_f145
+2023-06-02 00:39:47,106:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f145
+2023-06-02 00:39:47,106:INFO:pysm3:Using map2alm with pixel weights
+2023-06-02 00:39:49,140:INFO:pysm3:Smoothing with fwhm of 15.8 arcmin
+2023-06-02 00:39:49,193:INFO:pysm3:Rotate Alm
+2023-06-02 00:39:51,862:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:39:52,100:INFO:mapsims:Writing output map cmbs4_co_co3_uKCMB_SAT-SAT_f145_nside512.fits
+2023-06-02 00:39:52,100:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:39:52,110:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:39:52,297:INFO:mapsims:Writing output map
+
+real	0m28.009s
+user	3m4.998s
+sys	0m10.557s

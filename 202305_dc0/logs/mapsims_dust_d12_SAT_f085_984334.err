@@ -1,0 +1,45 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:30:40,283:INFO:mapsims:Parsing configuration from common.toml, dust_d12.toml
+2023-06-02 00:30:40,309:INFO:mapsims:Nside: 512, Modeling Nside: 2048, Ellmax: 1280
+2023-06-02 00:30:40,311:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:30:42,628:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl1.fits
+2023-06-02 00:32:12,655:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl2.fits
+2023-06-02 00:34:52,895:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl3.fits
+2023-06-02 00:36:34,899:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl4.fits
+2023-06-02 00:36:36,671:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl5.fits
+2023-06-02 00:36:41,112:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl6.fits
+2023-06-02 00:36:49,706:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind1.fits
+2023-06-02 00:36:50,220:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind2.fits
+2023-06-02 00:36:50,959:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind3.fits
+2023-06-02 00:36:52,087:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind4.fits
+2023-06-02 00:36:52,663:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind5.fits
+2023-06-02 00:36:53,249:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind6.fits
+2023-06-02 00:36:54,606:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp1.fits
+2023-06-02 00:36:55,149:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp2.fits
+2023-06-02 00:36:55,936:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp3.fits
+2023-06-02 00:36:56,494:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp4.fits
+2023-06-02 00:36:57,064:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp5.fits
+2023-06-02 00:36:57,569:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp6.fits
+2023-06-02 00:36:58,289:INFO:mapsims:Processing channel Channel SAT_f085
+2023-06-02 00:36:58,289:INFO:mapsims:Bandpass integration for Channel SAT_f085
+2023-06-02 00:41:56,694:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f085
+2023-06-02 00:41:56,695:INFO:pysm3:Using map2alm with pixel weights
+2023-06-02 00:41:58,456:INFO:pysm3:Smoothing with fwhm of 24.6 arcmin
+2023-06-02 00:41:58,508:INFO:pysm3:Rotate Alm
+2023-06-02 00:42:00,971:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:42:01,174:INFO:mapsims:Writing output map cmbs4_dust_d12_uKCMB_SAT-SAT_f085_nside512.fits
+2023-06-02 00:42:01,174:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:42:01,185:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:42:01,423:INFO:mapsims:Writing output map
+
+real	11m23.417s
+user	13m42.979s
+sys	2m5.258s

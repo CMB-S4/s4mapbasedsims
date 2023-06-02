@@ -1,0 +1,53 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:44:12,851:INFO:mapsims:Parsing configuration from common.toml, radio_rg1.toml
+2023-06-02 00:44:12,862:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2023-06-02 00:44:12,863:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:44:13,073:INFO:mapsims:Processing channel Channel SPLAT_f090
+2023-06-02 00:44:13,073:INFO:mapsims:Bandpass integration for Channel SPLAT_f090
+2023-06-02 00:44:13,239:INFO:pysm3:Frequencies considered: [ 73.7  79.6  90.2 100.  111. ]
+2023-06-02 00:44:13,307:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0073.7.fits
+2023-06-02 00:44:13,307:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0073.7.fits
+2023-06-02 00:44:13,308:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0073.7.fits
+2023-06-02 00:45:33,432:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0073.7.fits
+2023-06-02 00:45:37,646:INFO:pysm3:Mean emission at 73.7 GHz in I: 2.397 uK_RJ
+2023-06-02 00:45:37,748:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0079.6.fits
+2023-06-02 00:45:37,749:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0079.6.fits
+2023-06-02 00:45:37,750:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0079.6.fits
+2023-06-02 00:45:59,730:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0079.6.fits
+2023-06-02 00:46:03,440:INFO:pysm3:Mean emission at 79.6 GHz in I: 1.951 uK_RJ
+2023-06-02 00:46:03,441:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0090.2.fits
+2023-06-02 00:46:03,441:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0090.2.fits
+2023-06-02 00:46:03,442:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0090.2.fits
+2023-06-02 00:51:20,394:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0090.2.fits
+2023-06-02 00:51:24,100:INFO:pysm3:Mean emission at 90.2 GHz in I: 1.403 uK_RJ
+2023-06-02 00:51:24,101:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0100.0.fits
+2023-06-02 00:51:24,101:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0100.0.fits
+2023-06-02 00:51:24,102:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0100.0.fits
+2023-06-02 00:55:38,106:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0100.0.fits
+2023-06-02 00:55:41,812:INFO:pysm3:Mean emission at 100.0 GHz in I: 1.07 uK_RJ
+2023-06-02 00:55:41,814:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2023-06-02 00:55:41,814:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2023-06-02 00:55:41,815:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2023-06-02 00:55:57,203:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/radio/radio_0111.0.fits
+2023-06-02 00:56:00,907:INFO:pysm3:Mean emission at 111.0 GHz in I: 0.8136 uK_RJ
+2023-06-02 00:56:26,024:INFO:mapsims:Smoothing and coord-transform for Channel SPLAT_f090
+2023-06-02 01:03:08,669:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.69
+2023-06-02 01:03:08,669:INFO:pysm3:Smoothing with fwhm of 2.5 arcmin
+2023-06-02 01:03:12,237:INFO:pysm3:Rotate Alm
+2023-06-02 01:13:31,717:INFO:pysm3:Alm to map HEALPix
+2023-06-02 01:13:46,265:INFO:mapsims:Writing output map cmbs4_radio_rg1_uKCMB_LAT-SPLAT_f090_nside4096.fits
+2023-06-02 01:13:46,268:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 01:13:46,877:INFO:mapsims:Reorder ring to nest
+2023-06-02 01:14:02,764:INFO:mapsims:Writing output map
+
+real	30m0.231s
+user	505m28.753s
+sys	6m42.800s

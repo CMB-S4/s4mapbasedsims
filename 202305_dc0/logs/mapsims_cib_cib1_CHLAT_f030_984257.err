@@ -1,0 +1,53 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:10:36,085:INFO:mapsims:Parsing configuration from common.toml, cib_cib1.toml
+2023-06-02 00:10:36,095:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2023-06-02 00:10:36,098:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:10:36,318:INFO:mapsims:Processing channel Channel CHLAT_f030
+2023-06-02 00:10:36,318:INFO:mapsims:Bandpass integration for Channel CHLAT_f030
+2023-06-02 00:10:36,506:INFO:pysm3:Frequencies considered: [18.7 21.6 24.5 27.3 30. ]
+2023-06-02 00:10:36,630:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0018.7.fits
+2023-06-02 00:10:36,630:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0018.7.fits
+2023-06-02 00:10:36,630:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0018.7.fits
+2023-06-02 00:10:43,273:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0018.7.fits
+2023-06-02 00:10:47,967:INFO:pysm3:Mean emission at 18.7 GHz in I: 1.008 uK_RJ
+2023-06-02 00:10:48,069:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0021.6.fits
+2023-06-02 00:10:48,069:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0021.6.fits
+2023-06-02 00:10:48,070:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0021.6.fits
+2023-06-02 00:10:57,984:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0021.6.fits
+2023-06-02 00:11:02,178:INFO:pysm3:Mean emission at 21.6 GHz in I: 1.26 uK_RJ
+2023-06-02 00:11:02,179:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0024.5.fits
+2023-06-02 00:11:02,179:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0024.5.fits
+2023-06-02 00:11:02,180:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0024.5.fits
+2023-06-02 00:11:11,217:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0024.5.fits
+2023-06-02 00:11:15,403:INFO:pysm3:Mean emission at 24.5 GHz in I: 1.529 uK_RJ
+2023-06-02 00:11:15,404:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0027.3.fits
+2023-06-02 00:11:15,405:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0027.3.fits
+2023-06-02 00:11:15,405:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0027.3.fits
+2023-06-02 00:11:19,625:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0027.3.fits
+2023-06-02 00:11:23,818:INFO:pysm3:Mean emission at 27.3 GHz in I: 1.805 uK_RJ
+2023-06-02 00:11:23,819:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0030.0.fits
+2023-06-02 00:11:23,819:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0030.0.fits
+2023-06-02 00:11:23,820:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0030.0.fits
+2023-06-02 00:11:27,314:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0030.0.fits
+2023-06-02 00:11:31,502:INFO:pysm3:Mean emission at 30.0 GHz in I: 2.083 uK_RJ
+2023-06-02 00:11:57,978:INFO:mapsims:Smoothing and coord-transform for Channel CHLAT_f030
+2023-06-02 00:18:55,341:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.36
+2023-06-02 00:18:55,341:INFO:pysm3:Smoothing with fwhm of 7.8 arcmin
+2023-06-02 00:18:58,738:INFO:pysm3:Rotate Alm
+2023-06-02 00:29:11,264:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:29:27,048:INFO:mapsims:Writing output map cmbs4_cib_cib1_uKCMB_LAT-CHLAT_f030_nside4096.fits
+2023-06-02 00:29:27,048:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:29:27,783:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:29:43,633:INFO:mapsims:Writing output map
+
+real	19m17.887s
+user	563m32.305s
+sys	6m36.230s

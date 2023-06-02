@@ -1,0 +1,32 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:43:52,928:INFO:mapsims:Parsing configuration from common.toml, ame_a1.toml
+2023-06-02 00:43:52,955:INFO:mapsims:Nside: 512, Modeling Nside: 512, Ellmax: 1280
+2023-06-02 00:43:52,956:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:43:52,957:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_t_new.fits
+2023-06-02 00:43:52,995:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_nu_peak_0.fits
+2023-06-02 00:43:53,208:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2023-06-02 00:43:53,255:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame2_t_new.fits
+2023-06-02 00:43:53,294:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2023-06-02 00:43:53,297:INFO:mapsims:Processing channel Channel SAT_f145
+2023-06-02 00:43:53,297:INFO:mapsims:Bandpass integration for Channel SAT_f145
+2023-06-02 00:44:00,135:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f145
+2023-06-02 00:44:04,896:INFO:pysm3:Used map2alm_lsq, converged in 7 iterations,residual relative error 0.19
+2023-06-02 00:44:04,897:INFO:pysm3:Smoothing with fwhm of 15.8 arcmin
+2023-06-02 00:44:04,944:INFO:pysm3:Rotate Alm
+2023-06-02 00:44:07,421:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:44:07,593:INFO:mapsims:Writing output map cmbs4_ame_a1_uKCMB_SAT-SAT_f145_nside512.fits
+2023-06-02 00:44:07,593:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:44:07,604:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:44:07,831:INFO:mapsims:Writing output map
+
+real	0m17.044s
+user	3m58.058s
+sys	0m57.871s

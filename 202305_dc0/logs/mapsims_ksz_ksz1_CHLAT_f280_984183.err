@@ -1,0 +1,29 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-01 23:54:09,922:INFO:mapsims:Parsing configuration from common.toml, ksz_ksz1.toml
+2023-06-01 23:54:09,931:INFO:mapsims:Nside: 4096, Modeling Nside: 4096, Ellmax: 10240
+2023-06-01 23:54:09,933:INFO:mapsims:Initializing the PySM Sky object
+2023-06-01 23:54:09,934:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2023-06-01 23:54:09,935:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2023-06-01 23:54:11,369:INFO:mapsims:Processing channel Channel CHLAT_f280
+2023-06-01 23:54:11,369:INFO:mapsims:Bandpass integration for Channel CHLAT_f280
+2023-06-01 23:54:20,584:INFO:mapsims:Smoothing and coord-transform for Channel CHLAT_f280
+2023-06-02 00:01:09,152:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.19
+2023-06-02 00:01:09,153:INFO:pysm3:Smoothing with fwhm of 0.83 arcmin
+2023-06-02 00:01:12,731:INFO:pysm3:Rotate Alm
+2023-06-02 00:12:36,510:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:12:51,038:INFO:mapsims:Writing output map cmbs4_ksz_ksz1_uKCMB_LAT-CHLAT_f280_nside4096.fits
+2023-06-02 00:12:51,038:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:12:51,633:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:13:07,260:INFO:mapsims:Writing output map
+
+real	19m5.700s
+user	553m9.195s
+sys	6m21.543s

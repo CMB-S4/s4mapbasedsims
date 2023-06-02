@@ -1,0 +1,29 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:41:56,290:INFO:mapsims:Parsing configuration from common.toml, synchrotron_s5.toml
+2023-06-02 00:41:56,315:INFO:mapsims:Nside: 512, Modeling Nside: 2048, Ellmax: 1280
+2023-06-02 00:41:56,316:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:41:56,317:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_template_nside2048_2023.02.25.fits
+2023-06-02 00:43:53,318:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_beta_nside2048.fits
+2023-06-02 00:43:59,803:INFO:mapsims:Processing channel Channel SAT_f040
+2023-06-02 00:43:59,803:INFO:mapsims:Bandpass integration for Channel SAT_f040
+2023-06-02 00:44:09,081:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f040
+2023-06-02 00:44:09,082:INFO:pysm3:Using map2alm with pixel weights
+2023-06-02 00:44:10,569:INFO:pysm3:Smoothing with fwhm of 61.6 arcmin
+2023-06-02 00:44:10,625:INFO:pysm3:Rotate Alm
+2023-06-02 00:44:14,577:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:44:14,784:INFO:mapsims:Writing output map cmbs4_synchrotron_s5_uKCMB_SAT-SAT_f040_nside512.fits
+2023-06-02 00:44:14,784:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:44:14,792:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:44:15,034:INFO:mapsims:Writing output map
+
+real	2m20.754s
+user	4m25.958s
+sys	0m15.212s

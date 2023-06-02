@@ -1,0 +1,31 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-01 23:49:57,897:INFO:mapsims:Parsing configuration from common.toml, co_co1.toml
+2023-06-01 23:49:57,910:INFO:mapsims:Nside: 4096, Modeling Nside: 2048, Ellmax: 5120
+2023-06-01 23:49:57,913:INFO:mapsims:Initializing the PySM Sky object
+2023-06-01 23:49:57,914:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2023-06-01 23:49:57,915:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2023-06-01 23:50:16,531:INFO:mapsims:Processing channel Channel CHLAT_f150
+2023-06-01 23:50:16,532:INFO:mapsims:Bandpass integration for Channel CHLAT_f150
+2023-06-01 23:50:17,856:INFO:mapsims:Smoothing and coord-transform for Channel CHLAT_f150
+/mnt/home/azonca/mambaforge-pypy3/envs/so/lib/python3.10/site-packages/healpy/sphtfunc.py:414: RuntimeWarning: invalid value encountered in double_scalars
+  return realalm2alm(res[0]), res[3] / norm(maps.reshape((-1,))), res[2]
+2023-06-01 23:50:27,620:INFO:pysm3:Used map2alm_lsq, converged in 0 iterations,residual relative error nan
+2023-06-01 23:50:27,621:INFO:pysm3:Smoothing with fwhm of 1.3 arcmin
+2023-06-01 23:50:28,546:INFO:pysm3:Rotate Alm
+2023-06-01 23:51:43,082:INFO:pysm3:Alm to map HEALPix
+2023-06-01 23:51:53,777:INFO:mapsims:Writing output map cmbs4_co_co1_uKCMB_LAT-CHLAT_f150_nside4096.fits
+2023-06-01 23:51:53,777:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-01 23:51:54,397:INFO:mapsims:Reorder ring to nest
+2023-06-01 23:52:10,353:INFO:mapsims:Writing output map
+
+real	2m26.216s
+user	62m29.550s
+sys	0m48.050s

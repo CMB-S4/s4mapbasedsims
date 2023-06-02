@@ -1,0 +1,29 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:07:10,144:INFO:mapsims:Parsing configuration from common.toml, ksz_ksz1.toml
+2023-06-02 00:07:10,153:INFO:mapsims:Nside: 512, Modeling Nside: 4096, Ellmax: 1280
+2023-06-02 00:07:10,155:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:07:10,157:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2023-06-02 00:07:10,158:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2023-06-02 00:07:11,855:INFO:mapsims:Processing channel Channel SAT_f085
+2023-06-02 00:07:11,855:INFO:mapsims:Bandpass integration for Channel SAT_f085
+2023-06-02 00:07:21,316:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f085
+2023-06-02 00:07:21,317:INFO:pysm3:Using map2alm with pixel weights
+2023-06-02 00:07:26,722:INFO:pysm3:Smoothing with fwhm of 24.6 arcmin
+2023-06-02 00:07:26,773:INFO:pysm3:Rotate Alm
+2023-06-02 00:07:29,109:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:07:29,396:INFO:mapsims:Writing output map cmbs4_ksz_ksz1_uKCMB_SAT-SAT_f085_nside512.fits
+2023-06-02 00:07:29,397:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:07:29,407:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:07:29,612:INFO:mapsims:Writing output map
+
+real	0m21.613s
+user	2m42.881s
+sys	0m11.074s
