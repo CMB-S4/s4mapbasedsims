@@ -101,6 +101,7 @@ See [the README in the verification folder](verification/README.md)
 
 * Websky Radio sources are available only down to 18.7 GHz, the lowest channels have bandpasses to 10 Ghz, so I created a copy of 18.7 GHz and renamed it to 1.0 GHz. This is the border of the band, should not matter much.
 * Websky Radio galaxies have a few sources which have fluxes which are much brigther than in Planck maps, this is due to having a statistical realization without a cut. These sources will need masking, we plan to provide a suitable mask as part of the release. See [the relevant issue](https://github.com/CMB-S4/s4mapbasedsims/issues/23)
+* Websky Radio galaxies emission is not polarized, this is not realistic, see [the relevant issue in the PySM repository](https://github.com/galsci/pysm/issues/162)
 
 ### Issues under investigation
 
