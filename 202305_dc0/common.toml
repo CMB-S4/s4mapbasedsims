@@ -1,4 +1,4 @@
-lmax_over_modeling_nside = 2.5
+lmax_over_nside = 2.5
 healpix = true
 car = false
 output_folder = "output_lsq/{nside}/{tag}/0000"
