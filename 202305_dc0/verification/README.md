@@ -1,10 +1,5 @@
 # DC-0 sky signal simulation verification
 
-## Issues under investigation
-
-* [Spikes in Synchrotron at high ell](https://github.com/CMB-S4/s4mapbasedsims/issues/29)
-* [Drop at ell=2000 in `d10`](https://github.com/CMB-S4/s4mapbasedsims/issues/28)
-
 ## Power spectra
 
 All components except CO and Radio Galaxies
