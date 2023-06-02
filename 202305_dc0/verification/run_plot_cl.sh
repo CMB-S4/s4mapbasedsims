@@ -1,7 +1,7 @@
-for telescope in SPLAT CHLAT
+for telescope in SAT SPLAT CHLAT
 do
-    for pol in I Q U
+    for pol in T E B
     do
-        papermill plot_cl.ipynb out_plot_cl/plot_cl_${telescope}_${pol}.ipynb -p input_telescope $telescope -p pol $pol
+        papermill --prepare-only plot_cl.ipynb out_plot_cl/plot_cl_${telescope}_${pol}.ipynb -p input_telescope $telescope -p pol $pol
     done
 done
