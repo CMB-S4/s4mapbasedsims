@@ -1,0 +1,32 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:43:32,312:INFO:mapsims:Parsing configuration from common.toml, ame_a1.toml
+2023-06-02 00:43:32,339:INFO:mapsims:Nside: 4096, Modeling Nside: 512, Ellmax: 1280
+2023-06-02 00:43:32,341:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:43:32,342:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_t_new.fits
+2023-06-02 00:43:32,381:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_nu_peak_0.fits
+2023-06-02 00:43:32,568:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2023-06-02 00:43:32,693:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame2_t_new.fits
+2023-06-02 00:43:32,728:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2023-06-02 00:43:32,731:INFO:mapsims:Processing channel Channel CHLAT_f280
+2023-06-02 00:43:32,731:INFO:mapsims:Bandpass integration for Channel CHLAT_f280
+2023-06-02 00:43:39,302:INFO:mapsims:Smoothing and coord-transform for Channel CHLAT_f280
+2023-06-02 00:43:43,391:INFO:pysm3:Used map2alm_lsq, converged in 7 iterations,residual relative error 0.19
+2023-06-02 00:43:43,392:INFO:pysm3:Smoothing with fwhm of 0.83 arcmin
+2023-06-02 00:43:43,449:INFO:pysm3:Rotate Alm
+2023-06-02 00:43:46,072:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:43:55,798:INFO:mapsims:Writing output map cmbs4_ame_a1_uKCMB_LAT-CHLAT_f280_nside4096.fits
+2023-06-02 00:43:55,799:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:43:57,505:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:44:13,930:INFO:mapsims:Writing output map
+
+real	0m51.929s
+user	3m51.063s
+sys	1m22.290s

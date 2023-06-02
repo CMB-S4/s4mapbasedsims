@@ -1,0 +1,33 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-02 00:27:50,057:INFO:mapsims:Parsing configuration from common.toml, cmb_c3.toml
+2023-06-02 00:27:50,080:INFO:mapsims:Nside: 512, Modeling Nside: 4096, Ellmax: 1280
+2023-06-02 00:27:50,117:INFO:mapsims:Initializing the PySM Sky object
+2023-06-02 00:27:50,122:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:27:50,124:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:27:50,124:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:27:50,126:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:31:09,547:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:34:06,447:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_unlensed_alm_seed1_nside4096.fits
+2023-06-02 00:34:29,656:INFO:mapsims:Processing channel Channel SAT_f220
+2023-06-02 00:34:29,657:INFO:mapsims:Bandpass integration for Channel SAT_f220
+2023-06-02 00:34:32,362:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f220
+2023-06-02 00:34:32,363:INFO:pysm3:Using map2alm with pixel weights
+2023-06-02 00:34:38,081:INFO:pysm3:Smoothing with fwhm of 9.4 arcmin
+2023-06-02 00:34:38,133:INFO:pysm3:Rotate Alm
+2023-06-02 00:34:40,641:INFO:pysm3:Alm to map HEALPix
+2023-06-02 00:34:40,839:INFO:mapsims:Writing output map cmbs4_cmb_c3_uKCMB_SAT-SAT_f220_nside512.fits
+2023-06-02 00:34:40,839:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 00:34:40,851:INFO:mapsims:Reorder ring to nest
+2023-06-02 00:34:41,109:INFO:mapsims:Writing output map
+
+real	6m53.128s
+user	2m47.178s
+sys	0m10.099s

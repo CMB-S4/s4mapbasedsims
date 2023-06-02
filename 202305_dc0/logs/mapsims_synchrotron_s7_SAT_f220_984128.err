@@ -1,0 +1,30 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-01 23:49:54,900:INFO:mapsims:Parsing configuration from common.toml, synchrotron_s7.toml
+2023-06-01 23:49:54,913:INFO:mapsims:Nside: 512, Modeling Nside: 2048, Ellmax: 1280
+2023-06-01 23:49:54,915:INFO:mapsims:Initializing the PySM Sky object
+2023-06-01 23:49:54,916:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_template_nside2048_2023.02.25.fits
+2023-06-01 23:49:59,148:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_beta_nside2048.fits
+2023-06-01 23:50:01,613:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_curvature_nside2048.fits
+2023-06-01 23:50:03,717:INFO:mapsims:Processing channel Channel SAT_f220
+2023-06-01 23:50:03,718:INFO:mapsims:Bandpass integration for Channel SAT_f220
+2023-06-01 23:50:13,877:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f220
+2023-06-01 23:50:13,883:INFO:pysm3:Using map2alm with pixel weights
+2023-06-01 23:50:15,449:INFO:pysm3:Smoothing with fwhm of 9.4 arcmin
+2023-06-01 23:50:15,504:INFO:pysm3:Rotate Alm
+2023-06-01 23:50:17,787:INFO:pysm3:Alm to map HEALPix
+2023-06-01 23:50:17,994:INFO:mapsims:Writing output map cmbs4_synchrotron_s7_uKCMB_SAT-SAT_f220_nside512.fits
+2023-06-01 23:50:17,994:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-01 23:50:18,003:INFO:mapsims:Reorder ring to nest
+2023-06-01 23:50:18,206:INFO:mapsims:Writing output map
+
+real	0m27.027s
+user	3m38.015s
+sys	0m16.416s
