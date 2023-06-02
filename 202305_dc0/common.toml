@@ -1,8 +1,8 @@
 lmax_over_nside = 2.5
 healpix = true
 car = false
-output_folder = "output_lsq/{nside}/{tag}/0000"
-output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}_0000.fits"
+output_folder = "output/{tag}"
+output_filename_template= "cmbs4_{tag}_uKCMB_{telescope}-{band}_nside{nside}.fits"
 unit = "uK_CMB"
 num = 0
 output_reference_frame = "C"
