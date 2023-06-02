@@ -22,3 +22,12 @@ WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.
 2023-06-02 07:13:50,537:INFO:pysm3:Used map2alm_lsq, converged in 2 iterations,residual relative error 4.7e-08
 2023-06-02 07:13:50,539:INFO:pysm3:Smoothing with fwhm of 7.8 arcmin
 2023-06-02 07:13:53,937:INFO:pysm3:Rotate Alm
+2023-06-02 07:27:11,426:INFO:pysm3:Alm to map HEALPix
+2023-06-02 07:27:27,493:INFO:mapsims:Writing output map cmbs4_cmb_c4_uKCMB_LAT-CHLAT_f030_nside4096.fits
+2023-06-02 07:27:27,493:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-02 07:27:28,323:INFO:mapsims:Reorder ring to nest
+2023-06-02 07:27:44,507:INFO:mapsims:Writing output map
+
+real	16m38.608s
+user	487m44.550s
+sys	2m12.435s
