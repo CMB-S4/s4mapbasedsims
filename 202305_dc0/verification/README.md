@@ -13,3 +13,7 @@ All components except CO and Radio Galaxies
 * [SPLAT T](https://nbviewer.org/gist/zonca/96f99de0963ae519d5487b16acb7f9f5)
 * [SPLAT E](https://nbviewer.org/gist/zonca/cc28f8206efcba55884af518e2d7e0ea)
 * [SPLAT B](https://nbviewer.org/gist/zonca/e651e69af46bf11cf049691573e74a1b)
+
+## CO Lines
+
+[Verify CO Lines notebook](verify_CO.ipynb)
