@@ -48,8 +48,13 @@ for output_content, components in all_combined.items():
         band = row["band"]
         print(band)
         nside = 512 if row["telescope"] == "SAT" else 4096
-        output_filename = output_folder / f"{output_content}/cmbs4_{output_content}_uKCMB_{band}_nside{nside}.fits"
-        if not os.path.exists(output_filename):
+        output_filename = (
+            output_folder
+            / f"{output_content}/cmbs4_{output_content}_uKCMB_{band}_nside{nside}.fits"
+        )
+        if os.path.exists(output_filename):
+            print("skip", output_filename)
+        else:
             combined_map = np.zeros((3, hp.nside2npix(nside)), dtype=np.float64)
             for content in components:
                 print(content)
@@ -58,9 +63,15 @@ for output_content, components in all_combined.items():
                     sign = -1
                     content = content[1:]
                 if content == "dipole":
-                    filename = output_folder / f"dipole/cmbs4_cmb_solar_dipole_uKCMB_nside{nside}.fits"
+                    filename = (
+                        output_folder
+                        / f"dipole/cmbs4_cmb_solar_dipole_uKCMB_nside{nside}.fits"
+                    )
                 else:
-                    filename = output_folder / f"{content}/cmbs4_{content}_uKCMB_{band}_nside{nside}.fits"
+                    filename = (
+                        output_folder
+                        / f"{content}/cmbs4_{content}_uKCMB_{band}_nside{nside}.fits"
+                    )
                 try:
                     m = hp.read_map(
                         filename, dtype=np.float64, field=(0, 1, 2), nest=True
