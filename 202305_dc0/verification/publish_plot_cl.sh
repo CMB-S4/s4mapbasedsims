@@ -1,5 +1,4 @@
-#for telescope in SAT SPLAT CHLAT
-for telescope in CHLAT SPLAT
+for telescope in SAT SPLAT CHLAT
 do
     for pol in T E B
     do
