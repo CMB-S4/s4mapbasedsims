@@ -3,6 +3,7 @@ Sky simulations for Data Challenge 0
 
 ## Updates
 
+* 2023-06-29: Reran Dust due to [missing power at high ell due to bug in PySM 3.4.0b8](https://github.com/CMB-S4/s4mapbasedsims/issues/28)
 * 2023-06-02: Executed maps
 * 2023-05-19: Exported instrument model from `s4sim` tag `e20d9ab`
 
@@ -83,7 +84,7 @@ ELL_MAX =                10240
 
 ## Model execution
 
-Simulations were run using `mapsims 2.6.0` to coordinate the execution of `PySM 3.4.0b8`.
+Simulations were run using `mapsims 2.6.0` to coordinate the execution of `PySM 3.4.0b9`.
 Given that each channel requested a different resolution, we have followed some guidelines, agreed with the Panexperiment Galactic science group:
 
 * We have 2 resolution parameters, the output Nside is the requested resolution of the output map as defined in the instrument model. The modeling Nside instead is the resolution used to run PySM, then the output of PySM is transformed to Alm, beam-smoothed, rotated to Equatorial and anti-transformed to the output Nside. No `ud_grade` operations are ever performed.
@@ -102,11 +103,7 @@ See [the README in the verification folder](verification/README.md)
 * Websky Radio sources are available only down to 18.7 GHz, the lowest channels have bandpasses to 10 Ghz, so I created a copy of 18.7 GHz and renamed it to 1.0 GHz. This is the border of the band, should not matter much.
 * Websky Radio galaxies have a few sources which have fluxes which are much brigther than in Planck maps, this is due to having a statistical realization without a cut. These sources will need masking, we plan to provide a suitable mask as part of the release. See [the relevant issue](https://github.com/CMB-S4/s4mapbasedsims/issues/23)
 * Websky Radio galaxies emission is not polarized, this is not realistic, see [the relevant issue in the PySM repository](https://github.com/galsci/pysm/issues/162)
-
-### Issues under investigation
-
-* [Spikes in Synchrotron at high ell](https://github.com/CMB-S4/s4mapbasedsims/issues/29)
-* [Drop at ell=2000 in `d10`](https://github.com/CMB-S4/s4mapbasedsims/issues/28)
+* [Spikes in Synchrotron at high ell](https://github.com/CMB-S4/s4mapbasedsims/issues/29) if Galaxy is not masked. This should not affect much analysis, the galactic plane is always masked.
 
 ## Feedback
 
