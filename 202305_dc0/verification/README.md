@@ -4,6 +4,10 @@
 
 All components except CO and Radio Galaxies
 
+### Obsolete power spectra
+
+First release with missing power at high ell in `dust`
+
 * [SAT T](https://nbviewer.org/gist/zonca/064437a8a988666a52288836e5a40fbb)
 * [SAT E](https://nbviewer.org/gist/zonca/5a77d7e3d02de90f28327408034da02f)
 * [SAT B](https://nbviewer.org/gist/zonca/5a81e11324d95407a5a34226851c8e3e)
