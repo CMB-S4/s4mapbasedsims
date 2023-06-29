@@ -1,0 +1,30 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2023-06-28 16:30:48,393:INFO:mapsims:Parsing configuration from common.toml, dust_d10.toml
+2023-06-28 16:30:48,414:INFO:mapsims:Nside: 512, Modeling Nside: 2048, Ellmax: 1280
+2023-06-28 16:30:48,417:INFO:mapsims:Initializing the PySM Sky object
+2023-06-28 16:30:48,421:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/dust_gnilc/gnilc_dust_template_nside2048.fits
+2023-06-28 16:31:10,923:INFO:pysm3:Retrieve data for dust_gnilc/gnilc_dust_beta_nside2048_2023.06.06.fits (if not cached already)
+2023-06-28 16:31:11,317:INFO:pysm3:Retrieve data for dust_gnilc/gnilc_dust_Td_nside2048_2023.06.06.fits (if not cached already)
+2023-06-28 16:31:11,663:INFO:mapsims:Processing channel Channel SAT_f220
+2023-06-28 16:31:11,663:INFO:mapsims:Bandpass integration for Channel SAT_f220
+2023-06-28 16:32:00,882:INFO:mapsims:Smoothing and coord-transform for Channel SAT_f220
+2023-06-28 16:32:00,891:INFO:pysm3:Using map2alm with pixel weights
+2023-06-28 16:32:02,382:INFO:pysm3:Smoothing with fwhm of 9.4 arcmin
+2023-06-28 16:32:02,437:INFO:pysm3:Rotate Alm
+2023-06-28 16:32:04,801:INFO:pysm3:Alm to map HEALPix
+2023-06-28 16:32:04,982:INFO:mapsims:Writing output map cmbs4_dust_d10_uKCMB_SAT_f220_nside512.fits
+2023-06-28 16:32:04,982:INFO:mapsims:Replace NaN with UNSEEN
+2023-06-28 16:32:04,991:INFO:mapsims:Reorder ring to nest
+2023-06-28 16:32:05,180:INFO:mapsims:Writing output map
+
+real	1m26.463s
+user	3m57.856s
+sys	0m22.699s
