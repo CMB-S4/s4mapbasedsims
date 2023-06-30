@@ -64,7 +64,7 @@ Each of the 17 components is available separately, see the TOML files in this re
 
 **Location at NERSC**, this is a temporary folder:
 
-    /global/cscratch1/sd/zonca/cmbs4/map_based_simulations/202305_dc0
+    /pscratch/sd/z/zonca/cmbs4/202305_dc0
 
 ## Metadata
 
