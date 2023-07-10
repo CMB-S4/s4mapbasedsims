@@ -10,7 +10,7 @@ all_combined = {
     "combined_cmb_lensing_signal": ["cmb_c4", "-cmb_c3"],
     "combined_foregrounds_mediumcomplexity": [
         "dust_d10",
-        "synchrotron_s4",
+        "synchrotron_s5",
         "freefree_f1",
         "ame_a1",
         "co_co3",
@@ -18,7 +18,7 @@ all_combined = {
     + extragalactic,
     "combined_foregrounds_lowcomplexity": [
         "dust_d9",
-        "synchrotron_s5",
+        "synchrotron_s4",
         "freefree_f1",
         "ame_a1",
         "co_co1",
