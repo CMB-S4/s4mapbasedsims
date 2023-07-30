@@ -66,6 +66,23 @@ Each of the 17 components is available separately, see the TOML files in this re
 
     /pscratch/sd/z/zonca/cmbs4/202305_dc0
 
+## Combined maps
+
+Also created a single set of maps to be used as input to the DC-0 simulations, available in the same folder.
+
+* `combined_cmb_unlensed_dipole`: Unlensed CMB with Planck HFI 2018 dipole
+* `combined_cmb_lensing_signal`: `cmb` lensed map - `cmb_unlensed` map
+* `combined_foregrounds_mediumcomplexity`: all Galactic and Extragalactic foregrounds, including SZ
+
+we also have the same foreground maps for the other models, not used in DC-0:
+
+* `combined_foregrounds_lowcomplexity`
+* `combined_foregrounds_highcomplexity`
+
+See [`combine_maps.py`](./combine_maps.py) for details.
+
+They are in the same folder and same naming convention.
+
 ## Metadata
 
 Most useful metadata is available in the FITS header of the HEALPix maps, for example:
