@@ -3,6 +3,7 @@ Sky simulations for Data Challenge 0
 
 ## Updates
 
+* 2023-09-11: Copied data to Community File System at NERSC
 * 2023-06-29: Reran Dust due to [missing power at high ell due to bug in PySM 3.4.0b8](https://github.com/CMB-S4/s4mapbasedsims/issues/28)
 * 2023-06-02: Executed maps
 * 2023-05-19: Exported instrument model from `s4sim` tag `e20d9ab`
@@ -62,9 +63,9 @@ See [`common.toml`](common.toml) for the naming convention.
 
 Each of the 17 components is available separately, see the TOML files in this repository for the configuration used to run PySM for each component.
 
-**Location at NERSC**, this is a temporary folder:
+**Location at NERSC**:
 
-    /pscratch/sd/z/zonca/cmbs4/202305_dc0
+    /global/cfs/cdirs/cmbs4/dc/dc0/sky
 
 ## Combined maps
 
