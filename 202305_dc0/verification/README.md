@@ -2,7 +2,9 @@
 
 ## Power spectra
 
-All components except CO and Radio Galaxies
+All components except CO and Radio Galaxies,
+the B Spectra of the CMB components are affected by high noise due to `ud_grade` performed in the on-the-fly run with PySM inside the notebook.
+If the run is properly executed at Nside 4096, no artificial noise is visible anymore.
 
 * [SAT T](https://nbviewer.org/gist/zonca/8c56ea1ae49037efd6bb6f265905aef3)
 * [SAT E](https://nbviewer.org/gist/zonca/0d91eb04cb37f768fc0f10b7919eebb7)
