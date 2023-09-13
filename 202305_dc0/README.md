@@ -67,6 +67,10 @@ Each of the 17 components is available separately, see the TOML files in this re
 
     /global/cfs/cdirs/cmbs4/dc/dc0/sky
 
+    or
+
+    /global/cfs/cdirs/cmbs4xlb/v1/fg/s4
+
 ## Combined maps
 
 Also created a single set of maps to be used as input to the DC-0 simulations, available in the same folder.
