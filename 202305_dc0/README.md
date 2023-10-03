@@ -12,6 +12,7 @@ Sky simulations for Data Challenge 0
 
 Full sky simulations for all CMB-S4 frequency channels for LAT deployed in Chile (CHLAT), SAT deployed at South Pole (SPLAT) and SAT of Galactic/Extragalactic foregrounds and CMB. The dataset includes Galactic foreground models at 3 different levels of complexity.
 The instrument model assumes Gaussian beams and top-hat bandpasses.
+Top-hat bandpasses were assumed to be **flat in power units [MJy/sr]**, this is different from other CMB-S4 work where instead top-hat means flat in RJ units, see [this post on Confluence (restricted)](https://cmb-s4.atlassian.net/wiki/spaces/XC/pages/1318518785/Bandpass+Convention+-+What+does+flat+mean).
 
 ## Instrument model
 
@@ -128,6 +129,7 @@ See [the README in the verification folder](verification/README.md)
 * Websky Radio galaxies have a few sources which have fluxes which are much brigther than in Planck maps, this is due to having a statistical realization without a cut. These sources will need masking, we plan to provide a suitable mask as part of the release. See [the relevant issue](https://github.com/CMB-S4/s4mapbasedsims/issues/23)
 * Websky Radio galaxies emission is not polarized, this is not realistic, see [the relevant issue in the PySM repository](https://github.com/galsci/pysm/issues/162)
 * [Spikes in Synchrotron at high ell](https://github.com/CMB-S4/s4mapbasedsims/issues/29) if Galaxy is not masked. This should not affect much analysis, the galactic plane is always masked.
+* See the notice in the Summary about the meaning of top-hat bandpasses
 
 ## Feedback
 
