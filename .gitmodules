@@ -1,0 +1,3 @@
+[submodule "private"]
+	path = private
+	url = git@github.com:CMB-S4/s4mapbasedsims-private.git
