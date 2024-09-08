@@ -14,7 +14,7 @@ Full sky simulations for all SPT-3G frequency channels of Galactic/Extragalactic
 
 The instrument model has been created from files provided by the SPT-3G team, full description of the instrument is available in the ["The Design and Integrated Performance of SPT-3G
 " paper](https://arxiv.org/abs/2106.11202).
-We used measured bandpasses and isotropic but realistic beams, i.e. we start from $`B_\ell`$ instead of a simple FWHM.
+We used measured bandpasses and isotropic but realistic beams, i.e. we start from $`B_\ell`$ instead of a simple FWHM, beams were normalized on the maximum value.
 
 
 See the [notebook script for more details](utils/create_instrument_parameters.ipynb), the instrument parameters have been extracted to
