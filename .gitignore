@@ -8,3 +8,5 @@ bk
 in
 run
 __pycache__
+*.out
+*.err
