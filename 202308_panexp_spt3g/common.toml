@@ -1,4 +1,5 @@
 lmax_over_nside = 2.5
+nside = 2048
 healpix = true
 car = false
 output_folder = "output/{tag}"
