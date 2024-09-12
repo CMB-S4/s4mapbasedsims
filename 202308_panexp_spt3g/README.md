@@ -3,6 +3,7 @@ PySM Foreground and CMB simulations for South Pole Telescope
 
 ## Updates
 
+* 2024-09-11: Published
 * 2024-09-07: Started map execution
 * 2023-08-23: Created input instrument model
 
@@ -64,8 +65,11 @@ See [`common.toml`](common.toml) for the naming convention.
 
 Each of the 17 components is available separately, see the TOML files in this repository for the configuration used to run PySM for each component.
 
-**Location at NERSC**, this is a temporary folder:
+**Location at NERSC**, accessible to all NERSC users:
 
+    /global/cfs/cdirs/cmb/gsharing/spt3g
+
+The release is also published on the [CMB-S4 Data Portal](https://data.cmb-s4.org).
 
 ## Combined maps
 
