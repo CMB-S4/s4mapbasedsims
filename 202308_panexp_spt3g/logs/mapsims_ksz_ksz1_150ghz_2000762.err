@@ -1,0 +1,41 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:01:40,259:INFO:mapsims:Parsing configuration from common.toml, ksz_ksz1.toml
+2024-09-08 11:01:40,261:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:01:40,269:INFO:mapsims:Channel 150ghz
+2024-09-08 11:01:40,304:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_150ghz.tbl
+2024-09-08 11:01:40,307:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_150ghz.tbl
+2024-09-08 11:01:40,311:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:01:40,316:INFO:mapsims:Channel 150ghz
+2024-09-08 11:01:40,348:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_150ghz.tbl
+2024-09-08 11:01:40,349:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_150ghz.tbl
+2024-09-08 11:01:40,388:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 11:01:40,390:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:01:40,392:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2024-09-08 11:01:40,394:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/ksz.fits
+2024-09-08 11:01:41,708:INFO:mapsims:Processing channel Channel 150ghz
+2024-09-08 11:01:41,708:INFO:mapsims:Bandpass integration for Channel 150ghz
+2024-09-08 11:02:13,597:INFO:pysm3:Removing 2/47 points below 1e-10
+2024-09-08 11:02:14,304:INFO:mapsims:Smoothing and coord-transform for Channel 150ghz
+2024-09-08 11:02:14,306:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 11:02:20,991:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:02:20,991:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:02:21,187:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:02:21,384:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:02:21,584:INFO:pysm3:Rotate Alm
+2024-09-08 11:03:41,781:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:03:45,055:INFO:mapsims:Writing output map spt_ksz_ksz1_uKCMB_150ghz_nside2048.fits
+2024-09-08 11:03:45,055:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:03:45,242:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:03:49,655:INFO:mapsims:Writing output map
+
+real	2m12.798s
+user	66m36.315s
+sys	0m27.452s

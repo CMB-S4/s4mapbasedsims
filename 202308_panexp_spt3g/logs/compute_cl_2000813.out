@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/synchrotron_s5
+reading output/synchrotron_s5/spt_synchrotron_s5_uKCMB_95ghz_nside2048.fits
+reading output/synchrotron_s5/spt_synchrotron_s5_uKCMB_150ghz_nside2048.fits
+reading output/synchrotron_s5/spt_synchrotron_s5_uKCMB_220ghz_nside2048.fits
+
+real	0m46.787s
+user	14m23.399s
+sys	0m43.503s

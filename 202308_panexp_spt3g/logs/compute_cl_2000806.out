@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/ame_a1
+reading output/ame_a1/spt_ame_a1_uKCMB_95ghz_nside2048.fits
+reading output/ame_a1/spt_ame_a1_uKCMB_150ghz_nside2048.fits
+reading output/ame_a1/spt_ame_a1_uKCMB_220ghz_nside2048.fits
+
+real	0m47.522s
+user	14m29.535s
+sys	0m45.000s

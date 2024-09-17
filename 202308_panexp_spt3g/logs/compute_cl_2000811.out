@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/cmb_c3
+reading output/cmb_c3/spt_cmb_c3_uKCMB_95ghz_nside2048.fits
+reading output/cmb_c3/spt_cmb_c3_uKCMB_150ghz_nside2048.fits
+reading output/cmb_c3/spt_cmb_c3_uKCMB_220ghz_nside2048.fits
+
+real	0m46.781s
+user	14m39.915s
+sys	0m42.329s

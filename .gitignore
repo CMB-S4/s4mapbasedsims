@@ -8,3 +8,6 @@ bk
 in
 run
 __pycache__
+*.out
+*.err
+out_plot_cl

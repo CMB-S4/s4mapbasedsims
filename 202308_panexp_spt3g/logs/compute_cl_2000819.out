@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/freefree_f1
+reading output/freefree_f1/spt_freefree_f1_uKCMB_95ghz_nside2048.fits
+reading output/freefree_f1/spt_freefree_f1_uKCMB_150ghz_nside2048.fits
+reading output/freefree_f1/spt_freefree_f1_uKCMB_220ghz_nside2048.fits
+
+real	1m5.207s
+user	23m24.172s
+sys	1m30.208s

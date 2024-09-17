@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/ksz_ksz1
+reading output/ksz_ksz1/spt_ksz_ksz1_uKCMB_95ghz_nside2048.fits
+reading output/ksz_ksz1/spt_ksz_ksz1_uKCMB_150ghz_nside2048.fits
+reading output/ksz_ksz1/spt_ksz_ksz1_uKCMB_220ghz_nside2048.fits
+
+real	0m48.241s
+user	14m56.291s
+sys	0m40.539s

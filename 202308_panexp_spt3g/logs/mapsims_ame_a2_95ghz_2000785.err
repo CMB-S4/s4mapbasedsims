@@ -1,0 +1,53 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:10:46,656:INFO:mapsims:Parsing configuration from common.toml, ame_a2.toml
+2024-09-08 11:10:46,658:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:10:46,661:INFO:mapsims:Channel 95ghz
+2024-09-08 11:10:46,696:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 11:10:46,698:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 11:10:46,707:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:10:46,709:INFO:mapsims:Channel 95ghz
+2024-09-08 11:10:46,740:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 11:10:46,741:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 11:10:46,748:INFO:mapsims:Nside: 2048, Modeling Nside: 512, Ellmax: 1280
+2024-09-08 11:10:46,750:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:10:46,752:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_t_new.fits
+2024-09-08 11:10:46,784:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame_nu_peak_0.fits
+2024-09-08 11:10:46,815:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2024-09-08 11:10:46,821:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_u_new.fits
+2024-09-08 11:10:47,034:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_u_new.fits
+2024-09-08 11:10:47,036:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_q_new.fits
+2024-09-08 11:10:47,205:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_q_new.fits
+2024-09-08 11:10:47,271:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/ame2_t_new.fits
+2024-09-08 11:10:47,302:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/emissivity.txt
+2024-09-08 11:10:47,307:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_u_new.fits
+2024-09-08 11:10:47,345:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_u_new.fits
+2024-09-08 11:10:47,347:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_q_new.fits
+2024-09-08 11:10:47,379:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/pysm_2/dust_q_new.fits
+2024-09-08 11:10:47,440:INFO:mapsims:Processing channel Channel 95ghz
+2024-09-08 11:10:47,440:INFO:mapsims:Bandpass integration for Channel 95ghz
+2024-09-08 11:11:00,048:INFO:pysm3:Removing 1/30 points below 1e-10
+2024-09-08 11:11:00,062:INFO:pysm3:Removing 1/30 points below 1e-10
+2024-09-08 11:11:00,077:INFO:mapsims:Smoothing and coord-transform for Channel 95ghz
+2024-09-08 11:11:03,956:INFO:pysm3:Used map2alm_lsq, converged in 7 iterations,residual relative error 0.15
+2024-09-08 11:11:03,956:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:11:03,956:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:11:03,971:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:11:03,986:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:11:03,999:INFO:pysm3:Rotate Alm
+2024-09-08 11:11:06,527:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:11:09,093:INFO:mapsims:Writing output map spt_ame_a2_uKCMB_95ghz_nside2048.fits
+2024-09-08 11:11:09,093:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:11:09,274:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:11:13,623:INFO:mapsims:Writing output map
+
+real	0m30.291s
+user	3m51.892s
+sys	1m3.104s

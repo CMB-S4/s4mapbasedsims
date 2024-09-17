@@ -1,0 +1,48 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:12:02,183:INFO:mapsims:Parsing configuration from common.toml, co_co3.toml
+2024-09-08 11:12:02,184:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:12:02,194:INFO:mapsims:Channel 220ghz
+2024-09-08 11:12:02,228:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:12:02,229:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:12:02,230:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:12:02,238:INFO:mapsims:Channel 220ghz
+2024-09-08 11:12:02,271:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:12:02,272:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:12:02,272:INFO:mapsims:Nside: 2048, Modeling Nside: 2048, Ellmax: 5120
+2024-09-08 11:12:02,273:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:12:02,274:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2024-09-08 11:12:02,275:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/HFI_CompMap_CO-Type1_2048_R2.00_ring.fits
+2024-09-08 11:12:18,979:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2024-09-08 11:12:18,980:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2024-09-08 11:12:19,368:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/co/psimap_dust90_2048.fits
+2024-09-08 11:12:19,370:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2024-09-08 11:12:19,371:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2024-09-08 11:12:19,807:WARNING:pysm3:No physical unit associated with file /mnt/sdceph/users/azonca/pysm-data/co/gmap_dust90_2048.fits
+2024-09-08 11:12:19,808:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/mcmoleCO_HGL_2048.fits
+2024-09-08 11:12:19,809:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/co/mcmoleCO_HGL_2048.fits
+2024-09-08 11:12:21,062:INFO:mapsims:Processing channel Channel 220ghz
+2024-09-08 11:12:21,062:INFO:mapsims:Bandpass integration for Channel 220ghz
+2024-09-08 11:12:24,089:INFO:mapsims:Smoothing and coord-transform for Channel 220ghz
+2024-09-08 11:13:52,222:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.48
+2024-09-08 11:13:52,222:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:13:52,222:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:13:52,422:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:13:52,621:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:13:52,818:INFO:pysm3:Rotate Alm
+2024-09-08 11:15:23,807:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:15:27,203:INFO:mapsims:Writing output map spt_co_co3_uKCMB_220ghz_nside2048.fits
+2024-09-08 11:15:27,203:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:15:27,395:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:15:31,456:INFO:mapsims:Writing output map
+
+real	3m32.554s
+user	90m37.480s
+sys	3m25.943s

@@ -1,0 +1,41 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:02:18,916:INFO:mapsims:Parsing configuration from common.toml, dust_d10.toml
+2024-09-08 11:02:18,917:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:02:18,928:INFO:mapsims:Channel 220ghz
+2024-09-08 11:02:18,962:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:02:18,964:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:02:18,965:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:02:18,974:INFO:mapsims:Channel 220ghz
+2024-09-08 11:02:19,005:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:02:19,006:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:02:19,007:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 11:02:19,008:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:02:19,009:INFO:pysm3:Retrieve data for dust_gnilc/gnilc_dust_template_nside4096_2023.02.10.fits (if not cached already)
+2024-09-08 11:02:23,868:INFO:pysm3:Retrieve data for dust_gnilc/gnilc_dust_beta_nside4096_2023.06.06.fits (if not cached already)
+2024-09-08 11:02:25,175:INFO:pysm3:Retrieve data for dust_gnilc/gnilc_dust_Td_nside4096_2023.06.06.fits (if not cached already)
+2024-09-08 11:02:26,515:INFO:mapsims:Processing channel Channel 220ghz
+2024-09-08 11:02:26,515:INFO:mapsims:Bandpass integration for Channel 220ghz
+2024-09-08 11:22:56,919:INFO:mapsims:Smoothing and coord-transform for Channel 220ghz
+2024-09-08 11:22:56,921:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 11:23:03,556:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:23:03,556:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:23:03,753:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:23:03,948:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:23:04,143:INFO:pysm3:Rotate Alm
+2024-09-08 11:24:21,418:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:24:24,673:INFO:mapsims:Writing output map spt_dust_d10_uKCMB_220ghz_nside2048.fits
+2024-09-08 11:24:24,673:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:24:24,855:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:24:28,671:INFO:mapsims:Writing output map
+
+real	22m13.218s
+user	112m1.029s
+sys	7m0.939s

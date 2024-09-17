@@ -1,0 +1,40 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 10:58:20,881:INFO:mapsims:Parsing configuration from common.toml, synchrotron_s4.toml
+2024-09-08 10:58:20,883:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 10:58:20,890:INFO:mapsims:Channel 95ghz
+2024-09-08 10:58:20,938:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 10:58:20,940:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 10:58:20,949:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 10:58:20,950:INFO:mapsims:Channel 95ghz
+2024-09-08 10:58:20,982:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 10:58:20,983:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 10:58:20,991:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 10:58:20,992:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 10:58:20,995:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_template_nside4096_2023.02.25.fits
+2024-09-08 10:58:25,906:INFO:mapsims:Processing channel Channel 95ghz
+2024-09-08 10:58:25,906:INFO:mapsims:Bandpass integration for Channel 95ghz
+2024-09-08 10:59:39,333:INFO:pysm3:Removing 1/30 points below 1e-10
+2024-09-08 10:59:40,036:INFO:mapsims:Smoothing and coord-transform for Channel 95ghz
+2024-09-08 10:59:40,038:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 10:59:46,857:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 10:59:46,858:INFO:pysm3:Using the same beam for all components
+2024-09-08 10:59:47,056:INFO:pysm3:Using the same beam for all components
+2024-09-08 10:59:47,254:INFO:pysm3:Using the same beam for all components
+2024-09-08 10:59:47,452:INFO:pysm3:Rotate Alm
+2024-09-08 11:01:20,467:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:01:23,780:INFO:mapsims:Writing output map spt_synchrotron_s4_uKCMB_95ghz_nside2048.fits
+2024-09-08 11:01:23,780:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:01:23,981:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:01:28,135:INFO:mapsims:Writing output map
+
+real	3m10.655s
+user	77m22.408s
+sys	1m41.785s

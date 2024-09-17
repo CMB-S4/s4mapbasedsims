@@ -1,0 +1,44 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:01:34,781:INFO:mapsims:Parsing configuration from common.toml, cmb_c4.toml
+2024-09-08 11:01:34,782:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:01:34,793:INFO:mapsims:Channel 220ghz
+2024-09-08 11:01:34,837:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:01:34,840:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:01:34,840:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:01:34,849:INFO:mapsims:Channel 220ghz
+2024-09-08 11:01:34,881:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:01:34,882:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:01:34,882:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 11:01:34,884:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:01:34,886:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:34,887:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:34,889:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:34,891:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_I_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:37,742:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_Q_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:40,559:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cmb/map_U_lensed_alm_seed1_nside4096.fits
+2024-09-08 11:01:44,083:INFO:mapsims:Processing channel Channel 220ghz
+2024-09-08 11:01:44,083:INFO:mapsims:Bandpass integration for Channel 220ghz
+2024-09-08 11:01:46,618:INFO:mapsims:Smoothing and coord-transform for Channel 220ghz
+2024-09-08 11:01:46,620:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 11:01:53,265:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:01:53,265:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:53,466:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:53,664:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:53,861:INFO:pysm3:Rotate Alm
+2024-09-08 11:03:22,007:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:03:25,381:INFO:mapsims:Writing output map spt_cmb_c4_uKCMB_220ghz_nside2048.fits
+2024-09-08 11:03:25,381:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:03:25,607:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:03:29,822:INFO:mapsims:Writing output map
+
+real	1m58.470s
+user	72m27.837s
+sys	0m17.107s
