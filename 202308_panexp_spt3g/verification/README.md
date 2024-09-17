@@ -1,13 +1,14 @@
 # Sky signal simulation verification
 
-Verification is just done on the maps in Equatorial coordinates
-
 ## Map based verification
 
 * [Verify CO Lines `co1` `co3` notebook](./verify_CO.ipynb)
 * [Verify Radio Galaxies `rg1` notebook](./verify_radio.ipynb)
 
 ## Power spectra
+
+The feature visible in `s4` is in the template, probably due to processing of the input templates,
+see [these plots](https://gist.github.com/zonca/c252f702d3f7f6ba2a676ac457eb06c9)
 
 All components except CO and Radio Galaxies
 * [L T](https://nbviewer.org/gist/zonca/e6404c0b4a08d2149c1560da026e14ef)
