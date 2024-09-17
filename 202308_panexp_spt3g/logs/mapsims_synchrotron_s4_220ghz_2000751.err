@@ -1,0 +1,39 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 10:58:20,865:INFO:mapsims:Parsing configuration from common.toml, synchrotron_s4.toml
+2024-09-08 10:58:20,867:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 10:58:20,879:INFO:mapsims:Channel 220ghz
+2024-09-08 10:58:20,914:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 10:58:20,916:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 10:58:20,917:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 10:58:20,925:INFO:mapsims:Channel 220ghz
+2024-09-08 10:58:20,956:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 10:58:20,957:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 10:58:20,958:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 10:58:20,961:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 10:58:20,963:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/synch/synch_template_nside4096_2023.02.25.fits
+2024-09-08 10:58:26,105:INFO:mapsims:Processing channel Channel 220ghz
+2024-09-08 10:58:26,105:INFO:mapsims:Bandpass integration for Channel 220ghz
+2024-09-08 11:01:20,627:INFO:mapsims:Smoothing and coord-transform for Channel 220ghz
+2024-09-08 11:01:20,629:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 11:01:27,715:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:01:27,715:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:27,917:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:28,118:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:01:28,319:INFO:pysm3:Rotate Alm
+2024-09-08 11:02:56,992:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:03:00,321:INFO:mapsims:Writing output map spt_synchrotron_s4_uKCMB_220ghz_nside2048.fits
+2024-09-08 11:03:00,322:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:03:00,545:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:03:04,687:INFO:mapsims:Writing output map
+
+real	4m47.261s
+user	76m55.936s
+sys	3m35.812s

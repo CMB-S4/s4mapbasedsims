@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/dust_d12
+reading output/dust_d12/spt_dust_d12_uKCMB_95ghz_nside2048.fits
+reading output/dust_d12/spt_dust_d12_uKCMB_150ghz_nside2048.fits
+reading output/dust_d12/spt_dust_d12_uKCMB_220ghz_nside2048.fits
+
+real	1m3.881s
+user	24m23.796s
+sys	1m14.802s

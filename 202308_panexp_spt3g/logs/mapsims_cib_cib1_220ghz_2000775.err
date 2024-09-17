@@ -1,0 +1,89 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:04:11,449:INFO:mapsims:Parsing configuration from common.toml, cib_cib1.toml
+2024-09-08 11:04:11,450:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:04:11,460:INFO:mapsims:Channel 220ghz
+2024-09-08 11:04:11,495:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:04:11,498:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:04:11,498:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:04:11,507:INFO:mapsims:Channel 220ghz
+2024-09-08 11:04:11,539:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_220ghz.tbl
+2024-09-08 11:04:11,540:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_220ghz.tbl
+2024-09-08 11:04:11,540:INFO:mapsims:Nside: 2048, Modeling Nside: 4096, Ellmax: 5120
+2024-09-08 11:04:11,541:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:04:11,753:INFO:mapsims:Processing channel Channel 220ghz
+2024-09-08 11:04:11,753:INFO:mapsims:Bandpass integration for Channel 220ghz
+2024-09-08 11:04:11,993:INFO:pysm3:Frequencies considered: [153. 164. 189. 210. 217. 232. 256. 275. 294. 306.]
+2024-09-08 11:04:12,060:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0153.0.fits
+2024-09-08 11:04:12,060:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0153.0.fits
+2024-09-08 11:04:12,062:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0153.0.fits
+2024-09-08 11:04:20,154:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0153.0.fits
+2024-09-08 11:04:25,065:INFO:pysm3:Mean emission at 153.0 GHz in I: 19.36 uK_RJ
+2024-09-08 11:04:25,160:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0164.0.fits
+2024-09-08 11:04:25,160:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0164.0.fits
+2024-09-08 11:04:25,161:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0164.0.fits
+2024-09-08 11:04:32,123:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0164.0.fits
+2024-09-08 11:04:36,593:INFO:pysm3:Mean emission at 164.0 GHz in I: 20.82 uK_RJ
+2024-09-08 11:04:36,596:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2024-09-08 11:04:36,596:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2024-09-08 11:04:36,597:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2024-09-08 11:04:43,930:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0189.0.fits
+2024-09-08 11:04:48,287:INFO:pysm3:Mean emission at 189.0 GHz in I: 23.88 uK_RJ
+2024-09-08 11:04:48,296:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2024-09-08 11:04:48,296:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2024-09-08 11:04:48,298:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2024-09-08 11:04:54,507:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0210.0.fits
+2024-09-08 11:04:58,895:INFO:pysm3:Mean emission at 210.0 GHz in I: 26.14 uK_RJ
+2024-09-08 11:04:58,898:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2024-09-08 11:04:58,898:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2024-09-08 11:04:58,899:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2024-09-08 11:05:04,555:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0217.0.fits
+2024-09-08 11:05:09,003:INFO:pysm3:Mean emission at 217.0 GHz in I: 26.83 uK_RJ
+2024-09-08 11:05:09,005:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2024-09-08 11:05:09,005:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2024-09-08 11:05:09,007:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2024-09-08 11:05:14,936:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0232.0.fits
+2024-09-08 11:05:19,265:INFO:pysm3:Mean emission at 232.0 GHz in I: 28.19 uK_RJ
+2024-09-08 11:05:19,267:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2024-09-08 11:05:19,268:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2024-09-08 11:05:19,269:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2024-09-08 11:05:25,540:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0256.0.fits
+2024-09-08 11:05:29,685:INFO:pysm3:Mean emission at 256.0 GHz in I: 30.05 uK_RJ
+2024-09-08 11:05:29,688:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0275.0.fits
+2024-09-08 11:05:29,688:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0275.0.fits
+2024-09-08 11:05:29,690:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0275.0.fits
+2024-09-08 11:05:35,621:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0275.0.fits
+2024-09-08 11:05:39,993:INFO:pysm3:Mean emission at 275.0 GHz in I: 31.29 uK_RJ
+2024-09-08 11:05:39,996:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0294.0.fits
+2024-09-08 11:05:39,996:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0294.0.fits
+2024-09-08 11:05:39,997:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0294.0.fits
+2024-09-08 11:05:45,598:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0294.0.fits
+2024-09-08 11:05:49,975:INFO:pysm3:Mean emission at 294.0 GHz in I: 32.34 uK_RJ
+2024-09-08 11:05:49,978:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0306.0.fits
+2024-09-08 11:05:49,978:INFO:pysm3:Reading map /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0306.0.fits
+2024-09-08 11:05:49,979:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0306.0.fits
+2024-09-08 11:05:55,598:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/websky/0.4/cib/cib_0306.0.fits
+2024-09-08 11:06:00,051:INFO:pysm3:Mean emission at 306.0 GHz in I: 32.93 uK_RJ
+2024-09-08 11:08:47,273:INFO:mapsims:Smoothing and coord-transform for Channel 220ghz
+2024-09-08 11:08:47,275:INFO:pysm3:Using map2alm with pixel weights
+2024-09-08 11:08:54,353:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:08:54,354:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:08:54,558:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:08:54,763:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:08:54,967:INFO:pysm3:Rotate Alm
+2024-09-08 11:10:14,699:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:10:19,054:INFO:mapsims:Writing output map spt_cib_cib1_uKCMB_220ghz_nside2048.fits
+2024-09-08 11:10:19,054:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:10:19,281:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:10:23,381:INFO:mapsims:Writing output map
+
+real	6m15.412s
+user	68m44.872s
+sys	1m53.340s

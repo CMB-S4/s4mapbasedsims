@@ -1,0 +1,57 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+2024-09-08 11:10:30,070:INFO:mapsims:Parsing configuration from common.toml, dust_d12.toml
+2024-09-08 11:10:30,072:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:10:30,074:INFO:mapsims:Channel 95ghz
+2024-09-08 11:10:30,109:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 11:10:30,111:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 11:10:30,120:INFO:mapsims:Parsing channels from ../private/202308_panexp_spt3g/spt_instrument_model.tbl
+2024-09-08 11:10:30,121:INFO:mapsims:Channel 95ghz
+2024-09-08 11:10:30,153:INFO:mapsims:Beam from ../private/202308_panexp_spt3g/beam_95ghz.tbl
+2024-09-08 11:10:30,154:INFO:mapsims:Bandpass from ../private/202308_panexp_spt3g/bandpass_95ghz.tbl
+2024-09-08 11:10:30,161:INFO:mapsims:Nside: 2048, Modeling Nside: 2048, Ellmax: 5120
+2024-09-08 11:10:30,163:INFO:mapsims:Initializing the PySM Sky object
+2024-09-08 11:10:32,456:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl1.fits
+2024-09-08 11:10:34,999:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl2.fits
+2024-09-08 11:10:38,174:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl3.fits
+2024-09-08 11:10:41,351:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl4.fits
+2024-09-08 11:10:43,952:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl5.fits
+2024-09-08 11:10:47,065:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_ampl6.fits
+2024-09-08 11:10:56,578:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind1.fits
+2024-09-08 11:10:58,024:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind2.fits
+2024-09-08 11:10:59,266:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind3.fits
+2024-09-08 11:11:00,605:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind4.fits
+2024-09-08 11:11:01,882:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind5.fits
+2024-09-08 11:11:03,301:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_specind6.fits
+2024-09-08 11:11:05,245:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp1.fits
+2024-09-08 11:11:06,309:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp2.fits
+2024-09-08 11:11:07,593:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp3.fits
+2024-09-08 11:11:08,935:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp4.fits
+2024-09-08 11:11:10,034:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp5.fits
+2024-09-08 11:11:11,502:INFO:pysm3:Access data from /mnt/sdceph/users/azonca/pysm-data/mkd_dust/2048/thermaldust_temp6.fits
+2024-09-08 11:11:15,126:INFO:mapsims:Processing channel Channel 95ghz
+2024-09-08 11:11:15,127:INFO:mapsims:Bandpass integration for Channel 95ghz
+2024-09-08 11:25:17,464:INFO:pysm3:Removing 1/30 points below 1e-10
+2024-09-08 11:25:17,840:INFO:mapsims:Smoothing and coord-transform for Channel 95ghz
+2024-09-08 11:26:46,835:WARNING:pysm3:hp.map2alm_lsq did not converge in 10 iterations, residual relative error is 0.0012
+2024-09-08 11:26:46,835:INFO:pysm3:Smoothing with a custom isotropic beam
+2024-09-08 11:26:46,836:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:26:47,038:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:26:47,237:INFO:pysm3:Using the same beam for all components
+2024-09-08 11:26:47,435:INFO:pysm3:Rotate Alm
+2024-09-08 11:28:10,594:INFO:pysm3:Alm to map HEALPix
+2024-09-08 11:28:13,975:INFO:mapsims:Writing output map spt_dust_d12_uKCMB_95ghz_nside2048.fits
+2024-09-08 11:28:13,976:INFO:mapsims:Replace NaN with UNSEEN
+2024-09-08 11:28:14,160:INFO:mapsims:Reorder ring to nest
+2024-09-08 11:28:18,278:INFO:mapsims:Writing output map
+
+real	17m51.601s
+user	121m29.066s
+sys	8m29.455s

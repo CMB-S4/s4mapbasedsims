@@ -1,0 +1,17 @@
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+
+WARNING: version mismatch between CFITSIO header (v3.47) and linked library (v4.02).
+
+output/radio_rg1
+reading output/radio_rg1/spt_radio_rg1_uKCMB_95ghz_nside2048.fits
+reading output/radio_rg1/spt_radio_rg1_uKCMB_150ghz_nside2048.fits
+reading output/radio_rg1/spt_radio_rg1_uKCMB_220ghz_nside2048.fits
+
+real	0m46.321s
+user	14m37.373s
+sys	0m42.624s
