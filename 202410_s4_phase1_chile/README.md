@@ -3,6 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 1
 
 ## Updates
 
+* 2024-10-24: Copied to NERSC and published
 * 2024-10-23: Executed maps except Radio Galaxies
 
 ## Summary
@@ -62,7 +63,9 @@ See [`common.toml`](common.toml) for the naming convention.
 
 Each of the 16 components is available separately, see the TOML files in this repository for the configuration used to run PySM for each component.
 
-**Location at NERSC**:
+**Location at NERSC**, temporarily staged on Perlmutter Scratch, will be copied to tape and moved to the project space:
+
+`/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
 
 
 ## Combined maps
@@ -100,7 +103,7 @@ ELL_MAX =                10240
 
 ## Model execution
 
-Simulations were run using `mapsims 2.7.0b1` to coordinate the execution of `PySM 3.4.1b1`.
+Simulations were run using `mapsims 2.7.0a1` to coordinate the execution of `PySM 3.4.1a1`.
 Given that each channel requested a different resolution, we have followed some guidelines, agreed with the Panexperiment Galactic science group:
 
 * We have 2 resolution parameters, the output Nside is the requested resolution of the output map as defined in the instrument model. The modeling Nside instead is the resolution used to run PySM, then the output of PySM is transformed to Alm, beam-smoothed, rotated to Equatorial and anti-transformed to the output Nside. No `ud_grade` operations are ever performed.
