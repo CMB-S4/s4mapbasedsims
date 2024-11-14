@@ -3,7 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 1
 
 ## Updates
 
-* 2024-11-13: Modified bandpasses to be $\nu^(-2)$ in power units
+* 2024-11-13: Modified bandpasses to be $\nu^(-2)$ in power units, the previous version of the simulations is temporarily available on Permutter scratch at `/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
 * 2024-10-24: Copied to NERSC and published
 * 2024-10-23: Executed maps except Radio Galaxies
 
@@ -66,8 +66,7 @@ Each of the 16 components is available separately, see the TOML files in this re
 
 **Location at NERSC**, temporarily staged on Perlmutter Scratch, will be copied to tape and moved to the project space:
 
-`/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
-
+`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase1/input_sky`
 
 ## Combined maps
 
