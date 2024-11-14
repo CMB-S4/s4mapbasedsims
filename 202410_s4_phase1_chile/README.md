@@ -3,6 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 1
 
 ## Updates
 
+* 2024-11-13: Modified bandpasses to be $\nu^(-2)$ in power units, the previous version of the simulations is temporarily available on Permutter scratch at `/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
 * 2024-10-24: Copied to NERSC and published
 * 2024-10-23: Executed maps except Radio Galaxies
 
@@ -10,7 +11,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 1
 
 Full sky simulations for all CMB-S4 frequency channels for LAT and SAT deployed in Chile (CHLAT) of Galactic/Extragalactic foregrounds and CMB. The dataset includes Galactic foreground models at 3 different levels of complexity.
 The instrument model assumes Gaussian beams and top-hat bandpasses.
-Top-hat bandpasses were assumed to be **flat in power units [MJy/sr]**, this is different from other CMB-S4 work where instead top-hat means flat in RJ units, see [this post on Confluence (restricted)](https://cmb-s4.atlassian.net/wiki/spaces/XC/pages/1318518785/Bandpass+Convention+-+What+does+flat+mean).
+Top-hat bandpasses in CMB-S4 are assumed to be **flat in RJ units [uK_RJ]**, which means that they are proportional to $\nu^(-2)$ in the power units used by PySM, see [this post on Confluence (restricted)](https://cmb-s4.atlassian.net/wiki/spaces/XC/pages/1318518785/Bandpass+Convention+-+What+does+flat+mean). Notice that the [DC-0 simulations](https://github.com/CMB-S4/s4mapbasedsims/tree/main/202305_dc0) instead use bandpasses that are flat in power units, similarly to previous Simons Observatory and Litebird simulations.
 
 ## Instrument model
 
@@ -65,8 +66,7 @@ Each of the 16 components is available separately, see the TOML files in this re
 
 **Location at NERSC**, temporarily staged on Perlmutter Scratch, will be copied to tape and moved to the project space:
 
-`/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
-
+`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase1/input_sky`
 
 ## Combined maps
 
