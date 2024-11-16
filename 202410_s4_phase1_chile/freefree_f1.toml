@@ -1,5 +1,6 @@
 tag = "freefree_f1"
-modeling_nside = 512
+modeling_nside = 4096
+lmax_over_nside = 1
 
 [pysm_components]
 pysm_components_string = "f1"
