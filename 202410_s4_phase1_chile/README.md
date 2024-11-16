@@ -3,7 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 1
 
 ## Updates
 
-* 2024-11-16: Reijo noticed ringing in the maps, it was due to [artifacts in `f1`](https://github.com/galsci/pysm/issues/197), reran `f1` using `ud_grade` to 4096, which was the default in PySM 2, regenerated also the `combined_foregrounds` maps
+* 2024-11-16: Reijo noticed ringing in the CHLAT foreground maps, it was due to [artifacts in `f1`](https://github.com/galsci/pysm/issues/197), reran `f1` using `ud_grade` to 4096, which was the default in PySM 2, regenerated also the `combined_foregrounds` map. Similar issue in `a1` and `a2` even if less evident, executed those maps for CHLAT with `ud_grade` as well.
 * 2024-11-13: Modified bandpasses to be $\nu^(-2)$ in power units, the previous version of the simulations is temporarily available on Permutter scratch at `/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
 * 2024-10-24: Copied to NERSC and published
 * 2024-10-23: Executed maps except Radio Galaxies
