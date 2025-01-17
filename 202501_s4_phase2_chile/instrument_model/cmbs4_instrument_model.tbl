@@ -1,10 +1,6 @@
 \ Text file in IPAC table format, read with astropy
 \ from astropy.table import QTable
 \ QTable.read('filename.tbl', format='ascii.ipac')
-\ Instrument model exported from the file
-\ chile_optimization_sims/phase1/hardware.toml.gz
-\ in the Phase1 branch of the repository:
-\ https://github.com/CMB-S4/s4sim
 |      band|telescope| site|center_frequency|  fwhm|nside|          bandpass_file|
 |      char|     char| char|          double|double| long|                   char|
 |          |         |     |             GHz|arcmin|     |                       |
@@ -16,11 +12,13 @@
  CHLAT_f150       LAT Chile            148.5    1.3  4096 bandpass_CHLAT_f150.tbl 
  CHLAT_f220       LAT Chile            227.0   0.95  4096 bandpass_CHLAT_f220.tbl 
  CHLAT_f280       LAT Chile            285.5   0.83  4096 bandpass_CHLAT_f280.tbl 
-   SAT_f030       SAT Chile            24.75  100.9   512   bandpass_SAT_f030.tbl 
-   SAT_f040       SAT Chile             36.5   74.4   512   bandpass_SAT_f040.tbl 
-   SAT_f085       SAT Chile             85.0   29.5   512   bandpass_SAT_f085.tbl 
-   SAT_f095       SAT Chile             95.0   26.4   512   bandpass_SAT_f095.tbl 
-   SAT_f145       SAT Chile            145.0   18.1   512   bandpass_SAT_f145.tbl 
-   SAT_f155       SAT Chile            155.0   16.9   512   bandpass_SAT_f155.tbl 
-   SAT_f220       SAT Chile            227.0   11.3   512   bandpass_SAT_f220.tbl 
-   SAT_f280       SAT Chile            285.5   10.1   512   bandpass_SAT_f280.tbl 
+   SAT_f030       SAT Chile            24.75   79.2   512   bandpass_SAT_f030.tbl 
+   SAT_f040       SAT Chile             36.5   56.6   512   bandpass_SAT_f040.tbl 
+   SAT_f085       SAT Chile             85.0   22.9   512   bandpass_SAT_f085.tbl 
+   SAT_f090       SAT Chile             91.5   21.4   512   bandpass_SAT_f090.tbl 
+   SAT_f095       SAT Chile             95.0   20.6   512   bandpass_SAT_f095.tbl 
+   SAT_f145       SAT Chile            145.0   14.2   512   bandpass_SAT_f145.tbl 
+   SAT_f150       SAT Chile            148.5   14.0   512   bandpass_SAT_f150.tbl 
+   SAT_f155       SAT Chile            155.0   13.5   512   bandpass_SAT_f155.tbl 
+   SAT_f220       SAT Chile            227.0    9.4   512   bandpass_SAT_f220.tbl 
+   SAT_f280       SAT Chile            285.5    7.8   512   bandpass_SAT_f280.tbl 
