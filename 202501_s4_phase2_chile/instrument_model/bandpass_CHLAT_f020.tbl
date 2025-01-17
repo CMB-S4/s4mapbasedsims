@@ -1,0 +1,21 @@
+\ Text file in IPAC table format, read with astropy
+\ from astropy.table import QTable
+\ QTable.read('filename.tbl', format='ascii.ipac')
+\ Instrument model exported from the file
+\ chile_optimization_sims/phase1/hardware.toml.gz
+\ in the Phase1 branch of the repository:
+\ https://github.com/CMB-S4/s4sim
+|bandpass_frequency|   bandpass_weight|
+|            double|            double|
+|               GHz|                  |
+|              null|              null|
+               17.5                1.0 
+ 18.055555555555557 0.9394082840236684 
+  18.61111111111111 0.8841612831365561 
+ 19.166666666666668 0.8336483931947068 
+  19.72222222222222 0.7873437809958341 
+  20.27777777777778 0.7447926440232688 
+ 20.833333333333332             0.7056 
+  21.38888888888889 0.6694214876033058 
+ 21.944444444444443 0.6359557763178978 
+               22.5 0.6049382716049383 
