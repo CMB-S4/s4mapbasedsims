@@ -1,5 +1,5 @@
 tag = "ame_a2"
-modeling_nside = 4096
+modeling_nside = 512
 lmax_over_nside = 1
 
 [pysm_components]
