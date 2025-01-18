@@ -3,7 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 2
 
 ## Updates
 
-* 2025-01-17: Exported instrument model
+* 2025-01-17: Exported instrument model, executed maps, made available at NERSC
 
 ## Summary
 
@@ -69,7 +69,7 @@ Each of the 16 components is available separately, see the TOML files in this re
 
 **Location at NERSC**, on project space:
 
-`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase1/input_sky`
+`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase2/input_sky`
 
 ## Combined maps
 
