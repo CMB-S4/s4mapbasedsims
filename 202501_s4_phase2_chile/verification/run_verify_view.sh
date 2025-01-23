@@ -1,15 +1,11 @@
 #!/bin/bash
 
 components=(
-    "combined_cmb_lensing_signal"
     "combined_foregrounds_lowcomplexity_norg"
-    "combined_cmb_unlensed_dipole"
     "combined_foregrounds_mediumcomplexity_norg"
     "combined_foregrounds_highcomplexity_norg"
-)
-
-components=(
     "combined_cmb_lensing_signal"
+    "combined_cmb_unlensed_dipole"
 )
 
 echo "# Visual inspection of maps" >> README.md
