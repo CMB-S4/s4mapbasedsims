@@ -1,16 +1,18 @@
-Sky simulations for CMB-S4 Chile-only simulations Phase 1
+Sky simulations for CMB-S4 Chile-only simulations Phase 2
 =========================================================
 
 ## Updates
 
-* 2024-11-16: Reijo noticed ringing in the CHLAT foreground maps, it was due to [artifacts in `f1`](https://github.com/galsci/pysm/issues/197), reran `f1` using `ud_grade` to 4096, which was the default in PySM 2, regenerated also the `combined_foregrounds` map. Similar issue in `a1` and `a2` even if less evident, executed those maps for CHLAT with `ud_grade` as well.
-* 2024-11-13: Modified bandpasses to be $\nu^(-2)$ in power units, the previous version of the simulations is temporarily available on Permutter scratch at `/pscratch/sd/z/zonca/cmbs4/202410_s4_phase1_chile`
-* 2024-10-24: Copied to NERSC and published
-* 2024-10-23: Executed maps except Radio Galaxies
+* 2025-01-17: Exported instrument model, executed maps, made available at NERSC
 
 ## Summary
 
-Full sky simulations for all CMB-S4 frequency channels for LAT and SAT deployed in Chile (CHLAT) of Galactic/Extragalactic foregrounds and CMB. The dataset includes Galactic foreground models at 3 different levels of complexity.
+Full sky simulations for SAT only deployed in Chile of Galactic/Extragalactic foregrounds and CMB.
+These simulations have the same configuration of the [Phase 1 simulations](https://github.com/CMB-S4/s4mapbasedsims/tree/main/202410_s4_phase1_chile), so please refer to that simulation for LAT maps.
+The need for this new round of simulations was triggered by having updated beams and new non-split bands `f090` and `f150`.
+
+The dataset includes Galactic foreground models at 3 different levels of complexity.
+
 The instrument model assumes Gaussian beams and top-hat bandpasses.
 Top-hat bandpasses in CMB-S4 are assumed to be **flat in RJ units [uK_RJ]**, which means that they are proportional to $\nu^(-2)$ in the power units used by PySM, see [this post on Confluence (restricted)](https://cmb-s4.atlassian.net/wiki/spaces/XC/pages/1318518785/Bandpass+Convention+-+What+does+flat+mean). Notice that the [DC-0 simulations](https://github.com/CMB-S4/s4mapbasedsims/tree/main/202305_dc0) instead use bandpasses that are flat in power units, similarly to previous Simons Observatory and Litebird simulations.
 
@@ -65,9 +67,9 @@ See [`common.toml`](common.toml) for the naming convention.
 
 Each of the 16 components is available separately, see the TOML files in this repository for the configuration used to run PySM for each component.
 
-**Location at NERSC**, temporarily staged on Perlmutter Scratch, will be copied to tape and moved to the project space:
+**Location at NERSC**, on project space:
 
-`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase1/input_sky`
+`/global/cfs/cdirs/cmbs4/chile_optimization/simulations/phase2/input_sky`
 
 ## Combined maps
 
@@ -88,19 +90,7 @@ They are in the same folder and same naming convention.
 
 ## Metadata
 
-Most useful metadata is available in the FITS header of the HEALPix maps, for example:
-
-```
-PIXTYPE = 'HEALPIX '           / HEALPIX pixelisation                           
-ORDERING= 'NESTED  '           / Pixel ordering scheme, either RING or NESTED   
-COORDSYS= 'C       '           / Ecliptic, Galactic or Celestial (equatorial)   
-EXTNAME = 'xtension'           / name of this binary table extension            
-NSIDE   =                 4096 / Resolution parameter of HEALPIX                
-TELESCOP= 'LAT     '                                                            
-BAND    = 'CHLAT_f030'                                                          
-TAG     = 'dust_d10'                                                            
-ELL_MAX =                10240                                                  
-```
+Most useful metadata is available in the FITS header of the HEALPix maps.
 
 ## Model execution
 
@@ -108,7 +98,7 @@ Simulations were run using `mapsims 2.7.0a1` to coordinate the execution of `PyS
 Given that each channel requested a different resolution, we have followed some guidelines, agreed with the Panexperiment Galactic science group:
 
 * We have 2 resolution parameters, the output Nside is the requested resolution of the output map as defined in the instrument model. The modeling Nside instead is the resolution used to run PySM, then the output of PySM is transformed to Alm, beam-smoothed, rotated to Equatorial and anti-transformed to the output Nside. No `ud_grade` operations are ever performed.
-* Evaluation of the PySM 3 models is executed at a minimum Nside 2048 or at the higher resolution available in the model. For example PySM 2 native models are executed at Nside 512, the new PySM 3 models are executed at 2048 even if we only want a Nside 128 output.
+* Evaluation of the PySM 3 models is executed at a minimum Nside 2048 or at the higher resolution available in the model. For example PySM 2 native models are executed at Nside 512, the new PySM 3 models are executed at 2048 even if we only want a Nside 128 output. This caused ringing in the CHLAT foreground maps, it was due to [artifacts in `f1`](https://github.com/galsci/pysm/issues/197) so now we execute PySM 2 models, with a max nside of 512, either at 512 or at 4096 with `ud_grade` to avoid ringing.
 * Evaluation is executed at 2 times the requested output Nside, unless the requested output Nside is already the maximum available. For example if we request output at Nside 2048, `d10` is executed at 4096, if we request Nside 8192, `d10` is also executed at 8192.
 * The maximum Ell is set to 2.5 times the lowest between the modeling and the output Nside, to avoid artifacts in the Spherical Harmonics transforms. Harmonics transforms are executed with [`hp.map2alm_lsq`](https://healpy.readthedocs.io/en/latest/generated/healpy.sphtfunc.map2alm_lsq.html) with 10 maximum iterations and 1e-7 target accuracy.
 
