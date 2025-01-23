@@ -3,6 +3,7 @@ Sky simulations for CMB-S4 Chile-only simulations Phase 2
 
 ## Updates
 
+* 2025-01-22: Ran verification
 * 2025-01-17: Exported instrument model, executed maps, made available at NERSC
 
 ## Summary
