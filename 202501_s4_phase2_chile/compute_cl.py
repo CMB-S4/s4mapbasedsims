@@ -14,12 +14,12 @@ chs = QTable.read(
     "instrument_model/cmbs4_instrument_model.tbl",
     format="ascii.ipac",
 )
-folder = [f for f in glob("output/*") if not f.endswith("pkl")][ID]
+folder = [f for f in glob("output/*") if not f.endswith("pkl") and not os.path.basename(f).startswith("combined") and not os.path.basename(f).startswith("C_ell")][ID]
 cl = {}
 print(folder)
 component = os.path.basename(folder)
 
-output_filename = f"output/C_ell_{component}.pkl"
+output_filename = f"output/C_ell/C_ell_{component}.pkl"
 if os.path.exists(output_filename):
     print(f"{output_filename} already exists")
     sys.exit(0)
